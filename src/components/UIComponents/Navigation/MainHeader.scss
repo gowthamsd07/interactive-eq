@@ -1,0 +1,21 @@
+.main-header,
+.main-footer {
+  background: rgba(21, 14, 18, 0.3);
+  backdrop-filter: blur(12px);
+  padding: 24px 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-brand-logo {
+    max-width: 206px;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+}

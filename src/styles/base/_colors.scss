@@ -1,0 +1,41 @@
+.text-primary {
+  color: var(--text-primary-d);
+}
+.text-secondary {
+  color: var(--text-secondary-d);
+}
+.text-placeholder {
+  color: var(--text-placeholder-d);
+}
+.text-disabled {
+  color: var(--text-disabled-d);
+}
+.text-brand {
+  color: var(--text-brand-d);
+}
+.text-gradient {
+  color: var(--text-gradient-d);
+}
+.text-white {
+  color: var(--text-white-l);
+}
+
+// bg
+.bg-surface {
+  background: var(--bg-surface-d);
+}
+.bg-variant1 {
+  background: var(--bg-variant1-d);
+}
+.bg-variant2 {
+  background: var(--bg-variant2-d);
+}
+.bg-brand {
+  background: var(--bg-brand-d);
+}
+.bg-brand-hover {
+  background: var(--bg-brand-hover-d);
+}
+.bg-gradient {
+  background: var(--bg-gradient-d);
+}

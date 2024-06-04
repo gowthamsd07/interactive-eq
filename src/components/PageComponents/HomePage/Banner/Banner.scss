@@ -1,0 +1,24 @@
+.ieq-banner {
+  padding-top: 90px;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      background: linear-gradient(93deg, #5a1c4f -8.33%, #e13d44 124.79%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      max-width: 574px;
+    }
+
+    button {
+      margin-top: 40px;
+    }
+  }
+
+  &__video {
+    margin-top: 80px;
+  }
+}

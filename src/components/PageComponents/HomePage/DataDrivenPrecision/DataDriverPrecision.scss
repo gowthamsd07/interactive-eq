@@ -1,0 +1,30 @@
+.ieq-datadriven {
+  h1 {
+    max-width: 658px;
+    margin: 0 auto;
+  }
+  .slider-content-item-wrap {
+    .slider-content-item {
+      padding-bottom: 40px;
+      &:not(:last-child) {
+        border-bottom: 1px solid #2d272b;
+      }
+
+      &:not(:first-child) {
+        padding-top: 25px;
+      }
+      p {
+        max-width: 360px;
+        margin-top: 16px;
+      }
+
+      button {
+        margin-top: 32px;
+      }
+    }
+  }
+
+  .slider-image-item {
+    position: absolute;
+  }
+}

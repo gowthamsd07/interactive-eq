@@ -1,0 +1,53 @@
+@use '../../../styles/base/mixins' as mixin;
+
+.button {
+  border-radius: 110px;
+  font-family: var(--font-default);
+  box-shadow: none;
+  text-shadow: none;
+  height: auto;
+  cursor: pointer;
+  text-align: center;
+
+  &--large {
+    @include mixin.font-responsive(48, 56, 18, 110, 110, 100); //18-SB
+    font-weight: 500;
+  }
+
+  &--small {
+    @include mixin.font-responsive(48, 56, 14, 110, 110, 100); //18-SB
+    font-weight: 500;
+  }
+
+  &--primary {
+    padding: 16px 24px;
+    color: var(--text-white-l);
+    font-weight: 500;
+    background: linear-gradient(93deg, #5a1c4f -8.33%, #e13d44 124.79%);
+    outline: none;
+    border: none;
+  }
+
+  &--secondary {
+    padding: 16px 24px;
+    color: var(--text-white-l);
+    font-weight: 500;
+    background: transparent;
+    outline: none;
+    border: 1px solid var(--text-white-l);
+  }
+
+  &--tertiary {
+    padding: 16px 24px;
+    color: var(--text-white-l);
+    font-weight: 500;
+    background: rgba(58, 56, 57, 0.7);
+    backdrop-filter: blur(3.5px);
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    border: none;
+  }
+}

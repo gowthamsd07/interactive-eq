@@ -1,0 +1,23 @@
+.ieq-assessment {
+  padding-bottom: 106px;
+  .section-title {
+    max-width: 456px;
+    margin: 0 auto;
+  }
+  .assessment-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h6 {
+      margin: 8px 0 !important;
+    }
+    p {
+      max-width: 240px;
+    }
+  }
+
+  &__content {
+    margin-top: 96px;
+  }
+}

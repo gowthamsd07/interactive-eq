@@ -1,0 +1,92 @@
+// FontFamily
+$font-biotif: 'biotif';
+
+// BaseColors
+$cyan: '#51B6C5';
+$green: '#83D447';
+$pink: '#E93A76';
+$yellow: '#F4B30F';
+$purple: '#7C26F5';
+$cyan-light: '#B5E6EC';
+$green-light: '#D2ECBE';
+$pink-light: '#FFC9DB';
+$yellow-light: '#F0E1C1';
+$purple-light: '#CFB2F6';
+$cyan-lightest: '#E5F4F6';
+$green-lightest: '#EDF9E4';
+$pink-lightest: '#FFE8F0';
+$yellow-lightest: '#FEF5E3';
+$purple-lightest: '#ECDFFE';
+
+// TextColors
+// LightTheme
+$text-primary-l: '#262642';
+$text-secondary-l: '#6E6E81';
+$text-placeholder-l: '#9F9FAB';
+$text-disabled-l: '#C0C0C8';
+$text-brand-l: '#752B50';
+$text-white-l: '#fff';
+$text-gradient-l: '#262642';
+// DarkTheme
+$text-primary-d: '#E9E9E9';
+$text-secondary-d: '#A7A7A7';
+$text-placeholder-d: '#7C7C7C';
+$text-disabled-d: '#505050';
+$text-brand-d: '#A64D79';
+$text-gradient-d: '#A64D79';
+
+// BackgroundColors
+// LightTheme
+$bg-surface-l: '#FFFFFF';
+$bg-variant1-l: '#F2F2F2';
+$bg-variant2-l: '#FAFAFA';
+$bg-brand-l: '#752B50';
+$bg-brand-hover-l: '#A64D79';
+$bg-gradient-l: '#5A1C4F';
+
+// DarkTheme
+$bg-surface-d: '#150E12';
+$bg-variant1-d: '#181015';
+$bg-variant2-d: '#2D272B';
+$bg-brand-d: '#752B50';
+$bg-brand-hover-d: '#A64D79';
+$bg-gradient-d: linear-gradient(93deg, #5a1c4f -8.33%, #e13d44 124.79%);
+
+// BorderRadius
+
+// RootVariables
+:root {
+  // TextColors
+  // LightTheme
+  --font-default: #{$font-biotif};
+  --text-primary-l: #{$text-primary-l};
+  --text-secondary-l: #{$text-secondary-l};
+  --text-placeholder-l: #{$text-placeholder-l};
+  --text-disabled-l: #{$text-disabled-l};
+  --text-brand-l: #{$text-brand-l};
+  --text-white-l: #{$text-white-l};
+  --text-gradient-l: #{$text-gradient-l};
+  // DarkTheme
+  --text-primary-d: #{$text-primary-d};
+  --text-secondary-d: #{$text-secondary-d};
+  --text-placeholder-d: #{$text-placeholder-d};
+  --text-disabled-d: #{$text-disabled-d};
+  --text-brand-d: #{$text-brand-d};
+  --text-gradient-d: #{$text-gradient-d};
+
+  // BackgroundColors
+  // LightTheme
+  --bg-surface-l: #{$bg-surface-l};
+  --bg-variant1-l: #{$bg-variant1-l};
+  --bg-variant2-l: #{$bg-variant2-l};
+  --bg-brand-l: #{$bg-brand-l};
+  --bg-brand-hover-l: #{$bg-brand-hover-l};
+  --bg-gradient-l: #{$bg-gradient-l};
+  // DarkTheme
+  --bg-surface-d: #{$bg-surface-d};
+  --bg-variant1-d: #{$bg-variant1-d};
+  --bg-variant2-d: #{$bg-variant2-d};
+  --bg-brand-d: #{$bg-brand-d};
+  --bg-brand-hover-d: #{$bg-brand-hover-d};
+  --bg-gradient-d: #{$bg-gradient-d};
+}

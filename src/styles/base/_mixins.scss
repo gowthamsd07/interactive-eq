@@ -1,0 +1,29 @@
+// Responsive fonts fixed typography
+$widthMob: 300; //set mobile breakpoint. unitless value in pixels.
+$widthTab: 768; //set tablet breakpoint. unitless value in pixels.
+$widthDesktop: 1200; //set desktop breakpoint. unitless value in pixels.
+@mixin font-responsive($valueMob, $valueTab, $valueDesktop, $lhMob, $lhTab, $lhDesktop) {
+  // turn mixin parameters into rem value.
+  $fontMob: $valueMob;
+  $fontTab: $valueTab;
+  $fontDesktop: $valueDesktop;
+  $lineHeightMob: $lhMob;
+  $lineHeightTab: $lhTab;
+  $lineHeightDesktop: $lhDesktop;
+
+  // set minimum font size. give it rem value.
+  font-size: #{$valueMob}px;
+  line-height: #{$lhMob} + '%';
+
+  // set font size between min and max breakpoints.
+  @media (min-width: #{$widthTab}px) {
+    font-size: #{$valueTab}px;
+    line-height: #{$lhTab} + '%';
+  }
+
+  // set font size above max breakpoint
+  @media (min-width: #{$widthDesktop}px) {
+    font-size: #{$fontDesktop}px;
+    line-height: #{$lhDesktop} + '%';
+  }
+}

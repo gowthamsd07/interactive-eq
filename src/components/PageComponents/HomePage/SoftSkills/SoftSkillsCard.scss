@@ -1,0 +1,38 @@
+.soft-skills-card {
+  display: flex;
+  width: 100%;
+
+  &.direction-reverse {
+    flex-direction: row-reverse;
+  }
+
+  &__content,
+  &__icon {
+    width: 50%;
+    border: 1px solid #242424;
+  }
+
+  &__content {
+    padding: 120px 80px;
+    h6 {
+      border-radius: 100px;
+      width: 72px;
+      height: 72px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    h4 {
+      margin-top: 32px;
+    }
+    p {
+      margin-top: 16px;
+    }
+  }
+
+  &__icon {
+    .main-icon {
+      width: 100%;
+    }
+  }
+}
