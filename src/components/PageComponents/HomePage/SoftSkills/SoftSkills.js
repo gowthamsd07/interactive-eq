@@ -1,9 +1,15 @@
 import React from "react";
+import ScrollAnimation from "react-animate-on-scroll";
 
 import "./SoftSkills.scss";
 import { Col, Row } from "antd";
 import SoftSkillsCard from "./SoftSkillsCard";
 import Button from "../../../UIComponents/Buttons/Buttons";
+
+import { Tween } from "react-gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import gsap from "gsap";
+gsap.registerPlugin(ScrollTrigger);
 
 const SoftSkills = (props) => {
   return (
@@ -25,14 +31,22 @@ const SoftSkills = (props) => {
         <Row className="mt-80">
           <Col xl={{ span: 20, offset: 2 }} className="ieq-softskills__list">
             {props.items.map((item) => (
-              <SoftSkillsCard
+              <ScrollAnimation
                 key={item.id}
-                id={item.id}
-                direction={item.direction}
-                title={item.title}
-                desc={item.desc}
-                iconUrl={item.iconUrl}
-              />
+                animateOnce={true}
+                offset={200}
+                duration={0.5}
+                animateIn="animate__fadeIn"
+              >
+                <SoftSkillsCard
+                  key={item.id}
+                  id={item.id}
+                  direction={item.direction}
+                  title={item.title}
+                  desc={item.desc}
+                  iconUrl={item.iconUrl}
+                />
+              </ScrollAnimation>
             ))}
           </Col>
         </Row>

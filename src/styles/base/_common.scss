@@ -75,3 +75,19 @@ body {
 .flex-column {
   flex-direction: column;
 }
+
+// overrides
+.animate__fadeInUp {
+  animation-name: fadeInUpNew !important;
+}
+
+@keyframes fadeInUpNew {
+  0% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
