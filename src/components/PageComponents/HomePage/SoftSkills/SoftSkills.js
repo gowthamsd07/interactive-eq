@@ -6,7 +6,7 @@ import { Col, Row } from "antd";
 import SoftSkillsCard from "./SoftSkillsCard";
 import Button from "../../../UIComponents/Buttons/Buttons";
 
-import { Tween } from "react-gsap";
+// import { Tween } from "react-gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import gsap from "gsap";
 gsap.registerPlugin(ScrollTrigger);

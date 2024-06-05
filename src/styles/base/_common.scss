@@ -80,6 +80,12 @@ body {
 .animate__fadeInUp {
   animation-name: fadeInUpNew !important;
 }
+.animate__fadeInLeft {
+  animation-name: fadeInLeftNew !important;
+}
+.animate__fadeInRight {
+  animation-name: fadeInRightNew !important;
+}
 
 @keyframes fadeInUpNew {
   0% {
@@ -89,5 +95,27 @@ body {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeftNew {
+  0% {
+    opacity: 0;
+    transform: translateX(-30%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRightNew {
+  0% {
+    opacity: 0;
+    transform: translateX(30%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

@@ -20,14 +20,14 @@ import AssessmentIcon5 from "../assets/images/home/shield-5.svg";
 import AssessmentIcon6 from "../assets/images/home/shield-6.svg";
 
 // Skill
-import SkillIcon1 from "../assets/images/home/skill-icon-1.svg";
-import SkillIcon2 from "../assets/images/home/skill-icon-2.svg";
-import SkillIcon3 from "../assets/images/home/skill-icon-3.svg";
-import SkillIcon4 from "../assets/images/home/skill-icon-4.svg";
-import SkillIcon5 from "../assets/images/home/skill-icon-5.svg";
-import SkillIcon6 from "../assets/images/home/skill-icon-6.svg";
-import SkillIcon7 from "../assets/images/home/skill-icon-7.svg";
-import SkillIcon8 from "../assets/images/home/skill-icon-8.svg";
+import SkillIcon1 from "../assets/images/home/skill-slider-1.png";
+import SkillIcon2 from "../assets/images/home/skill-slider-2.png";
+import SkillIcon3 from "../assets/images/home/skill-slider-3.png";
+import SkillIcon4 from "../assets/images/home/skill-slider-4.png";
+import SkillIcon5 from "../assets/images/home/skill-slider-5.png";
+import SkillIcon6 from "../assets/images/home/skill-slider-6.png";
+import SkillIcon7 from "../assets/images/home/skill-slider-7.png";
+import SkillIcon8 from "../assets/images/home/skill-slider-8.png";
 
 export const SOFT_SKILLS_ITEMS = [
   {
