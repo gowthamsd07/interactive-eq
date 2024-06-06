@@ -11,53 +11,53 @@
 
 .display-1 {
   @include mixin.font-responsive(48, 56, 88, 110, 110, 110); //88b
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .display-2 {
   @include mixin.font-responsive(48, 56, 72, 110, 110, 110); //72b
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .display-3 {
   @include mixin.font-responsive(48, 56, 64, 110, 110, 110); //64b
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h1,
 .h1 {
   @include mixin.font-responsive(48, 56, 48, 110, 110, 110); //48
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h2,
 .h2 {
   @include mixin.font-responsive(48, 56, 40, 110, 110, 110); //40
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h3,
 .h3 {
   @include mixin.font-responsive(48, 56, 36, 110, 110, 110); //36
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h4,
 .h4 {
   @include mixin.font-responsive(48, 56, 32, 110, 110, 110); //32
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h5,
 .h5 {
   @include mixin.font-responsive(48, 56, 28, 110, 110, 110); //28
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h6,
 .h6 {
   @include mixin.font-responsive(48, 56, 24, 110, 110, 110); //24
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .subtitle-1 {
