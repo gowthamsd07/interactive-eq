@@ -16,7 +16,7 @@ const SkillSetItem = (props) => {
 
 const SkillSets = (props) => {
   return (
-    <section className="ieq-skills section-padding-top">
+    <section className="ieq-skills section-padding-y">
       <div className="container">
         <Row gutter={[24, 24]}>
           <Col xl={{ span: 8, offset: 4 }}>

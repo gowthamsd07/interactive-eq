@@ -1,5 +1,5 @@
 // Softskill imagery
-import TimeManagementIcon from "../assets/images/home/time-management.svg";
+// import TimeManagementIcon from "../assets/images/home/time-management.svg";
 import DecisionIcon from "../assets/images/home/decision-making.svg";
 import LearningIcon from "../assets/images/home/learning-agility.svg";
 import OrganisationIcon from "../assets/images/home/organisation-skill.svg";
@@ -32,51 +32,43 @@ import SkillIcon8 from "../assets/images/home/skill-slider-8.png";
 export const SOFT_SKILLS_ITEMS = [
   {
     id: 1,
-    direction: "",
-    title: "Time management",
-    desc: "Experience crystal-clear audio quality for seamless communication between users.",
-    iconUrl: TimeManagementIcon,
+    direction: "reverse",
+    title: "Empathy",
+    desc: "Feel what your teammates are feeling.",
+    iconUrl: AwarenessIcon,
     offset: 300,
   },
   {
     id: 2,
-    direction: "reverse",
-    title: "Decision making",
-    desc: "Experience crystal-clear audio quality for seamless communication between users.",
+    direction: "",
+    title: "Situational awareness",
+    desc: "Read the room and respond appropriately.",
     offset: 450,
     iconUrl: DecisionIcon,
   },
   {
     id: 3,
-    direction: "",
-    title: "Learning agility",
-    desc: "Experience crystal-clear audio quality for seamless communication between users.",
+    direction: "reverse",
+    title: "Improvisation",
+    desc: "Change up when things don’t go to plan.",
     offset: 450,
     iconUrl: LearningIcon,
   },
   {
     id: 4,
-    direction: "reverse",
-    title: "Organisation skill",
-    desc: "Experience crystal-clear audio quality for seamless communication between users.",
+    direction: "",
+    title: "Conflict resolution",
+    desc: "Sense tension and disarm the bomb.",
     offset: 450,
     iconUrl: OrganisationIcon,
   },
   {
     id: 5,
-    direction: "",
-    title: "Problem-solving",
-    desc: "Experience crystal-clear audio quality for seamless communication between users.",
-    offset: 450,
-    iconUrl: ProblemIcon,
-  },
-  {
-    id: 6,
     direction: "reverse",
     title: "Self awareness",
-    desc: "Experience crystal-clear audio quality for seamless communication between users.",
+    desc: "My impact on this situation.",
     offset: 450,
-    iconUrl: AwarenessIcon,
+    iconUrl: ProblemIcon,
   },
 ];
 
@@ -84,28 +76,49 @@ export const DATA_DRIVEN_ITEMS = [
   {
     id: 1,
     imgUrl: DataDrivenImage1,
-    AltText: "Pressure test",
-    contentTitle: "Pressure test",
-    description:
-      "An effortless add-on to evaluation workflow; no recruiting experience necessary.",
+    AltText: "Candidate ratings",
+    contentTitle: "Candidate ratings",
+    description: "Go deeper than IQ; EQ predicts future success",
     ButtonText: "Why real-life scenarios?",
   },
   {
     id: 2,
     imgUrl: DataDrivenImage2,
-    AltText: "Pressure test",
-    contentTitle: "Pressure test",
-    description:
-      "An effortless add-on to evaluation workflow; no recruiting experience necessary.",
+    AltText: "First-person",
+    contentTitle: "First-person",
+    description: "Immersive film production + cinematic writing",
     ButtonText: "Why real-life scenarios?",
   },
   {
     id: 3,
     imgUrl: DataDrivenImage3,
-    AltText: "Pressure test",
-    contentTitle: "Pressure test",
-    description:
-      "An effortless add-on to evaluation workflow; no recruiting experience necessary.",
+    AltText: "Conflict simulation",
+    contentTitle: "Conflict simulation",
+    description: "Drop candidates into real business scenarios",
+    ButtonText: "Why real-life scenarios?",
+  },
+  {
+    id: 4,
+    imgUrl: DataDrivenImage3,
+    AltText: "GenAI",
+    contentTitle: "GenAI",
+    description: "Unbiased scoring over gut feeling",
+    ButtonText: "Why real-life scenarios?",
+  },
+  {
+    id: 5,
+    imgUrl: DataDrivenImage3,
+    AltText: "No training",
+    contentTitle: "No training",
+    description: "Effortless add-on + ATS integration",
+    ButtonText: "Why real-life scenarios?",
+  },
+  {
+    id: 6,
+    imgUrl: DataDrivenImage3,
+    AltText: "Benchmarking",
+    contentTitle: "Benchmarking",
+    description: "Compare candidates against industry averages",
     ButtonText: "Why real-life scenarios?",
   },
 ];

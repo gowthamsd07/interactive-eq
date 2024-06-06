@@ -19,16 +19,16 @@ const SoftSkillsCard = (props) => {
         </ScrollAnimation>
         <ScrollAnimation
           animateOnce={true}
-          offset={150}
+          offset={230}
           duration={0.5}
           animateIn="animate__fadeInUp"
           delay={0.2}
         >
-          <h4 className="text-primary">{props.title}</h4>
+          <h4 className="text-primary fw-400">{props.title}</h4>
         </ScrollAnimation>
         <ScrollAnimation
           animateOnce={true}
-          offset={150}
+          offset={230}
           duration={0.5}
           animateIn="animate__fadeInUp"
           delay={0.4}

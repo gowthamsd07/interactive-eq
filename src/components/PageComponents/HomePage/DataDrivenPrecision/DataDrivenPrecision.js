@@ -1,7 +1,7 @@
 import { Col, Row } from "antd";
 
-import IconSet from "../../../UIComponents/IconSet/IconSet";
-import Button from "../../../UIComponents/Buttons/Buttons";
+// import IconSet from "../../../UIComponents/IconSet/IconSet";
+// import Button from "../../../UIComponents/Buttons/Buttons";
 
 import "./DataDriverPrecision.scss";
 
@@ -25,25 +25,20 @@ const ContentItem = (props) => {
     <div className="slider-content-item">
       <h4 className="text-white">{props.contentTitle}</h4>
       <p className="subtitle-2 text-secondary">{props.description}</p>
-      <Button size="large" tertiary>
+      {/* <Button size="large" tertiary>
         {props.ButtonText}
         <IconSet bg="bg" iconName="plus" />
-      </Button>
+      </Button> */}
     </div>
   );
 };
 
 const DataDrivenPrecision = (props) => {
   useLayoutEffect(() => {
-    // gsap.set(".mask-image", {
-    //   scale: 17,
-    //   duration: 2,
-    // });
-
     let ctx = gsap.context(() => {
       ScrollTrigger.create({
         trigger: ".ieq-datadriven",
-        id: "pin-sec",
+        id: "pin-sec1",
         // markers: true,
         scrub: true,
         start: "23% top",
@@ -60,9 +55,18 @@ const DataDrivenPrecision = (props) => {
   return (
     <section className="ieq-datadriven section-padding-top">
       <div className="container pin-container">
-        <h1 className="text-white text-center">
-          Breaking barriers with data-driven precision
-        </h1>
+        <Row gutter={80}>
+          <Col xl={{ span: 8, offset: 1 }}>
+            <h1 className="text-white ">Ultimate candidate scoring</h1>
+          </Col>
+          <Col xl={{ span: 12 }}>
+            <p className="text-secondary subtitle-1 ">
+              iEQ offers the missing piece in recruiting. We close the hiring
+              blind spot by using an immersive assessment unlike any other on
+              the market to score a candidate’s human aptitude.
+            </p>
+          </Col>
+        </Row>
         <Row gutter={[80, 24]} className="mt-120">
           <Col xl={{ span: 12, offset: 2 }}>
             <div className="w-100 h-100">

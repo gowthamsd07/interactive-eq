@@ -12,10 +12,10 @@ const HomeBanner = () => {
       <div className="container">
         <div className="ieq-banner__content">
           <h1 className="display-3 text-center">
-            Tech hiring with human perspective
+            Hiring technology that accounts for humanity.
           </h1>
           <Button size="large" tertiary>
-            Request Demo
+            Watch a Demo
             <IconSet bg="bg" iconName="play" />
           </Button>
           <div className="ieq-banner__video">

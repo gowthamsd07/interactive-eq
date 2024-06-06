@@ -111,3 +111,8 @@ h6,
   @include mixin.font-responsive(48, 56, 14, 110, 110, 100); //14-SB
   font-weight: 500;
 }
+
+// font weights
+.fw-400 {
+  font-weight: 400 !important;
+}

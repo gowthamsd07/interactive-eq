@@ -8,6 +8,8 @@
     margin: 0 auto;
   }
   .slider-content-item-wrap {
+    max-height: 766px;
+    overflow: hidden;
     .slider-content-item {
       padding-bottom: 40px;
       &:not(:last-child) {

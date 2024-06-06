@@ -2,25 +2,24 @@ import React from "react";
 
 import "./HumanAptitude.scss";
 
-import VideoAnalysisVideo from "../../../../assets/images/home/video-analysis.png";
+import HumanAptitudeVideo from "../../../../assets/images/home/human-aptitude-placeholder.mp4";
 
 const HumanAptitude = () => {
   return (
     <section className="ieq-aptitude section-padding-top">
       <div className="container">
         <div className="ieq-aptitude__title">
-          <h1 className="text-white text-center">What is human aptitude?</h1>
+          <h1 className="text-white text-center">Deeper than a resume</h1>
           <p className="text-secondary subtitle-1 text-center">
-            IQ measures intelligence. EQ measures emotional intelligence. Human
-            aptitude is the application of EQ to job candidate evaluation.
+            Look beyond job titles, work samples, and social profiles. Now you
+            can objectively measure a true differentiator.
           </p>
         </div>
-        <div className="mt-120">
-          <img
-            className="w-100"
-            src={VideoAnalysisVideo}
-            alt="Video Anlysis on human aptitude"
-          />
+        <div className="pt-120">
+          <video autoPlay muted loop>
+            <source src={HumanAptitudeVideo} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
     </section>

@@ -13,27 +13,30 @@ gsap.registerPlugin(ScrollTrigger);
 const IeqVideo = () => {
   useLayoutEffect(() => {
     gsap.set(".mask-image", {
-      scale: 17,
+      scale: 20,
       duration: 2,
     });
-    let ctx = gsap.context(() => {
+    let cty = gsap.context(() => {
       gsap.to(".mask-image", {
         scale: 1,
         scrollTrigger: {
           trigger: ".ieq-video",
-          start: "top top",
-          end: "120% top",
+          start: "0px top",
+          end: "150% top",
           scrub: 3,
           pin: true,
-          markers: true,
+          pinSpacer: true,
+          pinSpacing: true,
+          // markers: true,
+          anticipatePin: 1,
         },
       });
     });
 
-    return () => ctx.revert();
+    return () => cty.revert();
   });
   return (
-    <section className="ieq-video">
+    <section className="ieq-video ">
       <div className="ieq-video__wrap">
         <img
           className="w-100 mask-image"
