@@ -36,12 +36,14 @@ export const SOFT_SKILLS_ITEMS = [
     title: "Time management",
     desc: "Experience crystal-clear audio quality for seamless communication between users.",
     iconUrl: TimeManagementIcon,
+    offset: 300,
   },
   {
     id: 2,
     direction: "reverse",
     title: "Decision making",
     desc: "Experience crystal-clear audio quality for seamless communication between users.",
+    offset: 450,
     iconUrl: DecisionIcon,
   },
   {
@@ -49,6 +51,7 @@ export const SOFT_SKILLS_ITEMS = [
     direction: "",
     title: "Learning agility",
     desc: "Experience crystal-clear audio quality for seamless communication between users.",
+    offset: 450,
     iconUrl: LearningIcon,
   },
   {
@@ -56,6 +59,7 @@ export const SOFT_SKILLS_ITEMS = [
     direction: "reverse",
     title: "Organisation skill",
     desc: "Experience crystal-clear audio quality for seamless communication between users.",
+    offset: 450,
     iconUrl: OrganisationIcon,
   },
   {
@@ -63,6 +67,7 @@ export const SOFT_SKILLS_ITEMS = [
     direction: "",
     title: "Problem-solving",
     desc: "Experience crystal-clear audio quality for seamless communication between users.",
+    offset: 450,
     iconUrl: ProblemIcon,
   },
   {
@@ -70,6 +75,7 @@ export const SOFT_SKILLS_ITEMS = [
     direction: "reverse",
     title: "Self awareness",
     desc: "Experience crystal-clear audio quality for seamless communication between users.",
+    offset: 450,
     iconUrl: AwarenessIcon,
   },
 ];
@@ -152,36 +158,36 @@ export const SKILLS_ITEMS = [
   {
     id: 2,
     iconUrl: SkillIcon2,
-    desc: "Multi-modular assessments",
+    desc: "Generative AI",
   },
   {
     id: 3,
     iconUrl: SkillIcon3,
-    desc: "Multi-modular assessments",
+    desc: "Natural language processing",
   },
   {
     id: 4,
     iconUrl: SkillIcon4,
-    desc: "Multi-modular assessments",
+    desc: "Large language modeling",
   },
   {
     id: 5,
     iconUrl: SkillIcon5,
-    desc: "Multi-modular assessments",
+    desc: "Data privacy and compliance",
   },
   {
     id: 6,
     iconUrl: SkillIcon6,
-    desc: "Multi-modular assessments",
+    desc: "For hiring managers",
   },
   {
     id: 7,
     iconUrl: SkillIcon7,
-    desc: "Multi-modular assessments",
+    desc: "For recruiters and talent acquisition",
   },
   {
     id: 8,
     iconUrl: SkillIcon8,
-    desc: "Multi-modular assessments",
+    desc: "For those who want to get it right!",
   },
 ];

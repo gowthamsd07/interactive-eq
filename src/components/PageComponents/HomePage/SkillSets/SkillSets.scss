@@ -2,7 +2,13 @@
   .skill-set-item {
     p {
       max-width: 215px;
+      min-width: 215px;
       margin-top: 24px;
+      padding: 0 20px;
     }
+  }
+
+  button {
+    margin-top: 110px;
   }
 }

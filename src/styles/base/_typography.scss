@@ -1,13 +1,13 @@
 @use './mixins' as mixin;
 
-// @font-face {
-//   font-family: 'biotif';
-//   src:
-//     url('../../assets/fonts/biotif-variable.woff2') format('woff2 supports variations'),
-//     url('../../assets/fonts/biotif-variable.woff2') format('woff2-variations');
-//   font-weight: 100 1000;
-//   font-style: normal;
-// }
+@font-face {
+  font-family: 'biotif';
+  src:
+    url('../../assets/fonts/dm-sans.woff2') format('woff2 supports variations'),
+    url('../../assets/fonts/dm-sans.woff2') format('woff2-variations');
+  font-weight: 100 1000;
+  font-style: normal;
+}
 
 .display-1 {
   @include mixin.font-responsive(48, 56, 88, 110, 110, 110); //88b

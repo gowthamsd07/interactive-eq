@@ -34,9 +34,9 @@ const SoftSkills = (props) => {
               <ScrollAnimation
                 key={item.id}
                 animateOnce={true}
-                offset={200}
-                duration={0.5}
-                animateIn="animate__fadeIn"
+                offset={item.offset}
+                // duration={0.8}
+                animateIn="animate__fadeInSkew"
               >
                 <SoftSkillsCard
                   key={item.id}

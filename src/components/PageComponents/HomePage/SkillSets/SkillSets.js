@@ -35,7 +35,7 @@ const SkillSets = (props) => {
         </Row>
         <Row gutter={[24, 24]} className="mt-80">
           <Col xl={{ span: 16, offset: 4 }}>
-            <Row gutter={[24, 52]} className="col-gap-24">
+            <Row gutter={[25, 52]} className="col-gap-24">
               {props.items.map((item) => (
                 <ScrollAnimation
                   key={item.id}
@@ -54,7 +54,7 @@ const SkillSets = (props) => {
               ))}
               <Col xl={6}></Col>
             </Row>
-            <Row gutter={[24, 52]} className="col-gap-24">
+            <Row gutter={[25, 0]} className="col-gap-24">
               {props.items.map((item) => (
                 <ScrollAnimation
                   key={item.id}

@@ -82,6 +82,9 @@ body {
 }
 
 // overrides
+.animate__fadeInSkew {
+  animation-name: fadeInSkew !important;
+}
 .animate__fadeInUp {
   animation-name: fadeInUpNew !important;
 }
@@ -92,10 +95,21 @@ body {
   animation-name: fadeInRightNew !important;
 }
 
+@keyframes fadeInSkew {
+  0% {
+    opacity: 0;
+    transform: perspective(30rem) rotateX(3deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+
 @keyframes fadeInUpNew {
   0% {
     opacity: 0;
-    transform: translateY(30%);
+    transform: translateY(40%);
   }
   to {
     opacity: 1;

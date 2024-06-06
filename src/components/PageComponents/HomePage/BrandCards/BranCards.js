@@ -16,7 +16,7 @@ const BrandCards = () => {
               <Col xl={12}>
                 <ScrollAnimation
                   animateOnce={true}
-                  offset={150}
+                  offset={250}
                   duration={0.8}
                   animateIn="animate__fadeInLeft"
                 >
@@ -28,9 +28,9 @@ const BrandCards = () => {
               <Col xl={12}>
                 <ScrollAnimation
                   animateOnce={true}
-                  offset={150}
+                  offset={250}
                   duration={0.8}
-                  delay={500}
+                  delay={400}
                   animateIn="animate__fadeInRight"
                 >
                   <div className="brand-card-2 flex-all-center flex-column">

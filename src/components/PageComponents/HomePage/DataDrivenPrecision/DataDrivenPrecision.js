@@ -7,7 +7,7 @@ import "./DataDriverPrecision.scss";
 
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import { useEffect } from "react";
+import { useLayoutEffect } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.core.globals("ScrollTrigger", ScrollTrigger);
@@ -34,25 +34,28 @@ const ContentItem = (props) => {
 };
 
 const DataDrivenPrecision = (props) => {
-  useEffect(() => {
-    // min width 1200px
-    // gsap.set(".slider-content-item > *", {
-    //   opacity: 0,
-    //   duration: 0.3,
+  useLayoutEffect(() => {
+    // gsap.set(".mask-image", {
+    //   scale: 17,
+    //   duration: 2,
     // });
-    //  set pin testimonial section
-    // ScrollTrigger.create({
-    //   trigger: ".pin-container",
-    //   id: "pin-sec",
-    //   // markers: true,
-    //   scrub: true,
-    //   start: "20% top",
-    //   end: "100% top",
-    //   pinSpacing: true,
-    //   pinSpacer: true,
-    //   anticipatePin: 1,
-    //   pin: true,
-    // });
+
+    let ctx = gsap.context(() => {
+      ScrollTrigger.create({
+        trigger: ".ieq-datadriven",
+        id: "pin-sec",
+        // markers: true,
+        scrub: true,
+        start: "23% top",
+        end: "100% top",
+        pinSpacing: true,
+        pinSpacer: true,
+        anticipatePin: 1,
+        pin: true,
+      });
+    });
+
+    return () => ctx.revert();
   });
   return (
     <section className="ieq-datadriven section-padding-top">

@@ -1,6 +1,6 @@
 import React, { useLayoutEffect } from "react";
 
-import VideoPlaceholder from "../../../../assets/images/home/section-ieqvideo.png";
+import VideoPlaceholder from "../../../../assets/images/home/section-ieqvideo.svg";
 import IeqVideoFile from "../../../../assets/images/home/ieq-video.mp4";
 
 import "./IeqVideo.scss";
@@ -22,10 +22,10 @@ const IeqVideo = () => {
         scrollTrigger: {
           trigger: ".ieq-video",
           start: "top top",
-          end: "110% top",
-          scrub: true,
+          end: "120% top",
+          scrub: 3,
           pin: true,
-          // markers: true,
+          markers: true,
         },
       });
     });

@@ -20,7 +20,7 @@ const SoftSkillsCard = (props) => {
         <ScrollAnimation
           animateOnce={true}
           offset={150}
-          duration={0.8}
+          duration={0.5}
           animateIn="animate__fadeInUp"
           delay={0.2}
         >
@@ -29,7 +29,7 @@ const SoftSkillsCard = (props) => {
         <ScrollAnimation
           animateOnce={true}
           offset={150}
-          duration={0.8}
+          duration={0.5}
           animateIn="animate__fadeInUp"
           delay={0.4}
         >
@@ -40,7 +40,7 @@ const SoftSkillsCard = (props) => {
         <ScrollAnimation
           animateOnce={true}
           offset={150}
-          duration={0.8}
+          duration={0.5}
           animateIn="animate__fadeIn"
         >
           <img className="main-icon" src={props.iconUrl} alt={props.title} />
