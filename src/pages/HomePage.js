@@ -16,15 +16,19 @@ import {
 import IeqVideo from "../components/PageComponents/HomePage/IeqVideo/IeqVideo";
 
 const HomePage = () => {
+  const SkillItemsArray1 = SKILLS_ITEMS.slice(0, 4);
+  const SkillItemsArray2 = SKILLS_ITEMS.slice(4, 8);
+  const AssessmentItemsArray1 = ASSESSMENT_ITEMS.slice(0, 3);
+  const AssessmentItemsArray2 = ASSESSMENT_ITEMS.slice(3, 6);
   return (
     <Fragment>
       <HomeBanner />
       <SoftSkills items={SOFT_SKILLS_ITEMS} />
       <DataDrivenPrecision items={DATA_DRIVEN_ITEMS} />
       <HumanAptitude />
-      <Assessment items={ASSESSMENT_ITEMS} />
+      <Assessment items={(AssessmentItemsArray1, AssessmentItemsArray2)} />
       <IeqVideo />
-      <SkillSets items={SKILLS_ITEMS} />
+      <SkillSets items={(SkillItemsArray1, SkillItemsArray2)} />
       <BrandCards />
     </Fragment>
   );

@@ -76,6 +76,11 @@ body {
   flex-direction: column;
 }
 
+// positions
+.position-relative {
+  position: relative !important;
+}
+
 // overrides
 .animate__fadeInUp {
   animation-name: fadeInUpNew !important;

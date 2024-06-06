@@ -30,6 +30,7 @@ const BrandCards = () => {
                   animateOnce={true}
                   offset={150}
                   duration={0.8}
+                  delay={500}
                   animateIn="animate__fadeInRight"
                 >
                   <div className="brand-card-2 flex-all-center flex-column">

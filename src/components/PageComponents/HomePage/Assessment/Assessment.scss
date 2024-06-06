@@ -17,7 +17,13 @@
     }
   }
 
-  &__content {
+  &__content-wrap {
     margin-top: 96px;
+
+    .animated {
+      &:nth-child(2) {
+        margin-top: 112px;
+      }
+    }
   }
 }

@@ -3,6 +3,7 @@ import { Col, Row } from "antd";
 
 import "./SkillSets.scss";
 import Button from "../../../UIComponents/Buttons/Buttons";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const SkillSetItem = (props) => {
   return (
@@ -36,13 +37,41 @@ const SkillSets = (props) => {
           <Col xl={{ span: 16, offset: 4 }}>
             <Row gutter={[24, 52]} className="col-gap-24">
               {props.items.map((item) => (
-                <SkillSetItem
-                  id={item.id}
+                <ScrollAnimation
                   key={item.id}
-                  iconUrl={item.iconUrl}
-                  title={item.title}
-                  desc={item.desc}
-                />
+                  animateOnce={true}
+                  offset={200}
+                  duration={0.8}
+                  animateIn="animate__fadeInUp"
+                >
+                  <SkillSetItem
+                    id={item.id}
+                    iconUrl={item.iconUrl}
+                    title={item.title}
+                    desc={item.desc}
+                  />
+                </ScrollAnimation>
+              ))}
+              <Col xl={6}></Col>
+            </Row>
+            <Row gutter={[24, 52]} className="col-gap-24">
+              {props.items.map((item) => (
+                <ScrollAnimation
+                  key={item.id}
+                  animateOnce={true}
+                  offset={200}
+                  duration={0.8}
+                  delay={100}
+                  animateIn="animate__fadeInUp"
+                >
+                  <SkillSetItem
+                    id={item.id}
+                    key={item.id}
+                    iconUrl={item.iconUrl}
+                    title={item.title}
+                    desc={item.desc}
+                  />
+                </ScrollAnimation>
               ))}
               <Col xl={6}></Col>
             </Row>

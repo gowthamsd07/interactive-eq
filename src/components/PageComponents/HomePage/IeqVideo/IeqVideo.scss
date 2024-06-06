@@ -1,0 +1,23 @@
+.ieq-video {
+  height: 100vh !important;
+  // will-change: transform;
+  overflow: hidden;
+
+  &__wrap {
+    position: relative;
+    img {
+      position: absolute;
+      width: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      transform-origin: 45% center;
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

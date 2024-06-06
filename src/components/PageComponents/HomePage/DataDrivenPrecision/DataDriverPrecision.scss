@@ -1,4 +1,8 @@
 .ieq-datadriven {
+  // .pin-container {
+  //   transform: none !important;
+  // }
+
   h1 {
     max-width: 658px;
     margin: 0 auto;
@@ -28,5 +32,7 @@
 
   .slider-image-item {
     position: absolute;
+    top: 0;
+    left: 0;
   }
 }

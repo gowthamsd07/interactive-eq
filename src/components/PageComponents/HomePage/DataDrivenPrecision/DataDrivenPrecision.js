@@ -5,6 +5,13 @@ import Button from "../../../UIComponents/Buttons/Buttons";
 
 import "./DataDriverPrecision.scss";
 
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import { useEffect } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
+gsap.core.globals("ScrollTrigger", ScrollTrigger);
+
 const ImageItem = (props) => {
   return (
     <div className="slider-image-item">
@@ -27,15 +34,35 @@ const ContentItem = (props) => {
 };
 
 const DataDrivenPrecision = (props) => {
+  useEffect(() => {
+    // min width 1200px
+    // gsap.set(".slider-content-item > *", {
+    //   opacity: 0,
+    //   duration: 0.3,
+    // });
+    //  set pin testimonial section
+    // ScrollTrigger.create({
+    //   trigger: ".pin-container",
+    //   id: "pin-sec",
+    //   // markers: true,
+    //   scrub: true,
+    //   start: "20% top",
+    //   end: "100% top",
+    //   pinSpacing: true,
+    //   pinSpacer: true,
+    //   anticipatePin: 1,
+    //   pin: true,
+    // });
+  });
   return (
     <section className="ieq-datadriven section-padding-top">
-      <div className="container">
+      <div className="container pin-container">
         <h1 className="text-white text-center">
           Breaking barriers with data-driven precision
         </h1>
         <Row gutter={[80, 24]} className="mt-120">
           <Col xl={{ span: 12, offset: 2 }}>
-            <div>
+            <div className="w-100 h-100">
               {props.items.map((item) => (
                 <ImageItem
                   key={item.id}

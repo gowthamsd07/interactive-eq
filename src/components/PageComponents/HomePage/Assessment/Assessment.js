@@ -2,6 +2,7 @@ import { Col, Row } from "antd";
 import React from "react";
 
 import "./Assessment.scss";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const AssessmentItem = (props) => {
   return (
@@ -20,19 +21,48 @@ const Assessment = (props) => {
         <h6 className="text-secondary text-center section-title">
           A rich, experiential assessment from Interactive EQ measures:
         </h6>
-
-        <Row gutter={[24, 112]} className="ieq-assessment__content">
-          {props.items.map((item) => (
-            <Col xl={8} key={item.id}>
-              <AssessmentItem
-                id={item.id}
-                IconUrl={item.IconUrl}
-                title={item.title}
-                desc={item.desc}
-              />
-            </Col>
-          ))}
-        </Row>
+        <div className="ieq-assessment__content-wrap">
+          <ScrollAnimation
+            animateOnce={true}
+            offset={200}
+            duration={0.8}
+            delay={100}
+            animateIn="animate__fadeInUp"
+          >
+            <Row gutter={[24, 112]} className="ieq-assessment__content">
+              {props.items.map((item) => (
+                <Col xl={8} key={item.id}>
+                  <AssessmentItem
+                    id={item.id}
+                    IconUrl={item.IconUrl}
+                    title={item.title}
+                    desc={item.desc}
+                  />
+                </Col>
+              ))}
+            </Row>
+          </ScrollAnimation>
+          <ScrollAnimation
+            animateOnce={true}
+            offset={200}
+            duration={0.8}
+            delay={100}
+            animateIn="animate__fadeInUp"
+          >
+            <Row gutter={[24, 112]} className="ieq-assessment__content">
+              {props.items.map((item) => (
+                <Col xl={8} key={item.id}>
+                  <AssessmentItem
+                    id={item.id}
+                    IconUrl={item.IconUrl}
+                    title={item.title}
+                    desc={item.desc}
+                  />
+                </Col>
+              ))}
+            </Row>
+          </ScrollAnimation>
+        </div>
       </div>
     </section>
   );
