@@ -1,19 +1,18 @@
 {
   "files": {
-    "main.css": "/interactive-eq/static/css/main.40d09f12.css",
-    "main.js": "/interactive-eq/static/js/main.7d355960.js",
-    "static/css/10.36db5efd.chunk.css": "/interactive-eq/static/css/10.36db5efd.chunk.css",
-    "static/js/10.c80ac005.chunk.js": "/interactive-eq/static/js/10.c80ac005.chunk.js",
+    "main.css": "/interactive-eq/static/css/main.61434b45.css",
+    "main.js": "/interactive-eq/static/js/main.246f969a.js",
+    "static/css/603.e7ab8e57.chunk.css": "/interactive-eq/static/css/603.e7ab8e57.chunk.css",
+    "static/js/603.922696a1.chunk.js": "/interactive-eq/static/js/603.922696a1.chunk.js",
     "static/js/453.ac778537.chunk.js": "/interactive-eq/static/js/453.ac778537.chunk.js",
     "static/js/356.4001e9f8.chunk.js": "/interactive-eq/static/js/356.4001e9f8.chunk.js",
+    "static/media/human-aptitude-placeholder.mp4": "/interactive-eq/static/media/human-aptitude-placeholder.d762ad1ba85bb1c799be.mp4",
     "static/media/ieq-video.mp4": "/interactive-eq/static/media/ieq-video.e7709c058f8ce0ffd548.mp4",
     "static/media/datadriven-slider-image-1.png": "/interactive-eq/static/media/datadriven-slider-image-1.e7c7a97ca7d88fb81693.png",
-    "static/media/video-analysis.png": "/interactive-eq/static/media/video-analysis.e411f8b5dc885e20c587.png",
     "static/media/interactive-eq-banner-video.png": "/interactive-eq/static/media/interactive-eq-banner-video.821daed771ade2417b0c.png",
     "static/media/dm-sans.woff2": "/interactive-eq/static/media/dm-sans.920315b0779497c02dfe.woff2",
     "static/media/brand-card-illustration.png": "/interactive-eq/static/media/brand-card-illustration.af4a2c047937ab0e82a2.png",
     "static/media/problem-solving.svg": "/interactive-eq/static/media/problem-solving.2ad50669346706910d90cdb99789dd29.svg",
-    "static/media/time-management.svg": "/interactive-eq/static/media/time-management.f861563798389a64c57881a00d07f0ac.svg",
     "static/media/organisation-skill.svg": "/interactive-eq/static/media/organisation-skill.b72a157d9b1eb2daac2c9c078f47d10c.svg",
     "static/media/interactive-eq-logo.svg": "/interactive-eq/static/media/interactive-eq-logo.4b8e983b5491a3c4cb2ab354ed22d0e8.svg",
     "static/media/decision-making.svg": "/interactive-eq/static/media/decision-making.34cc1c7f3005b701d5a9a159d3a146b4.svg",
@@ -27,15 +26,15 @@
     "static/media/shield-5.svg": "/interactive-eq/static/media/shield-5.f7ad9dfd8d81a9e2b9d3166a585b766f.svg",
     "static/media/shield-1.svg": "/interactive-eq/static/media/shield-1.e65643f51ebf74eaddff180b3a0ecf02.svg",
     "index.html": "/interactive-eq/index.html",
-    "main.40d09f12.css.map": "/interactive-eq/static/css/main.40d09f12.css.map",
-    "main.7d355960.js.map": "/interactive-eq/static/js/main.7d355960.js.map",
-    "10.36db5efd.chunk.css.map": "/interactive-eq/static/css/10.36db5efd.chunk.css.map",
-    "10.c80ac005.chunk.js.map": "/interactive-eq/static/js/10.c80ac005.chunk.js.map",
+    "main.61434b45.css.map": "/interactive-eq/static/css/main.61434b45.css.map",
+    "main.246f969a.js.map": "/interactive-eq/static/js/main.246f969a.js.map",
+    "603.e7ab8e57.chunk.css.map": "/interactive-eq/static/css/603.e7ab8e57.chunk.css.map",
+    "603.922696a1.chunk.js.map": "/interactive-eq/static/js/603.922696a1.chunk.js.map",
     "453.ac778537.chunk.js.map": "/interactive-eq/static/js/453.ac778537.chunk.js.map",
     "356.4001e9f8.chunk.js.map": "/interactive-eq/static/js/356.4001e9f8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.40d09f12.css",
-    "static/js/main.7d355960.js"
+    "static/css/main.61434b45.css",
+    "static/js/main.246f969a.js"
   ]
 }
