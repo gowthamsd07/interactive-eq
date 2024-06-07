@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 
 function getCurrentFrame(index) {
-  return `"../../../../assets/img-sequence/img_${index
+  return `../../../../assets/img-sequence/img_${index
     .toString()
-    .padStart(5, "0")}.png"`;
+    .padStart(5, "0")}.png`;
 }
 
 const ImageCanvas = ({ scrollHeight, numFrames, width, height }) => {

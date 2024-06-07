@@ -9,7 +9,7 @@ import SkillSets from "../components/PageComponents/HomePage/SkillSets/SkillSets
 import BrandCards from "../components/PageComponents/HomePage/BrandCards/BranCards";
 import { DATA_DRIVEN_ITEMS, SKILLS_ITEMS, SOFT_SKILLS_ITEMS } from "./Data";
 import IeqVideo from "../components/PageComponents/HomePage/IeqVideo/IeqVideo";
-import SequenceAnim from "../components/PageComponents/HomePage/Banner/Sequence";
+// import SequenceAnim from "../components/PageComponents/HomePage/Banner/Sequence";
 
 const HomePage = () => {
   const SkillItemsArray1 = SKILLS_ITEMS.slice(0, 4);
@@ -18,7 +18,7 @@ const HomePage = () => {
   // const AssessmentItemsArray2 = ASSESSMENT_ITEMS.slice(3, 6);
   return (
     <Fragment>
-      <SequenceAnim />
+      {/* <SequenceAnim />  */}
       <HomeBanner />
       <DataDrivenPrecision items={DATA_DRIVEN_ITEMS} />
       <SoftSkills items={SOFT_SKILLS_ITEMS} />
