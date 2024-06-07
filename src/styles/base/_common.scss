@@ -142,3 +142,13 @@ body {
     transform: translateX(0);
   }
 }
+
+canvas {
+  position: sticky;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 100vw;
+  max-height: 100vh;
+  margin: auto;
+  display: block;
+}
