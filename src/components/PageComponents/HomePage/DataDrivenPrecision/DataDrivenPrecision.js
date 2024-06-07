@@ -60,11 +60,11 @@ const DataDrivenPrecision = (props) => {
 
     let ctx = gsap.context(() => {
       ScrollTrigger.create({
-        trigger: ".ieq-datadriven",
+        trigger: ".slider-wrapper",
         id: "pin-sec1",
-        // markers: true,
+        markers: true,
         scrub: true,
-        start: "23% top",
+        start: "0% top",
         end: "200% top",
         pinSpacing: true,
         pinSpacer: true,
@@ -359,7 +359,7 @@ const DataDrivenPrecision = (props) => {
           </Col>
         </Row>
         <Row className="mt-120 slider-wrapper">
-          <Col xl={{ span: 12, offset: 2 }} className="h-100">
+          <Col xl={{ span: 12, offset: 2 }}>
             <div className="w-100 h-100 slider-image-wrapper">
               {props.items.map((item) => (
                 <ImageItem
