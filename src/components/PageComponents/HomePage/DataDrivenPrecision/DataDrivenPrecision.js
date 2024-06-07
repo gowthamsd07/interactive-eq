@@ -62,7 +62,7 @@ const DataDrivenPrecision = (props) => {
       ScrollTrigger.create({
         trigger: ".slider-wrapper",
         id: "pin-sec1",
-        markers: true,
+        // markers: true,
         scrub: true,
         start: "0% top",
         end: "200% top",
