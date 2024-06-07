@@ -8,8 +8,8 @@ import AwarenessIcon from "../assets/images/home/self-awareness.svg";
 
 // Data driven
 import DataDrivenImage1 from "../assets/images/home/datadriven-slider-image-1.png";
-import DataDrivenImage2 from "../assets/images/home/datadriven-slider-image-1.png";
-import DataDrivenImage3 from "../assets/images/home/datadriven-slider-image-1.png";
+import DataDrivenImage2 from "../assets/images/home/datadriven-slider-image-2.png";
+import DataDrivenImage3 from "../assets/images/home/datadriven-slider-image-3.png";
 
 // Assessment
 import AssessmentIcon1 from "../assets/images/home/shield-1.svg";
@@ -79,6 +79,8 @@ export const DATA_DRIVEN_ITEMS = [
     AltText: "Candidate ratings",
     contentTitle: "Candidate ratings",
     description: "Go deeper than IQ; EQ predicts future success",
+    groupClassImg: "image-group-1",
+    groupClass: "group-item-1",
     ButtonText: "Why real-life scenarios?",
   },
   {
@@ -87,6 +89,8 @@ export const DATA_DRIVEN_ITEMS = [
     AltText: "First-person",
     contentTitle: "First-person",
     description: "Immersive film production + cinematic writing",
+    groupClassImg: "image-group-2",
+    groupClass: "group-item-1",
     ButtonText: "Why real-life scenarios?",
   },
   {
@@ -95,6 +99,8 @@ export const DATA_DRIVEN_ITEMS = [
     AltText: "Conflict simulation",
     contentTitle: "Conflict simulation",
     description: "Drop candidates into real business scenarios",
+    groupClassImg: "image-group-3",
+    groupClass: "group-item-2",
     ButtonText: "Why real-life scenarios?",
   },
   {
@@ -103,6 +109,8 @@ export const DATA_DRIVEN_ITEMS = [
     AltText: "GenAI",
     contentTitle: "GenAI",
     description: "Unbiased scoring over gut feeling",
+    groupClassImg: "image-group-4",
+    groupClass: "group-item-2",
     ButtonText: "Why real-life scenarios?",
   },
   {
@@ -111,6 +119,8 @@ export const DATA_DRIVEN_ITEMS = [
     AltText: "No training",
     contentTitle: "No training",
     description: "Effortless add-on + ATS integration",
+    groupClassImg: "image-group-5",
+    groupClass: "group-item-3",
     ButtonText: "Why real-life scenarios?",
   },
   {
@@ -119,6 +129,8 @@ export const DATA_DRIVEN_ITEMS = [
     AltText: "Benchmarking",
     contentTitle: "Benchmarking",
     description: "Compare candidates against industry averages",
+    groupClassImg: "image-group-6",
+    groupClass: "group-item-3",
     ButtonText: "Why real-life scenarios?",
   },
 ];
