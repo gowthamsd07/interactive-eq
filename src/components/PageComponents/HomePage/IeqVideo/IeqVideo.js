@@ -17,18 +17,29 @@ const IeqVideo = () => {
       duration: 2,
     });
     let cty = gsap.context(() => {
+      ScrollTrigger.create({
+        trigger: ".ieq-video",
+        id: "pin-mark",
+        // markers: true,
+        scrub: 3,
+        start: "0 top",
+        end: "150% top",
+        pinSpacing: true,
+        pinSpacer: true,
+        anticipatePin: 1,
+        pin: true,
+      });
+
       gsap.to(".mask-image", {
         scale: 1,
+        delay: 0.3,
         scrollTrigger: {
           trigger: ".ieq-video",
           start: "0px top",
-          end: "150% top",
-          scrub: 3,
-          pin: true,
-          pinSpacer: true,
-          pinSpacing: true,
+          end: "100% top",
           // markers: true,
-          anticipatePin: 1,
+          id: "anim-mark",
+          scrub: 3,
         },
       });
     });

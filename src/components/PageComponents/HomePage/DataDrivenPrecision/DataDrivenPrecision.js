@@ -65,7 +65,7 @@ const DataDrivenPrecision = (props) => {
         // markers: true,
         scrub: true,
         start: "23% top",
-        end: "150% top",
+        end: "200% top",
         pinSpacing: true,
         pinSpacer: true,
         anticipatePin: 1,
@@ -83,7 +83,7 @@ const DataDrivenPrecision = (props) => {
           id: "img-1",
           scrub: true,
           start: "top top",
-          end: "200% top",
+          end: "300% top",
         },
       });
       gsap.to(".image-group-2", {
@@ -96,7 +96,7 @@ const DataDrivenPrecision = (props) => {
           id: "img-2",
           scrub: true,
           start: "top top",
-          end: "200% top",
+          end: "300% top",
         },
       });
       gsap.to(".image-group-3", {
@@ -107,8 +107,8 @@ const DataDrivenPrecision = (props) => {
           // markers: true,
           id: "img-3",
           scrub: true,
-          start: "250% top",
-          end: "350% top",
+          start: "350% top",
+          end: "650% top",
         },
       });
 
@@ -119,7 +119,7 @@ const DataDrivenPrecision = (props) => {
         // markers: true,
         scrub: 2,
         start: "0% top",
-        end: "200% top",
+        end: "300% top",
         pinSpacing: false,
         pinSpacer: false,
         pin: false,
@@ -235,8 +235,8 @@ const DataDrivenPrecision = (props) => {
         id: "cont-2",
         // markers: true,
         scrub: 2,
-        start: "250% top",
-        end: "350% top",
+        start: "350% top",
+        end: "650% top",
         pinSpacing: false,
         pinSpacer: false,
         pin: false,
@@ -372,7 +372,7 @@ const DataDrivenPrecision = (props) => {
               ))}
             </div>
           </Col>
-          <Col xl={{ span: 8 }} className="slider-contents">
+          <Col xl={{ span: 6 }} className="slider-contents">
             <div className="slider-content-item-wrap">
               {props.items.map((item) => (
                 <ContentItem
