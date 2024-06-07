@@ -20,7 +20,7 @@ const IeqVideo = () => {
       ScrollTrigger.create({
         trigger: ".ieq-video",
         id: "pin-mark",
-        // markers: true,
+        markers: true,
         scrub: 3,
         start: "0 top",
         end: "150% top",
