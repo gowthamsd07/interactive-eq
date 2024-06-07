@@ -18,7 +18,7 @@ const HomePage = () => {
   // const AssessmentItemsArray2 = ASSESSMENT_ITEMS.slice(3, 6);
   return (
     <Fragment>
-      {/* <SequenceAnim /> */}
+      <SequenceAnim />
       <HomeBanner />
       <DataDrivenPrecision items={DATA_DRIVEN_ITEMS} />
       <SoftSkills items={SOFT_SKILLS_ITEMS} />

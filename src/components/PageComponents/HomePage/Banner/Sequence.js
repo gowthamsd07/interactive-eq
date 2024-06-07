@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 
 function getCurrentFrame(index) {
-  return `"../../../../assets/img-sequence/img_${index.toString()}.jpg"`;
+  return `"../../../../assets/img-sequence/img_${index
+    .toString()
+    .padStart(5, "0")}.png"`;
 }
 
 const ImageCanvas = ({ scrollHeight, numFrames, width, height }) => {
@@ -72,7 +74,7 @@ const ImageCanvas = ({ scrollHeight, numFrames, width, height }) => {
 };
 
 const SequenceAnim = () => (
-  <ImageCanvas scrollHeight={4000} width={1158} height={770} numFrames={147} />
+  <ImageCanvas scrollHeight={4000} width={1158} height={770} numFrames={594} />
 );
 
 export default SequenceAnim;

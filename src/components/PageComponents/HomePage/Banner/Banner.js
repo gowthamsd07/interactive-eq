@@ -1,14 +1,14 @@
-import React, { useEffect, useLayoutEffect } from "react";
+import React, { useLayoutEffect } from "react";
 
 import BannerVideo from "../../../../assets/images/home/interactive-eq-banner-video.png";
-import HeroScrollVideo from "../../../../assets/images/home/hero-scroll-video.mp4";
+// import HeroScrollVideo from "../../../../assets/images/home/hero-scroll-video.mp4";
 
 import "./Banner.scss";
 import Button from "../../../UIComponents/Buttons/Buttons";
 import IconSet from "../../../UIComponents/IconSet/IconSet";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import SequenceAnim from "./Sequence";
+// import SequenceAnim from "./Sequence";
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.core.globals("ScrollTrigger", ScrollTrigger);
