@@ -1,5 +1,4 @@
 import React, { useLayoutEffect } from "react";
-import ScrollAnimation from "react-animate-on-scroll";
 
 import "./SoftSkills.scss";
 import { Col, Row } from "antd";
@@ -35,28 +34,57 @@ const SoftSkills = (props) => {
           },
         });
       }
-      // for (const card of document.querySelectorAll(".soft-skills-card > *")) {
-      //   gsap.set(card, {
-      //     y: "10px",
-      //     opacity: 0,
-      //     duration: 0.3,
-      //   });
-      //   gsap.to(card, {
-      //     opacity: 1,
-      //     y: 0,
-      //     delay: 0.1,
-      //     immediateRender: false,
-      //     scrollTrigger: {
-      //       trigger: card,
-      //       markers: true,
-      //       id: "img-1",
-      //       scrub: false,
-      //       start: "-20% center",
-      //       end: "100% center",
-      //       toggleActions: "play none none none",
-      //     },
-      //   });
-      // }
+      const textwrappers = gsap.utils.toArray(
+        ".soft-skills-card .soft-skills-card__content"
+      );
+      const icons = gsap.utils.toArray(
+        " .soft-skills-card .soft-skills-card__icon"
+      );
+      const cards = gsap.utils.toArray(".soft-skills-card");
+      cards.forEach((card, i) => {
+        gsap.set(textwrappers[i], {
+          y: "40px",
+          opacity: 0,
+          duration: 0.3,
+        });
+        gsap.to(textwrappers[i], {
+          opacity: 1,
+          y: 0,
+          delay: 0.1,
+          duration: 0.5,
+
+          immediateRender: false,
+          scrollTrigger: {
+            trigger: card,
+            // markers: true,
+            id: "img-1",
+            scrub: false,
+            start: "-20% center",
+            end: "100% center",
+            toggleActions: "play none none none",
+          },
+        });
+        gsap.set(icons[i], {
+          y: "20px",
+          opacity: 0,
+          duration: 0.3,
+        });
+        gsap.to(icons[i], {
+          opacity: 1,
+          y: 0,
+          delay: 0.2,
+          immediateRender: false,
+          scrollTrigger: {
+            trigger: card,
+            // markers: true,
+            id: "img-1",
+            scrub: false,
+            start: "-20% center",
+            end: "100% center",
+            toggleActions: "play none none none",
+          },
+        });
+      });
     });
     // ScrollTrigger.refresh();
     return () => cty.revert();
