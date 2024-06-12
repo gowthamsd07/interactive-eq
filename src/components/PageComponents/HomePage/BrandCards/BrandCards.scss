@@ -1,8 +1,12 @@
 .ieq-brand-cards {
   &__title {
     h1 {
-      max-width: 580px;
+      max-width: 335px;
       margin: 0 auto;
+
+      @media (min-width: 1200px) {
+        max-width: 580px;
+      }
     }
   }
   .brand-card-1 {

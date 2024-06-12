@@ -66,14 +66,17 @@
     gap: 80px;
     max-height: 617px;
 
-    @media (min-width: 1200px) {
+    @media (min-width: 768px) {
       max-height: none;
     }
   }
   .slider-image-wrapper {
     max-height: 400px;
     @media (min-width: 768px) {
-      max-height: 547px;
+      max-height: 570px;
+    }
+    @media (min-width: 992px) {
+      max-height: 690px;
     }
 
     @media (min-width: 1200px) {

@@ -7,3 +7,39 @@
 .copyright-title {
   margin-top: 8px;
 }
+
+footer {
+  .main-navigation__header-nav {
+    display: flex;
+  }
+
+  .container {
+    @media (max-width: 1199px) {
+      align-items: flex-start !important;
+    }
+    flex-wrap: wrap;
+    .footer-logo {
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+
+      img {
+        max-width: 230px;
+      }
+    }
+
+    ul {
+      flex-direction: column;
+
+      align-items: flex-start !important;
+      gap: 24px !important;
+      @media (max-width: 767px) {
+        margin-top: 40px;
+      }
+
+      @media (min-width: 1200px) {
+        flex-direction: row;
+      }
+    }
+  }
+}

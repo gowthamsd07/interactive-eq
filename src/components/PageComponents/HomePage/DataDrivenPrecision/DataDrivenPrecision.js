@@ -69,7 +69,7 @@ const DataDrivenPrecision = (props) => {
     });
 
     let ctx = gsap.context(() => {
-      mm.add("(max-width: 1199px)", () => {
+      mm.add("(max-width: 1023px)", () => {
         ScrollTrigger.create({
           trigger: ".ieq-datadriven",
           id: "pin-sec1",
@@ -83,7 +83,7 @@ const DataDrivenPrecision = (props) => {
           pin: true,
         });
       });
-      mm.add("(min-width: 1200px)", () => {
+      mm.add("(min-width: 1024px)", () => {
         ScrollTrigger.create({
           trigger: ".ieq-datadriven",
           id: "pin-sec1",

@@ -15,7 +15,7 @@ const IeqVideo = () => {
 
   useLayoutEffect(() => {
     gsap.set(".mask-image", {
-      scale: 20,
+      scale: 25,
       duration: 2,
     });
     let cty = gsap.context(() => {

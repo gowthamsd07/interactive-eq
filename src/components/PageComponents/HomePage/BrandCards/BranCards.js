@@ -110,7 +110,7 @@ const BrandCards = (props) => {
           <Row className="mt-80">
             <Col xl={{ offset: 4, span: 16 }}>
               <Row gutter={[24, 24]}>
-                <Col xl={12} className="w-100">
+                <Col md={{ span: 16, offset: 4 }} xl={{ span: 12, offset: 0 }}>
                   <ScrollAnimation
                     animateOnce={true}
                     offset={250}
@@ -124,7 +124,7 @@ const BrandCards = (props) => {
                     </div>
                   </ScrollAnimation>
                 </Col>
-                <Col xl={12}>
+                <Col md={{ span: 16, offset: 4 }} xl={{ span: 12, offset: 0 }}>
                   <ScrollAnimation
                     animateOnce={true}
                     offset={250}

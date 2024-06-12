@@ -29,12 +29,12 @@ const SkillSets = (props) => {
     >
       <div className="container">
         <Row gutter={[24, 24]}>
-          <Col xl={{ span: 8, offset: 4 }}>
+          <Col md={12} xl={{ span: 8, offset: 4 }}>
             <h3 className="text-primary-l">
               Tools to Elevate Your Recruitment
             </h3>
           </Col>
-          <Col xl={{ span: 8 }}>
+          <Col md={12} xl={{ span: 8 }}>
             <p className="subtitle-1 text-secondary-l">
               Technical skills have become commoditized. Hirers need to look
               beyond job titles, results and work samples. Human aptitude is the

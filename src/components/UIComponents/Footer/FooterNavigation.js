@@ -10,7 +10,7 @@ const FooterNavigation = () => {
   return (
     <MainFooter>
       <div className="container">
-        <div>
+        <div className="footer-logo">
           <Link to="/" className="header-brand-logo">
             <img src={Brandlogo} alt="Interactive eq logo" />
           </Link>
