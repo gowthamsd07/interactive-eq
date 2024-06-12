@@ -60,7 +60,7 @@ const SoftSkills = (props) => {
                 animateOnce={true}
                 offset={item.offset}
                 // duration={0.8}
-                animateIn="animate__fadeInSkew"
+                animateIn="animate__fadeInUp"
               >
                 <SoftSkillsCard
                   key={item.id}
