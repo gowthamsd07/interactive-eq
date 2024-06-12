@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 
 import "./SoftSkills.scss";
@@ -12,28 +12,55 @@ import gsap from "gsap";
 gsap.registerPlugin(ScrollTrigger);
 
 const SoftSkills = (props) => {
-  // useLayoutEffect(() => {
-  //   let cty = gsap.context(() => {
-  //     for (const video of document.querySelectorAll(".icon-animation")) {
-  //       // console.log(video);
-  //       // gsap.set(video, {
-  //       video.pause();
-  //       // });
-  //       ScrollTrigger.create({
-  //         trigger: video,
-  //         onEnter: () => video.play(),
-  //         onEnterBack: () => video.play(),
-  //         onLeave: () => video.pause(),
-  //         onLeaveBack: () => video.pause(),
-  //         // markers: true,
-  //         start: "-30% center",
-  //         end: "100% center",
-  //       });
-  //     }
-  //   });
-  //   ScrollTrigger.refresh();
-  //   return () => cty.revert();
-  // });
+  useLayoutEffect(() => {
+    let cty = gsap.context(() => {
+      for (const card of document.querySelectorAll(".soft-skills-card")) {
+        gsap.set(card, {
+          y: "50px",
+          opacity: 0,
+          duration: 0.3,
+        });
+        gsap.to(card, {
+          opacity: 1,
+          y: 0,
+          immediateRender: false,
+          scrollTrigger: {
+            trigger: card,
+            // markers: true,
+            id: "img-1",
+            scrub: false,
+            start: "-20% center",
+            end: "100% center",
+            toggleActions: "play none none none",
+          },
+        });
+      }
+      // for (const card of document.querySelectorAll(".soft-skills-card > *")) {
+      //   gsap.set(card, {
+      //     y: "10px",
+      //     opacity: 0,
+      //     duration: 0.3,
+      //   });
+      //   gsap.to(card, {
+      //     opacity: 1,
+      //     y: 0,
+      //     delay: 0.1,
+      //     immediateRender: false,
+      //     scrollTrigger: {
+      //       trigger: card,
+      //       markers: true,
+      //       id: "img-1",
+      //       scrub: false,
+      //       start: "-20% center",
+      //       end: "100% center",
+      //       toggleActions: "play none none none",
+      //     },
+      //   });
+      // }
+    });
+    // ScrollTrigger.refresh();
+    return () => cty.revert();
+  });
   return (
     <section className="ieq-softskills section-padding-y bg-surface-l">
       <div className="container">
@@ -55,22 +82,22 @@ const SoftSkills = (props) => {
         <Row className="mt-80">
           <Col xl={{ span: 20, offset: 2 }} className="ieq-softskills__list">
             {props.items.map((item) => (
-              <ScrollAnimation
+              // <ScrollAnimation
+              //   key={item.id}
+              //   animateOnce={true}
+              //   offset={item.offset}
+              //   // duration={0.8}
+              //   animateIn="animate__fadeInUp"
+              // >
+              <SoftSkillsCard
                 key={item.id}
-                animateOnce={true}
-                offset={item.offset}
-                // duration={0.8}
-                animateIn="animate__fadeInUp"
-              >
-                <SoftSkillsCard
-                  key={item.id}
-                  id={item.id}
-                  direction={item.direction}
-                  title={item.title}
-                  desc={item.desc}
-                  iconUrl={item.iconUrl}
-                />
-              </ScrollAnimation>
+                id={item.id}
+                direction={item.direction}
+                title={item.title}
+                desc={item.desc}
+                iconUrl={item.iconUrl}
+              />
+              // </ScrollAnimation>
             ))}
           </Col>
         </Row>
