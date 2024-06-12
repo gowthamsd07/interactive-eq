@@ -38,7 +38,7 @@ const HomeBanner = () => {
         immediateRender: false,
         scrollTrigger: {
           trigger: ".ieq-banner__content",
-          markers: true,
+          // markers: true,
           id: "banner-content",
           scrub: false,
           start: "820px top",
