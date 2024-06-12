@@ -1,6 +1,10 @@
 .ieq-skills {
   // min-height: 100%;
   height: 100%;
+
+  @media (min-width: 1200px) {
+    min-height: 1138px;
+  }
   .skill-set-item {
     p {
       max-width: 215px;

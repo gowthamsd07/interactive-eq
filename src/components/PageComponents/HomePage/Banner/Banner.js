@@ -38,11 +38,11 @@ const HomeBanner = () => {
         immediateRender: false,
         scrollTrigger: {
           trigger: ".ieq-banner__content",
-          // markers: true,
+          markers: true,
           id: "banner-content",
           scrub: false,
-          start: "270% top",
-          end: "1200% top",
+          start: "820px top",
+          end: "2100px top",
           toggleActions: "play none none reverse",
         },
       });

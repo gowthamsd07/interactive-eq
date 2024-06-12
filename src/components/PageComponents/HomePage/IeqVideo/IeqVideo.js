@@ -23,7 +23,7 @@ const IeqVideo = () => {
         ScrollTrigger.create({
           trigger: ".ieq-video",
           id: "pin-mark",
-          // markers: true,
+          markers: true,
           scrub: 3,
           start: "0% top",
           end: "180% top",
@@ -58,7 +58,7 @@ const IeqVideo = () => {
           src={VideoPlaceholder}
           alt="Ieq video"
         />
-        <video autoPlay muted loop>
+        <video autoPlay muted loop controls>
           <source src={IeqVideoFile} type="video/mp4" />
           Your browser does not support the video tag.
         </video>

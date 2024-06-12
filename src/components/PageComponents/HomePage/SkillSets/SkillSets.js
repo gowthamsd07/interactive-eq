@@ -46,7 +46,7 @@ const SkillSets = (props) => {
           <Col xl={{ span: 16, offset: 4 }}>
             <Row gutter={[25, 52]}>
               {props.items.map((item) => (
-                <Col key={item.id} xs={12} md={6} xl={6}>
+                <Col key={item.id} xs={12} md={8} xl={6}>
                   <ScrollAnimation
                     animateOnce={true}
                     offset={200}
@@ -64,7 +64,7 @@ const SkillSets = (props) => {
               ))}
               <Col xl={6}></Col>
             </Row>
-            <Row gutter={[25, 52]}>
+            {/* <Row gutter={[25, 52]}>
               {props.items.map((item) => (
                 <Col key={item.id} xs={12} md={6} xl={6}>
                   <ScrollAnimation
@@ -85,7 +85,7 @@ const SkillSets = (props) => {
                 </Col>
               ))}
               <Col xl={6}></Col>
-            </Row>
+            </Row> */}
           </Col>
         </Row>
         <div className="flex-all-center skill-button-wrap mt-120">

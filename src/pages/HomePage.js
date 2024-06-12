@@ -12,8 +12,8 @@ import IeqVideo from "../components/PageComponents/HomePage/IeqVideo/IeqVideo";
 // import ScrollSequence from "../components/PageComponents/HomePage/Banner/sample";
 
 const HomePage = () => {
-  const SkillItemsArray1 = SKILLS_ITEMS.slice(0, 4);
-  const SkillItemsArray2 = SKILLS_ITEMS.slice(4, 8);
+  // const SkillItemsArray1 = SKILLS_ITEMS.slice(0, 4);
+  // const SkillItemsArray2 = SKILLS_ITEMS.slice(4, 8);
   // const AssessmentItemsArray1 = ASSESSMENT_ITEMS.slice(0, 3);
   // const AssessmentItemsArray2 = ASSESSMENT_ITEMS.slice(3, 6);
   return (
@@ -24,7 +24,7 @@ const HomePage = () => {
       <SoftSkills items={SOFT_SKILLS_ITEMS} />
       <HumanAptitude />
       {/* <Assessment items={(AssessmentItemsArray1, AssessmentItemsArray2)} /> */}
-      <SkillSets items={(SkillItemsArray1, SkillItemsArray2)} />
+      <SkillSets items={SKILLS_ITEMS} />
       <IeqVideo />
       <BrandCards />
     </Fragment>
