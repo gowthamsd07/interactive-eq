@@ -26,7 +26,7 @@ const IeqVideo = () => {
           // markers: true,
           scrub: 3,
           start: "0% top",
-          end: "180% top",
+          end: "170% top",
           pinSpacing: true,
           pinSpacer: true,
           anticipatePin: 1,
