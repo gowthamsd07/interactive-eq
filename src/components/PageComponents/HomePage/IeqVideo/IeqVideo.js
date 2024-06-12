@@ -11,23 +11,27 @@ gsap.registerPlugin(ScrollTrigger);
 // gsap.core.globals("ScrollTrigger", ScrollTrigger);
 
 const IeqVideo = () => {
+  let mm = gsap.matchMedia();
+
   useLayoutEffect(() => {
     gsap.set(".mask-image", {
       scale: 20,
       duration: 2,
     });
     let cty = gsap.context(() => {
-      ScrollTrigger.create({
-        trigger: ".ieq-video",
-        id: "pin-mark",
-        // markers: true,
-        scrub: 3,
-        start: "0 top",
-        end: "150% top",
-        pinSpacing: true,
-        pinSpacer: true,
-        anticipatePin: 1,
-        pin: true,
+      mm.add("(min-width: 1200px)", () => {
+        ScrollTrigger.create({
+          trigger: ".ieq-video",
+          id: "pin-mark",
+          markers: true,
+          scrub: 3,
+          start: "0% top",
+          end: "220% top",
+          pinSpacing: true,
+          pinSpacer: true,
+          anticipatePin: 1,
+          pin: true,
+        });
       });
 
       gsap.to(".mask-image", {
@@ -43,7 +47,7 @@ const IeqVideo = () => {
         },
       });
     });
-
+    ScrollTrigger.refresh();
     return () => cty.revert();
   });
   return (

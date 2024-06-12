@@ -8,13 +8,14 @@ import Backdrop from "../Backdrop/Backdrop";
 import Brandlogo from "../../../assets/images/shared/interactive-eq-logo.svg";
 import "./MainNavigation.scss";
 import Button from "../Buttons/Buttons";
+import IconSet from "../IconSet/IconSet";
 
 const MainNavigation = (props) => {
   const [drawerIsOpen, setDrawerIsOpen] = useState(false);
 
-  // const openDrawerHandler = () => {
-  //   setDrawerIsOpen(true);
-  // };
+  const openDrawerHandler = () => {
+    setDrawerIsOpen(true);
+  };
 
   const closeDrawerHandler = () => {
     setDrawerIsOpen(false);
@@ -26,6 +27,10 @@ const MainNavigation = (props) => {
       <SideDrawer show={drawerIsOpen} onClick={closeDrawerHandler}>
         <nav className="main-navigation__drawer-nav">
           <NavLinks />
+          <Button size="large" primary>
+            Request Demo
+          </Button>
+          <IconSet bg="" iconName="cross" />
         </nav>
       </SideDrawer>
 
@@ -38,17 +43,21 @@ const MainNavigation = (props) => {
           <nav className="main-navigation__header-nav">
             <NavLinks />
           </nav>
-          {/* <button
-            className="main-navigation__menu-btn"
-            onClick={openDrawerHandler}
-          >
-            <span />
-            <span />
-            <span />
-          </button> */}
-          <Button size="large" primary>
-            Request Demo
-          </Button>
+          <div className="flex-align-center">
+            <div className="web-btn">
+              <Button size="large" primary>
+                Request Demo
+              </Button>
+            </div>
+            <button
+              className="main-navigation__menu-btn"
+              onClick={openDrawerHandler}
+            >
+              <span />
+              <span />
+              <span />
+            </button>
+          </div>
         </div>
       </MainHeader>
     </React.Fragment>

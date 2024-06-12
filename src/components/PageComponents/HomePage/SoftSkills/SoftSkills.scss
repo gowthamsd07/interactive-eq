@@ -6,11 +6,18 @@
     gap: 16px;
   }
 
+  .primary-title {
+    max-width: 400px;
+  }
+
   &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
     .animated {
       transition: all cubic-bezier(0.65, 0.05, 0.36, 1) 0.8s;
       &:not(:last-child) {
-        margin-bottom: 24px;
+        // margin-bottom: 24px;
       }
 
       &.skill-card-animation {
@@ -29,5 +36,10 @@
         transition: all ease 2s;
       }
     }
+  }
+
+  .button--secondary {
+    color: var(--text-primary-l) !important;
+    border: 1px solid var(--bg-icon-1-l) !important;
   }
 }

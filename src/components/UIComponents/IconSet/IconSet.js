@@ -4,7 +4,10 @@ import "./IconSet.scss";
 
 const IconSet = (props) => {
   return (
-    <div className={` icon-wrap-${props.bg || "default"}`}>
+    <div
+      className={` icon-wrap-${props.bg || "default"}`}
+      onClick={props.onClick}
+    >
       {props.iconName === "play" ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"

@@ -1,7 +1,40 @@
 .main-navigation__header-nav {
+  display: none;
+
+  @media (min-width: 1200px) {
+    display: block;
+  }
   .nav-links {
     display: flex;
     align-items: center;
     gap: 48px;
+  }
+}
+.web-btn {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.main-navigation__menu-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  background: transparent;
+  outline: none;
+  border: none;
+  margin-left: 24px;
+
+  @media (min-width: 1200px) {
+    display: none;
+  }
+  span {
+    width: 32px;
+    height: 2px;
+    display: block;
+    background: white;
+    border-radius: 4px;
   }
 }

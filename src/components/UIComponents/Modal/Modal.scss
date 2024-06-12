@@ -1,0 +1,49 @@
+.modal {
+  z-index: 100;
+  position: fixed;
+  top: 22vh;
+  left: 10%;
+  width: 80%;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 40px;
+  max-width: 936px;
+  /* margin: 0 auto; */
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  &__content {
+    padding: 56px 48px;
+  }
+
+  .icon-wrap-bg {
+    position: absolute;
+    top: 56px;
+    right: 48px;
+  }
+}
+.modal-enter {
+  opacity: 0;
+  // transform: scale(0.9);
+}
+
+.modal-enter-active {
+  opacity: 1;
+  transition:
+    opacity 300ms,
+    transform 300ms;
+}
+
+.modal-exit {
+  opacity: 1;
+}
+
+.modal-exit-active {
+  opacity: 0;
+  // transform: scale(0.9);
+  transition:
+    opacity 300ms,
+    transform 300ms;
+}

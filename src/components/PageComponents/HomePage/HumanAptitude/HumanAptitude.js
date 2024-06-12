@@ -6,17 +6,20 @@ import HumanAptitudeVideo from "../../../../assets/images/home/human-aptitude-pl
 
 const HumanAptitude = () => {
   return (
-    <section className="ieq-aptitude section-padding-top">
+    <section className="ieq-aptitude section-padding-y">
       <div className="container">
         <div className="ieq-aptitude__title">
-          <h1 className="text-white text-center">Deeper than a resume</h1>
-          <p className="text-secondary subtitle-1 text-center">
+          <h2 className="text-white text-center">
+            Deeper than a resume. Now you can objectively measure true
+            differentiators.
+          </h2>
+          {/* <p className="text-secondary subtitle-1 text-center">
             Look beyond job titles, work samples, and social profiles. Now you
             can objectively measure a true differentiator.
-          </p>
+          </p> */}
         </div>
-        <div className="pt-120">
-          <video autoPlay muted loop>
+        <div className="mt-80">
+          <video className="w-100 h-100" autoPlay muted loop>
             <source src={HumanAptitudeVideo} type="video/mp4" />
             Your browser does not support the video tag.
           </video>

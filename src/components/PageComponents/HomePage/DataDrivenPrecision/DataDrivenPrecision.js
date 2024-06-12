@@ -8,7 +8,7 @@ import "./DataDriverPrecision.scss";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useLayoutEffect } from "react";
-import { noop } from "antd/es/_util/warning";
+// import { noop } from "antd/es/_util/warning";
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.core.globals("ScrollTrigger", ScrollTrigger);
@@ -24,18 +24,28 @@ const ImageItem = (props) => {
 const ContentItem = (props) => {
   return (
     <div className={`slider-content-item ${props.groupClass || "default"}`}>
-      <h4 className="text-white">{props.contentTitle}</h4>
-      <p className="subtitle-2 text-secondary">{props.description}</p>
-      {/* <Button size="large" tertiary>
-        {props.ButtonText}
-        <IconSet bg="bg" iconName="plus" />
-      </Button> */}
+      <h6 className="fw-400 text-secondary">{props.description1}</h6>
+      <h6 className="fw-400 text-secondary">{props.description2}</h6>
     </div>
   );
 };
 
 const DataDrivenPrecision = (props) => {
+  let mm = gsap.matchMedia();
+
   useLayoutEffect(() => {
+    mm.add("(min-width: 1200px)", () => {
+      gsap.set(".slider-content-item-wrap", {
+        y: "250px",
+        duration: 0.3,
+      });
+    });
+    mm.add("(max-width: 1199px)", () => {
+      gsap.set(".slider-content-item-wrap", {
+        y: "0px",
+        duration: 0.3,
+      });
+    });
     gsap.set(".group-item-2", {
       opacity: 0.3,
       duration: 0.3,
@@ -49,27 +59,43 @@ const DataDrivenPrecision = (props) => {
       opacity: 0.8,
       yPercent: -93,
       duration: 0.3,
-      scale: 0.97,
+      scale: 0.92,
     });
     gsap.set(".image-group-3", {
-      opacity: 0.8,
-      yPercent: -186,
+      opacity: 0.5,
+      yPercent: -187,
       duration: 0.3,
-      scale: 0.94,
+      scale: 0.86,
     });
 
     let ctx = gsap.context(() => {
-      ScrollTrigger.create({
-        trigger: ".slider-wrapper",
-        id: "pin-sec1",
-        // markers: true,
-        scrub: true,
-        start: "0% top",
-        end: "200% top",
-        pinSpacing: true,
-        pinSpacer: true,
-        anticipatePin: 1,
-        pin: true,
+      mm.add("(max-width: 1199px)", () => {
+        ScrollTrigger.create({
+          trigger: ".ieq-datadriven",
+          id: "pin-sec1",
+          // markers: true,
+          scrub: true,
+          start: "25% top",
+          end: "175% top",
+          pinSpacing: true,
+          pinSpacer: true,
+          anticipatePin: 1,
+          pin: true,
+        });
+      });
+      mm.add("(min-width: 1200px)", () => {
+        ScrollTrigger.create({
+          trigger: ".ieq-datadriven",
+          id: "pin-sec1",
+          // markers: true,
+          scrub: true,
+          start: "0% top",
+          end: "200% top",
+          pinSpacing: true,
+          pinSpacer: true,
+          anticipatePin: 1,
+          pin: true,
+        });
       });
       // image animation
 
@@ -83,7 +109,7 @@ const DataDrivenPrecision = (props) => {
           id: "img-1",
           scrub: true,
           start: "top top",
-          end: "300% top",
+          end: "400% top",
         },
       });
       gsap.to(".image-group-2", {
@@ -96,7 +122,7 @@ const DataDrivenPrecision = (props) => {
           id: "img-2",
           scrub: true,
           start: "top top",
-          end: "300% top",
+          end: "400% top",
         },
       });
       gsap.to(".image-group-3", {
@@ -107,8 +133,8 @@ const DataDrivenPrecision = (props) => {
           // markers: true,
           id: "img-3",
           scrub: true,
-          start: "350% top",
-          end: "650% top",
+          start: "450% top",
+          end: "750% top",
         },
       });
 
@@ -119,11 +145,39 @@ const DataDrivenPrecision = (props) => {
         // markers: true,
         scrub: 2,
         start: "0% top",
-        end: "300% top",
+        end: "400% top",
         pinSpacing: false,
         pinSpacer: false,
         pin: false,
         onEnter: () => {
+          mm.add("(min-width: 1200px)", () => {
+            gsap.fromTo(
+              ".slider-content-item-wrap",
+              {
+                y: "250px",
+                duration: 0.3,
+              },
+              {
+                y: 0,
+                duration: 0.5,
+                ease: "power1.out",
+              }
+            );
+          });
+          mm.add("(max-width: 1199px)", () => {
+            gsap.fromTo(
+              ".slider-content-item-wrap",
+              {
+                y: 0,
+                duration: 0.3,
+              },
+              {
+                y: "-237px",
+                duration: 0.5,
+                ease: "power1.out",
+              }
+            );
+          });
           gsap.fromTo(
             ".group-item-2",
             {
@@ -187,21 +241,37 @@ const DataDrivenPrecision = (props) => {
             {
               opacity: 1,
               duration: 0.3,
-              delay: 0.5,
+              delay: 0.2,
             }
           );
-          gsap.fromTo(
-            ".slider-content-item-wrap",
-            {
-              y: "-150px",
-              duration: 0.3,
-            },
-            {
-              y: 0,
-              duration: 0.5,
-              ease: "power1.out",
-            }
-          );
+          mm.add("(min-width: 1200px)", () => {
+            gsap.fromTo(
+              ".slider-content-item-wrap",
+              {
+                y: 0,
+                duration: 0.3,
+              },
+              {
+                y: "250px",
+                duration: 0.5,
+                ease: "power1.out",
+              }
+            );
+          });
+          mm.add("(max-width: 1199px)", () => {
+            gsap.fromTo(
+              ".slider-content-item-wrap",
+              {
+                y: "-237px",
+                duration: 0.3,
+              },
+              {
+                y: 0,
+                duration: 0.5,
+                ease: "power1.out",
+              }
+            );
+          });
           gsap.to(".image-group-1", {
             // opacity: 0,
             duration: 0.3,
@@ -235,12 +305,40 @@ const DataDrivenPrecision = (props) => {
         id: "cont-2",
         // markers: true,
         scrub: 2,
-        start: "350% top",
-        end: "650% top",
+        start: "450% top",
+        end: "750% top",
         pinSpacing: false,
         pinSpacer: false,
         pin: false,
         onEnter: () => {
+          mm.add("(min-width: 1200px)", () => {
+            gsap.fromTo(
+              ".slider-content-item-wrap",
+              {
+                y: 0,
+                duration: 0.3,
+              },
+              {
+                y: "-250px",
+                duration: 0.5,
+                ease: "power1.out",
+              }
+            );
+          });
+          mm.add("(max-width: 1199px)", () => {
+            gsap.fromTo(
+              ".slider-content-item-wrap",
+              {
+                y: "-237px",
+                duration: 0.3,
+              },
+              {
+                y: "-474px",
+                duration: 0.5,
+                ease: "power1.out",
+              }
+            );
+          });
           gsap.fromTo(
             ".group-item-3",
             {
@@ -264,18 +362,7 @@ const DataDrivenPrecision = (props) => {
               duration: 0.3,
             }
           );
-          gsap.fromTo(
-            ".slider-content-item-wrap",
-            {
-              y: 0,
-              duration: 0.3,
-            },
-            {
-              y: "-150px",
-              duration: 0.5,
-              ease: "power1.out",
-            }
-          );
+
           gsap.to(".image-group-2", {
             // opacity: 0,
             duration: 0.3,
@@ -283,7 +370,7 @@ const DataDrivenPrecision = (props) => {
           });
           gsap.to(".image-group-3", {
             opacity: 1,
-            yPercent: -200,
+            yPercent: -197,
             duration: 0.3,
             // scale: 1,
           });
@@ -302,6 +389,34 @@ const DataDrivenPrecision = (props) => {
           );
         },
         onLeaveBack: () => {
+          mm.add("(min-width: 1200px)", () => {
+            gsap.fromTo(
+              ".slider-content-item-wrap",
+              {
+                y: "-250px",
+                duration: 0.3,
+              },
+              {
+                y: 0,
+                duration: 0.5,
+                ease: "power1.out",
+              }
+            );
+          });
+          mm.add("(max-width: 1199px)", () => {
+            gsap.fromTo(
+              ".slider-content-item-wrap",
+              {
+                y: "-474px",
+                duration: 0.3,
+              },
+              {
+                y: "-237px",
+                duration: 0.5,
+                ease: "power1.out",
+              }
+            );
+          });
           gsap.fromTo(
             ".group-item-3",
             {
@@ -344,13 +459,13 @@ const DataDrivenPrecision = (props) => {
     return () => ctx.revert();
   });
   return (
-    <section className="ieq-datadriven section-padding-top">
+    <section className="ieq-datadriven section-padding-y">
       <div className="container pin-container">
-        <Row gutter={80}>
-          <Col xl={{ span: 8, offset: 2 }}>
+        <Row gutter={{ md: 40, xl: 80 }}>
+          <Col md={12} xl={{ span: 8, offset: 2 }}>
             <h1 className="text-white ">Ultimate candidate scoring</h1>
           </Col>
-          <Col xl={{ span: 12 }}>
+          <Col md={12} xl={{ span: 12 }}>
             <p className="text-secondary subtitle-1 ">
               iEQ offers the missing piece in recruiting. We close the hiring
               blind spot by using an immersive assessment unlike any other on
@@ -359,8 +474,8 @@ const DataDrivenPrecision = (props) => {
           </Col>
         </Row>
         <Row className="mt-120 slider-wrapper">
-          <Col xl={{ span: 12, offset: 2 }}>
-            <div className="w-100 h-100 slider-image-wrapper">
+          <Col md={{ span: 20, offset: 2 }} xl={{ span: 12, offset: 2 }}>
+            <div className="w-100  slider-image-wrapper">
               {props.items.map((item) => (
                 <ImageItem
                   key={item.id}
@@ -372,14 +487,19 @@ const DataDrivenPrecision = (props) => {
               ))}
             </div>
           </Col>
-          <Col xl={{ span: 6 }} className="slider-contents">
+          <Col
+            md={{ span: 20, offset: 2 }}
+            xl={{ span: 6 }}
+            className="slider-contents"
+          >
             <div className="slider-content-item-wrap">
               {props.items.map((item) => (
                 <ContentItem
                   key={item.id}
                   id={item.id}
                   contentTitle={item.contentTitle}
-                  description={item.description}
+                  description1={item.description1}
+                  description2={item.description2}
                   ButtonText={item.ButtonText}
                   groupClass={item.groupClass}
                 />

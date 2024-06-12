@@ -16,6 +16,26 @@
 .text-gradient {
   color: var(--text-gradient-d);
 }
+
+.text-primary-l {
+  color: var(--text-primary-l);
+}
+.text-secondary-l {
+  color: var(--text-secondary-l);
+}
+.text-placeholder-l {
+  color: var(--text-placeholder-l);
+}
+.text-disabled-l {
+  color: var(--text-disabled-l);
+}
+.text-brand-l {
+  color: var(--text-brand-l);
+}
+.text-gradient-l {
+  color: var(--text-gradient-l);
+}
+
 .text-white {
   color: var(--text-white-l);
 }
@@ -38,4 +58,23 @@
 }
 .bg-gradient {
   background: var(--bg-gradient-d);
+}
+// bg-l
+.bg-surface-l {
+  background: var(--bg-surface-l);
+}
+.bg-variant1-l {
+  background: var(--bg-variant1-l);
+}
+.bg-variant2-l {
+  background: var(--bg-variant2-l);
+}
+.bg-brand-l {
+  background: var(--bg-brand-l);
+}
+.bg-brand-hover-l {
+  background: var(--bg-brand-hover-l);
+}
+.bg-gradient-l {
+  background: var(--bg-gradient-l);
 }

@@ -1,4 +1,6 @@
 .ieq-skills {
+  // min-height: 100%;
+  height: 100%;
   .skill-set-item {
     p {
       max-width: 215px;
@@ -8,7 +10,8 @@
     }
   }
 
-  button {
-    margin-top: 110px;
+  .button--secondary {
+    color: var(--text-primary-l) !important;
+    border: 1px solid var(--bg-icon-1-l) !important;
   }
 }

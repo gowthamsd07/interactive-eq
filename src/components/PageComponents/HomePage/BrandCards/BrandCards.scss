@@ -1,4 +1,10 @@
 .ieq-brand-cards {
+  &__title {
+    h1 {
+      max-width: 580px;
+      margin: 0 auto;
+    }
+  }
   .brand-card-1 {
     padding: 160px 0;
     border-radius: 40px;
@@ -65,5 +71,25 @@
 
   .animated {
     height: 100%;
+  }
+}
+
+.hire-metrics__modal-content {
+  .modal-title {
+    max-width: 570px;
+  }
+  .metrics-info {
+    & > div {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .text-body {
+      margin-top: 16px;
+    }
+  }
+
+  .metrics-wrap {
+    margin-top: 72px;
   }
 }

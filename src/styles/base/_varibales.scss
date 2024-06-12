@@ -42,7 +42,9 @@ $bg-variant1-l: '#F2F2F2';
 $bg-variant2-l: '#FAFAFA';
 $bg-brand-l: '#752B50';
 $bg-brand-hover-l: '#A64D79';
-$bg-gradient-l: '#5A1C4F';
+$bg-gradient-l: linear-gradient(93deg, #5a1c4f -8.33%, #e13d44 124.79%);
+$bg-icon-1-l: #666666;
+$bg-icon-2-l: #fff;
 
 // DarkTheme
 $bg-surface-d: '#150E12';
@@ -51,6 +53,8 @@ $bg-variant2-d: '#2D272B';
 $bg-brand-d: '#752B50';
 $bg-brand-hover-d: '#A64D79';
 $bg-gradient-d: linear-gradient(93deg, #5a1c4f -8.33%, #e13d44 124.79%);
+$bg-icon-1-d: #fff;
+$bg-icon-2-d: #150e12;
 
 // BorderRadius
 
@@ -82,6 +86,8 @@ $bg-gradient-d: linear-gradient(93deg, #5a1c4f -8.33%, #e13d44 124.79%);
   --bg-brand-l: #{$bg-brand-l};
   --bg-brand-hover-l: #{$bg-brand-hover-l};
   --bg-gradient-l: #{$bg-gradient-l};
+  --bg-icon-1-l: #{$bg-icon-1-l};
+  --bg-icon-2-l: #{$bg-icon-1-l};
   // DarkTheme
   --bg-surface-d: #{$bg-surface-d};
   --bg-variant1-d: #{$bg-variant1-d};
@@ -89,4 +95,6 @@ $bg-gradient-d: linear-gradient(93deg, #5a1c4f -8.33%, #e13d44 124.79%);
   --bg-brand-d: #{$bg-brand-d};
   --bg-brand-hover-d: #{$bg-brand-hover-d};
   --bg-gradient-d: #{$bg-gradient-d};
+  --bg-icon-1-d: #{$bg-icon-1-d};
+  --bg-icon-2-d: #{#{$bg-icon-1-d}};
 }

@@ -1,10 +1,16 @@
 // Softskill imagery
 // import TimeManagementIcon from "../assets/images/home/time-management.svg";
-import DecisionIcon from "../assets/images/home/decision-making.svg";
-import LearningIcon from "../assets/images/home/learning-agility.svg";
-import OrganisationIcon from "../assets/images/home/organisation-skill.svg";
-import ProblemIcon from "../assets/images/home/problem-solving.svg";
-import AwarenessIcon from "../assets/images/home/self-awareness.svg";
+// import DecisionIcon from "../assets/images/home/decision-making.svg";
+// import LearningIcon from "../assets/images/home/learning-agility.svg";
+// import OrganisationIcon from "../assets/images/home/organisation-skill.svg";
+// import ProblemIcon from "../assets/images/home/problem-solving.svg";
+// import AwarenessIcon from "../assets/images/home/self-awareness.svg";
+
+import HumanAptIcon1 from "../assets/images/home/skills-icon-animation-1.mp4";
+import HumanAptIcon2 from "../assets/images/home/skills-icon-animation-2.mp4";
+import HumanAptIcon3 from "../assets/images/home/skills-icon-animation-3.mp4";
+import HumanAptIcon4 from "../assets/images/home/skills-icon-animation-4.mp4";
+import HumanAptIcon5 from "../assets/images/home/skills-icon-animation-5.mp4";
 
 // Data driven
 import DataDrivenImage1 from "../assets/images/home/datadriven-slider-image-1.png";
@@ -32,43 +38,43 @@ import SkillIcon8 from "../assets/images/home/skill-slider-8.png";
 export const SOFT_SKILLS_ITEMS = [
   {
     id: 1,
-    direction: "reverse",
+    direction: "",
     title: "Empathy",
-    desc: "Feel what your teammates are feeling.",
-    iconUrl: AwarenessIcon,
+    desc: "Under stand others. Sense their emotional state. Feel what they are feeling.",
+    iconUrl: HumanAptIcon1,
     offset: 300,
   },
   {
     id: 2,
-    direction: "",
+    direction: "reverse",
     title: "Situational awareness",
-    desc: "Read the room and respond appropriately.",
+    desc: "Read the room, understand what is needed, and respond appropriately.",
     offset: 450,
-    iconUrl: DecisionIcon,
+    iconUrl: HumanAptIcon2,
   },
   {
     id: 3,
-    direction: "reverse",
+    direction: "",
     title: "Improvisation",
-    desc: "Change up when things don’t go to plan.",
+    desc: "The flexibility to keep cool and pivot when things don’t go to plan.",
     offset: 450,
-    iconUrl: LearningIcon,
+    iconUrl: HumanAptIcon3,
   },
   {
     id: 4,
-    direction: "",
+    direction: "reverse",
     title: "Conflict resolution",
-    desc: "Sense tension and disarm the bomb.",
+    desc: "Sense tension from others and know which wires to clip to disarm the bomb.",
     offset: 450,
-    iconUrl: OrganisationIcon,
+    iconUrl: HumanAptIcon4,
   },
   {
     id: 5,
-    direction: "reverse",
+    direction: "",
     title: "Self awareness",
-    desc: "My impact on this situation.",
+    desc: "Knowing one's own impact on any situation, including tone and body language.",
     offset: 450,
-    iconUrl: ProblemIcon,
+    iconUrl: HumanAptIcon5,
   },
 ];
 
@@ -77,8 +83,10 @@ export const DATA_DRIVEN_ITEMS = [
     id: 1,
     imgUrl: DataDrivenImage1,
     AltText: "Candidate ratings",
-    contentTitle: "Candidate ratings",
-    description: "Go deeper than IQ; EQ predicts future success",
+    description1:
+      "Candidate ratings: Go deeper than IQ; EQ predicts future success",
+    description2:
+      "First-person : Immersive film production + cinematic writing",
     groupClassImg: "image-group-1",
     groupClass: "group-item-1",
     ButtonText: "Why real-life scenarios?",
@@ -87,49 +95,20 @@ export const DATA_DRIVEN_ITEMS = [
     id: 2,
     imgUrl: DataDrivenImage2,
     AltText: "First-person",
-    contentTitle: "First-person",
-    description: "Immersive film production + cinematic writing",
+    description1:
+      "Conflict simulation : Drop candidates into real business scenarios",
+    description2: "GenAI : Unbiased scoring over gut feeling",
     groupClassImg: "image-group-2",
-    groupClass: "group-item-1",
+    groupClass: "group-item-2",
     ButtonText: "Why real-life scenarios?",
   },
   {
     id: 3,
     imgUrl: DataDrivenImage3,
     AltText: "Conflict simulation",
-    contentTitle: "Conflict simulation",
-    description: "Drop candidates into real business scenarios",
+    description1: "No training : Effortless add-on + ATS integration",
+    description2: "Benchmarking : Compare candidates against industry averages",
     groupClassImg: "image-group-3",
-    groupClass: "group-item-2",
-    ButtonText: "Why real-life scenarios?",
-  },
-  {
-    id: 4,
-    imgUrl: DataDrivenImage3,
-    AltText: "GenAI",
-    contentTitle: "GenAI",
-    description: "Unbiased scoring over gut feeling",
-    groupClassImg: "image-group-4",
-    groupClass: "group-item-2",
-    ButtonText: "Why real-life scenarios?",
-  },
-  {
-    id: 5,
-    imgUrl: DataDrivenImage3,
-    AltText: "No training",
-    contentTitle: "No training",
-    description: "Effortless add-on + ATS integration",
-    groupClassImg: "image-group-5",
-    groupClass: "group-item-3",
-    ButtonText: "Why real-life scenarios?",
-  },
-  {
-    id: 6,
-    imgUrl: DataDrivenImage3,
-    AltText: "Benchmarking",
-    contentTitle: "Benchmarking",
-    description: "Compare candidates against industry averages",
-    groupClassImg: "image-group-6",
     groupClass: "group-item-3",
     ButtonText: "Why real-life scenarios?",
   },

@@ -10,105 +10,116 @@
 }
 
 .display-1 {
-  @include mixin.font-responsive(48, 56, 88, 110, 110, 110); //88b
+  @include mixin.font-responsive(48, 64, 88, 110, 110, 110); //88b
   font-weight: 600;
 }
 
 .display-2 {
-  @include mixin.font-responsive(48, 56, 72, 110, 110, 110); //72b
+  @include mixin.font-responsive(44, 56, 72, 110, 110, 110); //72b
   font-weight: 600;
 }
 
 .display-3 {
-  @include mixin.font-responsive(48, 56, 64, 110, 110, 110); //64b
+  @include mixin.font-responsive(40, 48, 64, 110, 110, 110); //64b
   font-weight: 600;
 }
 
 h1,
 .h1 {
-  @include mixin.font-responsive(48, 56, 48, 110, 110, 110); //48
+  @include mixin.font-responsive(36, 40, 48, 110, 110, 110); //48
   font-weight: 600;
 }
 
 h2,
 .h2 {
-  @include mixin.font-responsive(48, 56, 40, 110, 110, 110); //40
+  @include mixin.font-responsive(32, 36, 40, 110, 110, 110); //40
   font-weight: 600;
 }
 
 h3,
 .h3 {
-  @include mixin.font-responsive(48, 56, 36, 110, 110, 110); //36
+  @include mixin.font-responsive(28, 32, 36, 110, 110, 110); //36
   font-weight: 600;
 }
 
 h4,
 .h4 {
-  @include mixin.font-responsive(48, 56, 32, 110, 110, 110); //32
+  @include mixin.font-responsive(24, 28, 32, 110, 110, 110); //32
   font-weight: 600;
 }
-
+.h4r {
+  @include mixin.font-responsive(24, 28, 32, 110, 110, 140); //32
+  font-weight: 400;
+}
 h5,
 .h5 {
-  @include mixin.font-responsive(48, 56, 28, 110, 110, 110); //28
+  @include mixin.font-responsive(20, 24, 28, 110, 110, 110); //28
   font-weight: 600;
+}
+.h5r {
+  @include mixin.font-responsive(20, 24, 28, 110, 110, 140); //28
+  font-weight: 400;
 }
 
 h6,
 .h6 {
-  @include mixin.font-responsive(48, 56, 24, 110, 110, 110); //24
+  @include mixin.font-responsive(18, 20, 24, 110, 110, 110); //24
   font-weight: 600;
+}
+.h6r {
+  @include mixin.font-responsive(18, 20, 24, 110, 110, 140); //24
+  font-weight: 400;
 }
 
 .subtitle-1 {
-  @include mixin.font-responsive(48, 56, 20, 110, 110, 140); //20
+  @include mixin.font-responsive(18, 18, 20, 150, 150, 140); //20
   font-weight: 400;
 }
 
 .subtitle-2 {
-  @include mixin.font-responsive(48, 56, 18, 110, 110, 140); //18-SB
+  @include mixin.font-responsive(16, 18, 18, 110, 110, 140); //18-SB
   font-weight: 500;
 }
 
 .text-l {
-  @include mixin.font-responsive(48, 56, 18, 110, 110, 150); //18-R
+  @include mixin.font-responsive(18, 18, 18, 150, 150, 150); //18-R
   font-weight: 400;
 }
 
 .text-body {
-  @include mixin.font-responsive(48, 56, 16, 110, 110, 150); //16-R
+  @include mixin.font-responsive(16, 16, 16, 110, 110, 150); //16-R
 }
 
 .text-body-bold {
-  @include mixin.font-responsive(48, 56, 16, 110, 110, 130); //16-B
+  @include mixin.font-responsive(16, 16, 16, 110, 110, 130); //16-B
   font-weight: 700;
 }
 
 .text-s {
-  @include mixin.font-responsive(48, 56, 14, 110, 110, 150); //14-R
+  @include mixin.font-responsive(14, 14, 14, 110, 110, 150); //14-R
 }
 
 .text-s-bold {
-  @include mixin.font-responsive(48, 56, 14, 110, 110, 130); //14-B
+  @include mixin.font-responsive(14, 14, 14, 110, 110, 130); //14-B
   font-weight: 700;
 }
 
 .text-xs {
-  @include mixin.font-responsive(48, 56, 12, 110, 110, 150); //12-R
+  @include mixin.font-responsive(12, 12, 12, 110, 110, 150); //12-R
 }
 
 .text-xs-bold {
-  @include mixin.font-responsive(48, 56, 12, 110, 110, 130); //12-B
+  @include mixin.font-responsive(12, 12, 12, 110, 110, 130); //12-B
   font-weight: 700;
 }
 
 .text-btn-l {
-  @include mixin.font-responsive(48, 56, 18, 110, 110, 100); //18-SB
+  @include mixin.font-responsive(18, 18, 18, 110, 110, 100); //18-SB
   font-weight: 500;
 }
 
 .text-btn-s {
-  @include mixin.font-responsive(48, 56, 14, 110, 110, 100); //14-SB
+  @include mixin.font-responsive(14, 14, 14, 110, 110, 100); //14-SB
   font-weight: 500;
 }
 

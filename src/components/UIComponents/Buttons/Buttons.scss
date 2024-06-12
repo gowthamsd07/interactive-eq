@@ -8,19 +8,29 @@
   height: auto;
   cursor: pointer;
   text-align: center;
+  padding: 16px 24px;
+  @media (min-width: 1200px) {
+    padding: 16px 24px;
+  }
 
   &--large {
-    @include mixin.font-responsive(48, 56, 18, 110, 110, 100); //18-SB
+    @include mixin.font-responsive(16, 18, 18, 110, 110, 100); //18-SB
     font-weight: 500;
   }
 
   &--small {
-    @include mixin.font-responsive(48, 56, 14, 110, 110, 100); //18-SB
+    @include mixin.font-responsive(14, 14, 14, 110, 110, 100); //18-SB
     font-weight: 500;
   }
 
   &--primary {
-    padding: 16px 24px;
+    color: var(--text-white-l);
+    font-weight: 500;
+    background: linear-gradient(93deg, #5a1c4f -8.33%, #e13d44 124.79%);
+    outline: none;
+    border: none;
+  }
+  &--primary {
     color: var(--text-white-l);
     font-weight: 500;
     background: linear-gradient(93deg, #5a1c4f -8.33%, #e13d44 124.79%);
@@ -29,20 +39,37 @@
   }
 
   &--secondary {
-    padding: 16px 24px;
     color: var(--text-white-l);
     font-weight: 500;
     background: transparent;
     outline: none;
     border: 1px solid var(--text-white-l);
   }
+  &--secondary-l {
+    color: var(--text-primary);
+    font-weight: 500;
+    background: transparent;
+    outline: none;
+    border: 1px solid var(--bg-icon-1-l);
+  }
 
   &--tertiary {
-    padding: 16px 24px;
     color: var(--text-white-l);
     font-weight: 500;
-    background: rgba(58, 56, 57, 0.7);
+    background: #2d272b;
     backdrop-filter: blur(3.5px);
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    border: none;
+  }
+  &--tertiary-l {
+    color: var(--text-primary);
+    font-weight: 500;
+    background: rgba(244, 244, 244, 0.7);
+    backdrop-filter: blur(13.5px);
     outline: none;
     display: flex;
     align-items: center;
