@@ -81,6 +81,10 @@ const DataDrivenPrecision = (props) => {
           pinSpacer: true,
           anticipatePin: 1,
           pin: true,
+          onToggle: (scrollTrigger) => {
+            // refresh because height start changes
+            scrollTrigger.refresh();
+          },
         });
       });
       mm.add("(min-width: 1024px)", () => {
