@@ -178,6 +178,7 @@ const HomeBanner = () => {
       <Row className="ieq-banner__video">
         <Col md={{ span: 20, offset: 2 }}>
           <img
+            rel="preload"
             className="w-100"
             src={BannerVideoPlaceholder}
             alt="interactive eq banner video animation"
