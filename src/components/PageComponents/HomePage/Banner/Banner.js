@@ -174,16 +174,16 @@ const HomeBanner = () => {
             <IconSet bg="bg" iconName="play" />
           </Button>
         </ScrollAnimation>
-        <Row className="ieq-banner__video">
-          <Col md={{ span: 20, offset: 2 }}>
-            <img
-              className="w-100"
-              src={BannerVideoPlaceholder}
-              alt="interactive eq banner video animation"
-            />
-          </Col>
-        </Row>
       </div>
+      <Row className="ieq-banner__video">
+        <Col md={{ span: 20, offset: 2 }}>
+          <img
+            className="w-100"
+            src={BannerVideoPlaceholder}
+            alt="interactive eq banner video animation"
+          />
+        </Col>
+      </Row>
       <div className="w-100vw canvas-wrapper">
         <ScrollAnimation
           animateOnce={true}

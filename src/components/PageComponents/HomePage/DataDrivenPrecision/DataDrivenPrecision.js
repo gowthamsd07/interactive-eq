@@ -459,7 +459,7 @@ const DataDrivenPrecision = (props) => {
     return () => ctx.revert();
   });
   return (
-    <section className="ieq-datadriven section-padding-y">
+    <section className="ieq-datadriven">
       <div className="container pin-container">
         <Row gutter={[{ md: 40, xl: 80 }, 24]}>
           <Col md={12} xl={{ span: 8, offset: 2 }}>
