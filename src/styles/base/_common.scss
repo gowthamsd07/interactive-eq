@@ -128,10 +128,16 @@ body {
   animation-name: fadeInUpNew !important;
 }
 .animate__fadeInLeft {
-  animation-name: fadeInLeftNew !important;
+  animation-name: fadeInUpNew !important;
+  @media (min-width: 1200px) {
+    animation-name: fadeInLeftNew !important;
+  }
 }
 .animate__fadeInRight {
-  animation-name: fadeInRightNew !important;
+  animation-name: fadeInUpNew !important;
+  @media (min-width: 1200px) {
+    animation-name: fadeInRightNew !important;
+  }
 }
 
 @keyframes fadeInSkew {

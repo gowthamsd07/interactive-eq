@@ -80,7 +80,11 @@
 
 .hire-metrics__modal-content {
   .modal-title {
-    max-width: 570px;
+    max-width: 270px;
+
+    @media (min-width: 768px) {
+      max-width: 570px;
+    }
   }
   .metrics-info {
     & > div {
@@ -94,6 +98,10 @@
   }
 
   .metrics-wrap {
-    margin-top: 72px;
+    margin-top: 40px;
+
+    @media (min-width: 768px) {
+      margin-top: 72px;
+    }
   }
 }

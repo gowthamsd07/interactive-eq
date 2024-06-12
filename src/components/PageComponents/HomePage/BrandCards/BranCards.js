@@ -32,8 +32,14 @@ const BrandCards = (props) => {
             Do you keep swinging and missing on your hires? Disappointment isn’t
             the only loss
           </h5>
-          <Row gutter={[24, 72]} className="metrics-wrap">
-            <Col xl={8} className="metrics-info">
+          <Row
+            gutter={[
+              { xs: 24, md: 56, xl: 24 },
+              { xs: 40, md: 56, xl: 72 },
+            ]}
+            className="metrics-wrap"
+          >
+            <Col xs={24} md={12} xl={8} className="metrics-info">
               <div>
                 <h4 className="text-primary-l">$17k</h4>
                 <p className="text-secondary-l text-s">
@@ -42,7 +48,7 @@ const BrandCards = (props) => {
               </div>
               <p className="text-body text-primary-l">-Career Builder</p>
             </Col>
-            <Col xl={8} className="metrics-info">
+            <Col xs={24} md={12} xl={8} className="metrics-info">
               <div>
                 <h4 className="text-primary-l">17%</h4>
                 <p className="text-secondary-l text-s">
@@ -51,7 +57,7 @@ const BrandCards = (props) => {
               </div>
               <p className="text-body text-primary-l">-US Dept of Labor</p>
             </Col>
-            <Col xl={8} className="metrics-info">
+            <Col xs={24} md={12} xl={8} className="metrics-info">
               <div>
                 <h4 className="text-primary-l">$100m</h4>
                 <p className="text-secondary-l text-s">
@@ -60,7 +66,7 @@ const BrandCards = (props) => {
               </div>
               <p className="text-body text-primary-l">-Brandon Hall Group</p>
             </Col>
-            <Col xl={8} className="metrics-info">
+            <Col xs={24} md={12} xl={8} className="metrics-info">
               <div>
                 <h4 className="text-primary-l">6mo</h4>
                 <p className="text-secondary-l text-s">
@@ -71,7 +77,7 @@ const BrandCards = (props) => {
                 -Harvard Business School
               </p>
             </Col>
-            <Col xl={8} className="metrics-info">
+            <Col xs={24} md={12} xl={8} className="metrics-info">
               <div>
                 <h4 className="text-primary-l">69%</h4>
                 <p className="text-secondary-l text-s">
@@ -80,7 +86,7 @@ const BrandCards = (props) => {
               </div>
               <p className="text-body text-primary-l">-Brandon Hall Group</p>
             </Col>
-            <Col xl={8} className="metrics-info">
+            <Col xs={24} md={12} xl={8} className="metrics-info">
               <div>
                 <h4 className="text-primary-l">$450b+</h4>
                 <p className="text-secondary-l text-s">
