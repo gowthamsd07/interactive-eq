@@ -43,7 +43,7 @@ const SoftSkillsCard = (props) => {
           animateOnce={true}
           offset={150}
           duration={0.5}
-          animateIn="animate__fadeIn"
+          animateIn="animate__fadeInUp"
         >
           {/* <img className="main-icon" src={props.iconUrl} alt={props.title} /> */}
           <video autoPlay loop muted className="icon-animation">

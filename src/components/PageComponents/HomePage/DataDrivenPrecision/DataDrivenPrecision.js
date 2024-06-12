@@ -455,7 +455,7 @@ const DataDrivenPrecision = (props) => {
         },
       });
     });
-
+    ScrollTrigger.refresh();
     return () => ctx.revert();
   });
   return (

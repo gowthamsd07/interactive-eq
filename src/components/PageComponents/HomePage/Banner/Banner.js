@@ -23,7 +23,7 @@ const HomeBanner = () => {
           // markers: true,
           scrub: true,
           start: "50px top",
-          end: "300% top",
+          end: "200% top",
           // pinSpacing: true,
           pinSpacer: true,
           anticipatePin: 1,
@@ -47,7 +47,7 @@ const HomeBanner = () => {
         },
       });
     });
-
+    ScrollTrigger.refresh();
     return () => cty.revert();
   });
 
