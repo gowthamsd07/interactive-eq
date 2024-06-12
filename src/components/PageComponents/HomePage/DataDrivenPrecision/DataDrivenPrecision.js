@@ -75,7 +75,7 @@ const DataDrivenPrecision = (props) => {
           id: "pin-sec1",
           // markers: true,
           scrub: true,
-          start: "25% top",
+          start: "27% top",
           end: "175% top",
           pinSpacing: true,
           pinSpacer: true,

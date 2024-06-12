@@ -23,8 +23,12 @@
   .brand-card-2 {
     border-radius: 40px;
     background: var(--bg-variant2-d);
-    padding: 56px 44px 40px 62px;
+    padding: 24px 16px;
     height: 100%;
+
+    @media (min-width: 768px) {
+      padding: 56px 44px 40px 62px;
+    }
 
     .skill-prop {
       display: flex;
