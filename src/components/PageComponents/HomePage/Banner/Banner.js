@@ -1,6 +1,7 @@
-import React, { useEffect, useLayoutEffect } from "react";
+import React, { Fragment, useEffect, useLayoutEffect, useState } from "react";
 
 import BannerVideoPlaceholder from "../../../../assets/images/home/mobile-mockup-banner.png";
+import WatchDemoVideo from "../../../../assets/images/home/watch-demo.mp4";
 import { BulkImg } from "../../../../pages/BulkImg";
 
 import "./Banner.scss";
@@ -10,6 +11,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrollAnimation from "react-animate-on-scroll";
 import { Col, Row } from "antd";
+import Modal from "../../../UIComponents/Modal/Modal";
 gsap.registerPlugin(ScrollTrigger);
 
 const HomeBanner = () => {
@@ -24,8 +26,8 @@ const HomeBanner = () => {
           scrub: true,
           start: "50px top",
           end: "200% top",
-          // pinSpacing: true,
-          pinSpacer: true,
+          pinSpacing: true,
+          pinSpacer: false,
           anticipatePin: 1,
           pin: true,
         });
@@ -47,7 +49,6 @@ const HomeBanner = () => {
         },
       });
     });
-    ScrollTrigger.refresh();
     return () => cty.revert();
   });
 
@@ -94,6 +95,8 @@ const HomeBanner = () => {
 
     function render() {
       // set size proportional to image
+      // ScrollTrigger.refresh();
+
       canvas.height =
         canvas.width *
         (images[airpods.frame].height / images[airpods.frame].width);
@@ -125,6 +128,8 @@ const HomeBanner = () => {
     const resizeCanvas = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
+      // ScrollTrigger.refresh();
+
       redrawImages(context);
     };
 
@@ -148,56 +153,85 @@ const HomeBanner = () => {
       window.removeEventListener("resize", resizeCanvas);
     };
   }, []);
+  const [showMap, setShowMap] = useState(false);
+
+  const openMapHandler = () => {
+    setShowMap(true);
+    document.body.style.overflow = "hidden";
+  };
+
+  const closeMapHandler = () => {
+    setShowMap(false);
+    document.body.style.overflow = "unset";
+  };
 
   return (
-    <section className="ieq-banner">
-      {/* <div className="container"> */}
-      <div className="ieq-banner__content">
-        <ScrollAnimation
-          animateOnce={true}
-          offset={-100}
-          animateIn="animate__fadeInUp"
-          animatePreScroll
-        >
-          <h1 className="display-3 text-center">
-            Hiring technology that accounts for humanity.
-          </h1>
-        </ScrollAnimation>
-        <ScrollAnimation
-          animateOnce={true}
-          offset={-100}
-          animateIn="animate__fadeInUp"
-          animatePreScroll
-        >
-          <Button size="large" tertiary>
-            Watch a Demo
-            <IconSet bg="bg" iconName="play" />
-          </Button>
-        </ScrollAnimation>
-      </div>
-      <Row className="ieq-banner__video">
-        <Col md={{ span: 20, offset: 2 }}>
-          <img
-            rel="preload"
-            className="w-100"
-            src={BannerVideoPlaceholder}
-            alt="interactive eq banner video animation"
-          />
-        </Col>
-      </Row>
-      <div className="w-100vw canvas-wrapper">
-        <ScrollAnimation
-          animateOnce={true}
-          offset={-100}
-          animateIn="animate__fadeInUp"
-          animatePreScroll
-        >
-          <canvas id="hero-lightpass"></canvas>
-        </ScrollAnimation>
-      </div>
+    <Fragment>
+      <Modal
+        show={showMap}
+        onCancel={closeMapHandler}
+        className="watch-demo-modal"
+        contentClass="watch-demo__modal-content"
+      >
+        <div>
+          <video className="w-100 h-100" autoPlay muted loop controls>
+            <source src={WatchDemoVideo} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </Modal>
 
-      {/* </div> */}
-    </section>
+      <section className="ieq-banner">
+        {/* <div className="container"> */}
+        <div className="ieq-banner__content">
+          <ScrollAnimation
+            animateOnce={true}
+            offset={-100}
+            animateIn="animate__fadeInUp"
+            animatePreScroll
+          >
+            <h1 className="display-3 text-center">
+              Hiring technology that accounts for humanity.
+            </h1>
+          </ScrollAnimation>
+          <ScrollAnimation
+            animateOnce={true}
+            offset={-100}
+            animateIn="animate__fadeInUp"
+            animatePreScroll
+          >
+            <div onClick={openMapHandler}>
+              <Button size="large" tertiary>
+                Watch a Demo
+                <IconSet bg="bg" iconName="play" />
+              </Button>
+            </div>
+          </ScrollAnimation>
+        </div>
+        <Row className="ieq-banner__video">
+          <Col md={{ span: 20, offset: 2 }}>
+            <img
+              rel="preload"
+              className="w-100"
+              src={BannerVideoPlaceholder}
+              alt="interactive eq banner video animation"
+            />
+          </Col>
+        </Row>
+        <div className="w-100vw canvas-wrapper">
+          <ScrollAnimation
+            animateOnce={true}
+            offset={-100}
+            animateIn="animate__fadeInUp"
+            animatePreScroll
+          >
+            <canvas id="hero-lightpass"></canvas>
+          </ScrollAnimation>
+        </div>
+
+        {/* </div> */}
+      </section>
+    </Fragment>
   );
 };
 

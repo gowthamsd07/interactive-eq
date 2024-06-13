@@ -36,14 +36,13 @@ const IeqVideo = () => {
 
       gsap.to(".mask-image", {
         scale: 1,
-        delay: 0.3,
         scrollTrigger: {
-          trigger: ".ieq-video",
-          start: "0px top",
+          trigger: ".ieq-video__wrap",
+          start: "10% top",
           end: "100% top",
           // markers: true,
           id: "anim-mark",
-          scrub: 3,
+          scrub: 2,
         },
       });
     });

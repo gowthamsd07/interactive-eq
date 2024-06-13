@@ -69,25 +69,25 @@ const DataDrivenPrecision = (props) => {
     });
 
     let ctx = gsap.context(() => {
-      mm.add("(max-width: 1023px)", () => {
-        ScrollTrigger.create({
-          trigger: ".ieq-datadriven .container",
-          id: "pin-sec1",
-          // markers: true,
-          scrub: true,
-          start: "23% top",
-          end: "185% top",
-          pinSpacing: true,
-          pinSpacer: true,
-          anticipatePin: 1,
-          pin: true,
-          onToggle: (scrollTrigger) => {
-            // refresh because height start changes
-            scrollTrigger.refresh();
-          },
-        });
-      });
-      mm.add("(min-width: 1024px)", () => {
+      // mm.add("(max-width: 1023px)", () => {
+      //   ScrollTrigger.create({
+      //     trigger: ".ieq-datadriven .container",
+      //     id: "pin-sec1",
+      //     // markers: true,
+      //     scrub: true,
+      //     start: "23% top",
+      //     end: "185% top",
+      //     pinSpacing: true,
+      //     pinSpacer: true,
+      //     anticipatePin: 1,
+      //     pin: true,
+      //     onToggle: (scrollTrigger) => {
+      //       // refresh because height start changes
+      //       scrollTrigger.refresh();
+      //     },
+      //   });
+      // });
+      mm.add("(min-width: 1200px)", () => {
         ScrollTrigger.create({
           trigger: ".ieq-datadriven",
           id: "pin-sec1",
@@ -493,7 +493,7 @@ const DataDrivenPrecision = (props) => {
           </Col>
           <Col
             md={{ span: 20, offset: 2 }}
-            xl={{ span: 6 }}
+            xl={{ span: 6, offset: 0 }}
             className="slider-contents"
           >
             <div className="slider-content-item-wrap">

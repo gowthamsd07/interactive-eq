@@ -26,6 +26,7 @@ const BrandCards = (props) => {
         show={showMap}
         onCancel={closeMapHandler}
         contentClass="hire-metrics__modal-content"
+        className="brand-card-modal"
       >
         <div className="metric-container">
           <h5 className="h5r text-primary-l modal-title">

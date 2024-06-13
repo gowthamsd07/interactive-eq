@@ -195,3 +195,36 @@ export const SKILLS_ITEMS = [
     desc: "For those who want to get it right!",
   },
 ];
+
+export const CARD_SLIDER_ITEMS = [
+  {
+    id: 1,
+    imgUrl: DataDrivenImage1,
+    AltText: "Candidate ratings",
+    imgItemclass: "1",
+    contentItemclass: "1",
+    title: "Predictive EQ Insights and Real-World Simulations",
+    desc: "Go beyond traditional IQ measures by gauging a candidate’s potential for future success with our advanced EQ assessment. Test candidates under pressure by immersing them in realistic business scenarios, evaluating their responses in real-time.",
+    buttonText: "How smart is Interactive EQ?",
+  },
+  {
+    id: 2,
+    imgUrl: DataDrivenImage2,
+    AltText: "Candidate ratings",
+    imgItemclass: "2",
+    contentItemclass: "2",
+    title: "Immersive and AI-Driven Evaluations",
+    desc: "Engage candidates with stunning visuals and rich dialogues for a deep, immersive evaluation experience. Eliminate bias and enhance accuracy with our generative AI, delivering fair and reliable candidate ratings",
+    buttonText: "Is it for me?",
+  },
+  {
+    id: 3,
+    imgUrl: DataDrivenImage3,
+    AltText: "Candidate ratings",
+    imgItemclass: "3",
+    contentItemclass: "3",
+    title: "Effortless Benchmarking and Integration",
+    desc: "Compare candidate performance against your top employees and industry standards to make informed hiring decisions. Seamlessly incorporate iEQ into your existing ATS with no additional training required, streamlining your evaluation process.",
+    buttonText: "Why real-life scenarios?",
+  },
+];
