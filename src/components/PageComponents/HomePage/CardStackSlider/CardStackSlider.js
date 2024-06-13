@@ -61,11 +61,11 @@ const CardStackSlider = (props) => {
         scrollTrigger: {
           trigger: ".slider-wrapper",
           start: "-280px top",
-          end: "+=168%",
+          end: "61% top",
           pin: ".content-list-wrapper",
           scrub: true,
           // markers: true,
-          // id: "new",
+          id: "new",
         },
       });
 
