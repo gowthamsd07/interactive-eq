@@ -41,7 +41,7 @@ const HomeBanner = () => {
           // markers: true,
           id: "banner-content",
           scrub: false,
-          start: "820px top",
+          start: "700px top",
           end: "2100px top",
           toggleActions: "play none none reverse",
         },

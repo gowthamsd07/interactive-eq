@@ -14,7 +14,7 @@
 
   @media (min-width: 1200px) {
     min-height: 100vh;
-    padding: 0;
+    padding: 112px 0 160px 0;
   }
 
   &__content {
@@ -27,16 +27,16 @@
       min-height: 236px;
     }
 
-    z-index: 2;
+    z-index: 3;
     width: 100%;
 
-    @media (min-width: 1200px) {
-      position: absolute;
-      transform: translateX(-50%);
-      top: 10%;
-      left: 50%;
-      width: auto;
-    }
+    // @media (min-width: 1200px) {
+    //   position: absolute;
+    //   transform: translateX(-50%);
+    //   top: 10%;
+    //   left: 50%;
+    //   width: auto;
+    // }
     h1 {
       background: linear-gradient(93deg, #5a1c4f -8.33%, #e13d44 124.79%);
       background-clip: text;
@@ -82,6 +82,12 @@
 
     @media (min-width: 1200px) {
       display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
     }
     .animated {
       height: 100%;
