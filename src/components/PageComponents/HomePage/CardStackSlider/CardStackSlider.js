@@ -6,7 +6,7 @@ import IconSet from "../../../UIComponents/IconSet/IconSet";
 import "./CardStackSlider.scss";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import { noop } from "antd/es/_util/warning";
+// import { noop } from "antd/es/_util/warning";
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.core.globals("ScrollTrigger", ScrollTrigger);
