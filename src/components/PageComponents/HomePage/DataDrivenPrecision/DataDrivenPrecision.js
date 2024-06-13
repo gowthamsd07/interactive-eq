@@ -73,7 +73,7 @@ const DataDrivenPrecision = (props) => {
         ScrollTrigger.create({
           trigger: ".ieq-datadriven .container",
           id: "pin-sec1",
-          markers: true,
+          // markers: true,
           scrub: true,
           start: "23% top",
           end: "185% top",
