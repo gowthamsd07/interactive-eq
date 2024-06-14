@@ -9,7 +9,6 @@ import Button from "../../../UIComponents/Buttons/Buttons";
 import IconSet from "../../../UIComponents/IconSet/IconSet";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import ScrollAnimation from "react-animate-on-scroll";
 import { Col, Row } from "antd";
 import Modal from "../../../UIComponents/Modal/Modal";
 gsap.registerPlugin(ScrollTrigger);

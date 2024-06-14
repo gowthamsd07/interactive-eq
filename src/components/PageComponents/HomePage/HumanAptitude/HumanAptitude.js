@@ -13,17 +13,37 @@ const HumanAptitude = () => {
   useLayoutEffect(() => {
     let cty = gsap.context(() => {
       mm.add("(min-width: 1200px)", () => {
+        gsap.set(".video-wrap", {
+          opacity: 0.5,
+          scale: 0.7,
+        });
+
         ScrollTrigger.create({
           trigger: ".video-wrap",
           id: "pin-mark",
           // markers: true,
           scrub: 3,
-          start: "0% top",
+          start: "-15% top",
           end: "150% top",
           pinSpacing: false,
           pinSpacer: false,
           anticipatePin: 1,
-          pin: ".video-wrap",
+          immediateRender: false,
+          pin: true,
+        });
+
+        gsap.to(".video-wrap", {
+          opacity: 1,
+          scale: 1,
+          immediateRender: false,
+          scrollTrigger: {
+            trigger: ".ieq-aptitude",
+            // markers: true,
+            id: "img-1",
+            scrub: 3,
+            start: "-40% top",
+            end: "0% top",
+          },
         });
 
         gsap.to(".video-wrap", {
@@ -31,12 +51,12 @@ const HumanAptitude = () => {
           scale: 0.7,
           immediateRender: false,
           scrollTrigger: {
-            trigger: ".video-wrap",
+            trigger: ".ieq-aptitude",
             // markers: true,
-            id: "img-1",
+            id: "img-2",
             scrub: 3,
-            start: "0% top",
-            end: "50% top",
+            start: "40% top",
+            end: "60% top",
           },
         });
       });
