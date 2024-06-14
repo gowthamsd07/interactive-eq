@@ -100,7 +100,7 @@ const BrandCards = (props) => {
         </div>
       </Modal>
 
-      <section className="ieq-brand-cards section-padding-y">
+      <section className="ieq-brand-cards section-padding-y bg-surface">
         <div className="container">
           <div className="ieq-brand-cards__title">
             <ScrollAnimation
@@ -147,20 +147,20 @@ const BrandCards = (props) => {
                     delay={400}
                     animateIn="animate__fadeInRight"
                   >
-                    <div className="brand-card-2 flex-all-center flex-column">
-                      <h6 className="text-white text-center">
+                    <div className="brand-card-2  flex-all-center flex-column">
+                      <h6 className="text-primary-l text-center">
                         As per National Soft Skills Association
                       </h6>
                       <div className="skill-prop">
                         <div>
                           <h4 className="text-white">15%</h4>
-                          <p className="text-s text-secondary">
+                          <p className="text-s text-secondary-l">
                             of an employee’s success comes from technical skills
                           </p>
                         </div>
                         <div>
                           <h4 className="text-white">85%</h4>
-                          <p className="text-s text-secondary">
+                          <p className="text-s text-secondary-l">
                             of an employee’s success comes from soft skills
                           </p>
                         </div>

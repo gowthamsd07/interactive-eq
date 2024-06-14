@@ -16,20 +16,25 @@ const SoftSkills = (props) => {
       for (const card of document.querySelectorAll(".soft-skills-card")) {
         gsap.set(card, {
           y: "50px",
-          opacity: 0,
+          scale: 0.9,
+          // opacity: 0,
           duration: 0.3,
         });
         gsap.to(card, {
-          opacity: 1,
+          // opacity: 1,
           y: 0,
+          // keyframes: {
+          //   scale: [1.04, 0.97, 1],
+          // },
+          scale: 1,
           immediateRender: false,
           scrollTrigger: {
             trigger: card,
             // markers: true,
             id: "img-1",
-            scrub: false,
-            start: "-20% center",
-            end: "100% center",
+            scrub: true,
+            start: "-40% center",
+            end: "80% center",
             toggleActions: "play none none none",
           },
         });
@@ -50,7 +55,7 @@ const SoftSkills = (props) => {
         gsap.to(textwrappers[i], {
           opacity: 1,
           y: 0,
-          delay: 0.1,
+          delay: 0.2,
           duration: 0.5,
 
           immediateRender: false,
@@ -59,7 +64,7 @@ const SoftSkills = (props) => {
             // markers: true,
             id: "img-1",
             scrub: false,
-            start: "-20% center",
+            start: "-50% center",
             end: "100% center",
             toggleActions: "play none none none",
           },

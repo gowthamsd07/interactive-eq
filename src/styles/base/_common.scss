@@ -128,16 +128,10 @@ body {
   animation-name: fadeInUpNew !important;
 }
 .animate__fadeInLeft {
-  animation-name: fadeInUpNew !important;
-  @media (min-width: 1200px) {
-    animation-name: fadeInLeftNew !important;
-  }
+  animation-name: fadeInUpCard !important;
 }
 .animate__fadeInRight {
-  animation-name: fadeInUpNew !important;
-  @media (min-width: 1200px) {
-    animation-name: fadeInRightNew !important;
-  }
+  animation-name: fadeInUpCard !important;
 }
 
 @keyframes fadeInSkew {
@@ -155,6 +149,17 @@ body {
   0% {
     opacity: 0;
     transform: translateY(40%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUpCard {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
   }
   to {
     opacity: 1;

@@ -25,13 +25,27 @@ const HumanAptitude = () => {
           anticipatePin: 1,
           pin: ".video-wrap",
         });
+
+        gsap.to(".video-wrap", {
+          opacity: 0.5,
+          scale: 0.7,
+          immediateRender: false,
+          scrollTrigger: {
+            trigger: ".video-wrap",
+            // markers: true,
+            id: "img-1",
+            scrub: 3,
+            start: "0% top",
+            end: "50% top",
+          },
+        });
       });
     });
     ScrollTrigger.refresh();
     return () => cty.revert();
   });
   return (
-    <section className="ieq-aptitude section-padding-y ">
+    <section className="ieq-aptitude  bg-surface">
       <div className="container">
         <div className="ieq-aptitude__title">
           <h2 className="text-white text-center">

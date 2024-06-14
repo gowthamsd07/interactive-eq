@@ -22,7 +22,7 @@
 
   .brand-card-2 {
     border-radius: 40px;
-    background: var(--bg-variant2-d);
+    background: var(--bg-variant2-l);
     padding: 24px 16px;
     height: 100%;
 
@@ -74,6 +74,9 @@
 
     button {
       margin-top: 54px;
+
+      border-color: var(--bg-icon-1-l);
+      color: var(--text-primary);
     }
   }
 

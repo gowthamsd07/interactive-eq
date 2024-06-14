@@ -57,31 +57,86 @@ const CardStackSlider = (props) => {
     let ctx = gsap.context(() => {
       const images = gsap.utils.toArray(".image-list__item");
       const rightElements = gsap.utils.toArray(".content-list__item");
+      // gsap.set(".content-list__item", {
+      //   opacity: 0.3,
+      //   duration: 0.3,
+      // });
       gsap.timeline({
         scrollTrigger: {
-          trigger: ".slider-wrapper",
-          start: "-280px top",
-          end: "61% top",
-          pin: ".content-list-wrapper",
+          trigger: ".ieq-cardslider",
+          start: "0px top",
+          end: "300% top",
+          pin: true,
           scrub: true,
           // markers: true,
           id: "new",
         },
       });
 
+      gsap.to(".image-list__item-2", {
+        marginTop: -685,
+        immediateRender: false,
+        scrollTrigger: {
+          trigger: ".image-list__item-1",
+          // markers: true,
+          id: "img-1",
+          scrub: 3,
+          start: "50% top",
+          end: "150% top",
+        },
+      });
+      gsap.to(".image-list__item-1", {
+        opacity: 0.4,
+        scale: 0.8,
+        immediateRender: false,
+        scrollTrigger: {
+          trigger: ".image-list__item-1",
+          // markers: true,
+          id: "img-1",
+          scrub: 3,
+          start: "60% top",
+          end: "160% top",
+        },
+      });
+      gsap.to(".image-list__item-3", {
+        marginTop: -685,
+        immediateRender: false,
+        scrollTrigger: {
+          trigger: ".image-list__item-2",
+          // markers: true,
+          id: "img-1",
+          scrub: 3,
+          start: "100% top",
+          end: "200% top",
+        },
+      });
+      gsap.to(".image-list__item-2", {
+        opacity: 0.4,
+        scale: 0.8,
+        immediateRender: false,
+        scrollTrigger: {
+          trigger: ".image-list__item-2",
+          // markers: true,
+          id: "img-1",
+          scrub: 3,
+          start: "100% top",
+          end: "200% top",
+        },
+      });
+
       images.forEach((img, i) => {
         gsap.to(rightElements, {
           yPercent: -(100 * i),
-          // duration: 1,
           ease: "none",
+          // delay: 0.2,
           immediateRender: false,
           scrollTrigger: {
             trigger: img,
             // markers: true,
             id: "cont",
             scrub: false,
-            start: "10% center",
-            end: "100% center",
+            start: "60% center",
+            end: "80% center",
             toggleActions: "play none none reverse",
           },
         });
@@ -90,8 +145,8 @@ const CardStackSlider = (props) => {
     return () => ctx.revert();
   });
   return (
-    <section className="ieq-cardslider">
-      <div className="container section-padding-top">
+    <section className="ieq-cardslider bg-surface">
+      <div className="container ">
         <Row className="slider-wrapper">
           <Col xl={{ span: 10, offset: 2 }} className="image-list-wrapper">
             <ul className="image-list">

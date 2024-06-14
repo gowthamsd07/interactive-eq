@@ -21,9 +21,9 @@ const HomeBanner = () => {
       mm.add("(min-width: 1200px)", () => {
         ScrollTrigger.create({
           trigger: ".ieq-banner",
-          id: "pin-section",
+          id: "pin-section1",
           // markers: true,
-          scrub: true,
+          scrub: 1,
           start: "50px top",
           end: "200% top",
           pinSpacing: true,
@@ -31,6 +31,18 @@ const HomeBanner = () => {
           anticipatePin: 1,
           pin: true,
         });
+        // ScrollTrigger.create({
+        //   trigger: ".additional-pin",
+        //   id: "pin-section2",
+        //   markers: true,
+        //   scrub: true,
+        //   start: "100% cenetr",
+        //   end: "400% center",
+        //   pinSpacing: true,
+        //   pinSpacer: false,
+        //   anticipatePin: 1,
+        //   pin: true,
+        // });
       });
 
       gsap.to(".ieq-banner__content", {
@@ -95,7 +107,7 @@ const HomeBanner = () => {
 
     function render() {
       // set size proportional to image
-      // ScrollTrigger.refresh();
+      ScrollTrigger.refresh();
 
       canvas.height =
         canvas.width *
@@ -128,8 +140,6 @@ const HomeBanner = () => {
     const resizeCanvas = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
-      // ScrollTrigger.refresh();
-
       redrawImages(context);
     };
 
@@ -144,7 +154,9 @@ const HomeBanner = () => {
       const y = (canvas.height - scaledHeight) / 2; // Center vertically
       ctx.drawImage(images[airpods.frame], x, y, scaledWidth, scaledHeight);
     };
+
     resizeCanvas();
+
     // Event listener for window resize
     window.addEventListener("resize", resizeCanvas);
 
@@ -181,32 +193,19 @@ const HomeBanner = () => {
         </div>
       </Modal>
 
-      <section className="ieq-banner">
+      <section className="ieq-banner additional-pin">
         {/* <div className="container"> */}
         <div className="ieq-banner__content">
-          <ScrollAnimation
-            animateOnce={true}
-            offset={-100}
-            animateIn="animate__fadeInUp"
-            animatePreScroll
-          >
-            <h1 className="display-3 text-center">
-              Hiring technology that accounts for humanity.
-            </h1>
-          </ScrollAnimation>
-          <ScrollAnimation
-            animateOnce={true}
-            offset={-100}
-            animateIn="animate__fadeInUp"
-            animatePreScroll
-          >
-            <div onClick={openMapHandler}>
-              <Button size="large" tertiary>
-                Watch a Demo
-                <IconSet bg="bg" iconName="play" />
-              </Button>
-            </div>
-          </ScrollAnimation>
+          <h1 className="display-3 text-center">
+            Hiring technology that accounts for humanity.
+          </h1>
+
+          <div onClick={openMapHandler}>
+            <Button size="large" tertiary>
+              <IconSet bg="bg" iconName="play" />
+              Watch a Demo
+            </Button>
+          </div>
         </div>
         <Row className="ieq-banner__video">
           <Col md={{ span: 20, offset: 2 }}>
@@ -219,14 +218,7 @@ const HomeBanner = () => {
           </Col>
         </Row>
         <div className="w-100vw canvas-wrapper">
-          <ScrollAnimation
-            animateOnce={true}
-            offset={-100}
-            animateIn="animate__fadeInUp"
-            animatePreScroll
-          >
-            <canvas id="hero-lightpass"></canvas>
-          </ScrollAnimation>
+          <canvas id="hero-lightpass"></canvas>
         </div>
 
         {/* </div> */}

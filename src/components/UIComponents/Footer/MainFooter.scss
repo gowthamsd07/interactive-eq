@@ -1,7 +1,13 @@
 .main-footer {
-  background: rgba(58, 56, 57, 0.7);
+  background: var(--bg-variant2-l);
   backdrop-filter: blur(3.5px);
   padding: 40px 0;
+
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
 
   @media (min-width: 768px) {
     padding: 60px 0;

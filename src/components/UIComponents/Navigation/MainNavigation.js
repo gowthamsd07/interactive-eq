@@ -5,7 +5,7 @@ import MainHeader from "./MainHeader";
 import NavLinks from "./NavLinks";
 import SideDrawer from "./SideDrawer";
 import Backdrop from "../Backdrop/Backdrop";
-import Brandlogo from "../../../assets/images/shared/interactive-eq-logo.svg";
+import Brandlogo from "../../../assets/images/shared/header-logo.svg";
 import "./MainNavigation.scss";
 import Button from "../Buttons/Buttons";
 import IconSet from "../IconSet/IconSet";
