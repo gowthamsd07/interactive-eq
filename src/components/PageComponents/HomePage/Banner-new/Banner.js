@@ -97,7 +97,7 @@ const HomeBanner = () => {
         scrub: 3,
         start: "50px top",
         end: "1800px top",
-        // markers: true,
+        markers: true,
         id: "video-animation",
       },
       onUpdate: render,

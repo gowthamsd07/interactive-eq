@@ -109,9 +109,9 @@ const BrandCards = (props) => {
               duration={0.8}
               animateIn="animate__fadeInUp"
             >
-              <h1 className="display-3 text-white text-center">
+              <h3 className=" text-white text-center">
                 Get the right fit every time
-              </h1>
+              </h3>
             </ScrollAnimation>
           </div>
           <Row className="mt-80">

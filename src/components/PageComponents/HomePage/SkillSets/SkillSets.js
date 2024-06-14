@@ -88,7 +88,7 @@ const SkillSets = (props) => {
             </Row> */}
           </Col>
         </Row>
-        <div className="flex-all-center skill-button-wrap mt-120">
+        <div className="flex-all-center skill-button-wrap">
           <Button size="large" secondary>
             Learn More
           </Button>

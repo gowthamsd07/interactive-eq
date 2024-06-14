@@ -48,10 +48,9 @@ const HumanAptitude = () => {
     <section className="ieq-aptitude  bg-surface">
       <div className="container">
         <div className="ieq-aptitude__title">
-          <h2 className="text-white text-center">
-            Deeper than a resume. Now you can objectively measure true
-            differentiators.
-          </h2>
+          <h3 className="text-white text-center">
+            Deeper than just resume and social profiles
+          </h3>
           {/* <p className="text-secondary subtitle-1 text-center">
             Look beyond job titles, work samples, and social profiles. Now you
             can objectively measure a true differentiator.

@@ -98,13 +98,11 @@ const SoftSkills = (props) => {
     <section className="ieq-softskills section-padding-y bg-surface-l">
       <div className="container">
         <Row gutter={[{ md: 40, xl: 80 }, 24]}>
-          <Col md={12} xl={{ span: 8, offset: 2 }}>
-            <h1 className="text-primary-l primary-title">
+          <Col xl={{ span: 12, offset: 6 }} className="ieq-softskills__title">
+            <h3 className="text-primary-l text-center primary-title">
               What is human aptitude?
-            </h1>
-          </Col>
-          <Col md={12} xl={{ span: 12 }}>
-            <p className="subtitle-1 text-secondary-l">
+            </h3>
+            <p className="subtitle-1 text-center text-secondary-l">
               IQ measures intelligence. EQ measures emotional intelligence.
               Human aptitude is the application of EQ to job candidate
               evaluation. A rich, experiential assessment from Interactive EQ
@@ -134,10 +132,10 @@ const SoftSkills = (props) => {
             ))}
           </Col>
         </Row>
-        <div className="ieq-softskills__buttons mt-80">
-          <Button size="large" primary>
+        <div className="ieq-softskills__buttons">
+          {/* <Button size="large" primary>
             Request Demo
-          </Button>
+          </Button> */}
           <Button size="large" secondary>
             Learn More
           </Button>

@@ -5,7 +5,7 @@
   position: relative;
 
   @media (min-width: 1200px) {
-    min-height: 1138px;
+    min-height: 1069px;
   }
   .skill-set-item {
     p {
@@ -19,5 +19,9 @@
   .button--secondary {
     color: var(--text-primary-l) !important;
     border: 1px solid var(--bg-icon-1-l) !important;
+  }
+
+  .skill-button-wrap {
+    margin-top: 52px;
   }
 }
