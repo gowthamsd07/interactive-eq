@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/interactive-eq/static/css/main.500cce06.css",
-    "main.js": "/interactive-eq/static/js/main.196f0fe7.js",
-    "static/css/342.76ec3db9.chunk.css": "/interactive-eq/static/css/342.76ec3db9.chunk.css",
-    "static/js/342.50cb1826.chunk.js": "/interactive-eq/static/js/342.50cb1826.chunk.js",
+    "main.js": "/interactive-eq/static/js/main.f16bec90.js",
+    "static/css/342.ec611659.chunk.css": "/interactive-eq/static/css/342.ec611659.chunk.css",
+    "static/js/342.ddb9812e.chunk.js": "/interactive-eq/static/js/342.ddb9812e.chunk.js",
     "static/js/453.9eff84bd.chunk.js": "/interactive-eq/static/js/453.9eff84bd.chunk.js",
     "static/js/530.b6303530.chunk.js": "/interactive-eq/static/js/530.b6303530.chunk.js",
     "static/media/ieq-video.mp4": "/interactive-eq/static/media/ieq-video.e7709c058f8ce0ffd548.mp4",
@@ -387,8 +387,8 @@
     "static/media/skill-slider-7.png": "/interactive-eq/static/media/skill-slider-7.4d7f40281e272db6a4a3.png",
     "static/media/skill-slider-6.png": "/interactive-eq/static/media/skill-slider-6.8ee57b705fb7b46643bf.png",
     "static/media/skill-slider-5.png": "/interactive-eq/static/media/skill-slider-5.de984a87bf68e2445c69.png",
-    "static/media/footer-logo.svg": "/interactive-eq/static/media/footer-logo.8b8242b576ee1d6979c60be4554653b7.svg",
-    "static/media/header-logo.svg": "/interactive-eq/static/media/header-logo.21164baadb349723fc232b739394b221.svg",
+    "static/media/footer-logo.svg": "/interactive-eq/static/media/footer-logo.c56d531cfa911fd80696c42854d83984.svg",
+    "static/media/header-logo.svg": "/interactive-eq/static/media/header-logo.b817e5ef343284e176ac43ce2ecfc546.svg",
     "static/media/shield-6.svg": "/interactive-eq/static/media/shield-6.1d08f28d0531e3e2b0e1331ff1ea951c.svg",
     "static/media/section-ieqvideo.svg": "/interactive-eq/static/media/section-ieqvideo.b9d1267c716477edda1cbe9883c5628a.svg",
     "static/media/shield-3.svg": "/interactive-eq/static/media/shield-3.ac5a0cda409dc41b2a8d88f800eff1c4.svg",
@@ -398,14 +398,14 @@
     "static/media/shield-1.svg": "/interactive-eq/static/media/shield-1.e65643f51ebf74eaddff180b3a0ecf02.svg",
     "index.html": "/interactive-eq/index.html",
     "main.500cce06.css.map": "/interactive-eq/static/css/main.500cce06.css.map",
-    "main.196f0fe7.js.map": "/interactive-eq/static/js/main.196f0fe7.js.map",
-    "342.76ec3db9.chunk.css.map": "/interactive-eq/static/css/342.76ec3db9.chunk.css.map",
-    "342.50cb1826.chunk.js.map": "/interactive-eq/static/js/342.50cb1826.chunk.js.map",
+    "main.f16bec90.js.map": "/interactive-eq/static/js/main.f16bec90.js.map",
+    "342.ec611659.chunk.css.map": "/interactive-eq/static/css/342.ec611659.chunk.css.map",
+    "342.ddb9812e.chunk.js.map": "/interactive-eq/static/js/342.ddb9812e.chunk.js.map",
     "453.9eff84bd.chunk.js.map": "/interactive-eq/static/js/453.9eff84bd.chunk.js.map",
     "530.b6303530.chunk.js.map": "/interactive-eq/static/js/530.b6303530.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.500cce06.css",
-    "static/js/main.196f0fe7.js"
+    "static/js/main.f16bec90.js"
   ]
 }
