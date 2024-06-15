@@ -22,6 +22,7 @@ const MainFooter = (props) => {
           scrub: false,
           start: "3000px top",
           end: "4000px top",
+          toggleActions: "play none none reverse",
         },
       });
     });

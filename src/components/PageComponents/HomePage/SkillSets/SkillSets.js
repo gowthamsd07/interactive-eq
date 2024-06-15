@@ -4,6 +4,7 @@ import { Col, Row } from "antd";
 import "./SkillSets.scss";
 import Button from "../../../UIComponents/Buttons/Buttons";
 import ScrollAnimation from "react-animate-on-scroll";
+import { Tween, Reveal } from "react-gsap";
 
 const SkillSetItem = (props) => {
   return (
@@ -30,16 +31,34 @@ const SkillSets = (props) => {
       <div className="container">
         <Row gutter={[24, 24]}>
           <Col md={12} xl={{ span: 8, offset: 4 }}>
-            <h3 className="text-primary-l">
-              Tools to Elevate Your Recruitment
-            </h3>
+            <Reveal>
+              <Tween
+                from={{ y: "50px", opacity: 0 }}
+                to={{ y: "0px", opacity: 1 }}
+                duration={1}
+                ease="Power1.out(1.7)"
+              >
+                <h3 className="text-primary-l">
+                  Tools to elevate your recruitment
+                </h3>
+              </Tween>
+            </Reveal>
           </Col>
           <Col md={12} xl={{ span: 8 }}>
-            <p className="subtitle-1 text-secondary-l">
-              Technical skills have become commoditized. Hirers need to look
-              beyond job titles, results and work samples. Human aptitude is the
-              true differentiator. Now you can objectively measure it.
-            </p>
+            <Reveal>
+              <Tween
+                from={{ y: "50px", opacity: 0 }}
+                to={{ y: "0px", opacity: 1 }}
+                duration={1}
+                ease="Power1.out(1.7)"
+              >
+                <p className="subtitle-1 text-secondary-l">
+                  Technical skills have become commoditized. Hirers need to look
+                  beyond job titles, results and work samples. Human aptitude is
+                  the true differentiator. Now you can objectively measure it.
+                </p>
+              </Tween>
+            </Reveal>
           </Col>
         </Row>
         <Row gutter={[24, 24]} className="mt-80">

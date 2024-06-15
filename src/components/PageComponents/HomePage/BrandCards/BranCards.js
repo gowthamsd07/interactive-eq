@@ -102,7 +102,7 @@ const BrandCards = (props) => {
 
       <section className="ieq-brand-cards section-padding-y bg-surface">
         <div className="container">
-          <div className="ieq-brand-cards__title">
+          {/* <div className="ieq-brand-cards__title">
             <ScrollAnimation
               animateOnce={true}
               offset={300}
@@ -113,7 +113,7 @@ const BrandCards = (props) => {
                 Get the right fit every time
               </h3>
             </ScrollAnimation>
-          </div>
+          </div> */}
           <Row className="mt-80">
             <Col xl={{ offset: 4, span: 16 }}>
               <Row gutter={[24, 24]}>

@@ -206,6 +206,10 @@ export const CARD_SLIDER_ITEMS = [
     title: "Predictive EQ Insights and Real-World Simulations",
     desc: "Go beyond traditional IQ measures by gauging a candidate’s potential for future success with our advanced EQ assessment. Test candidates under pressure by immersing them in realistic business scenarios, evaluating their responses in real-time.",
     buttonText: "How smart is Interactive EQ?",
+    modalTitle: "How smart is interactive EQ?",
+    modalDesc:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    modalButtonText: "Learn More",
   },
   {
     id: 2,
@@ -216,6 +220,10 @@ export const CARD_SLIDER_ITEMS = [
     title: "Immersive and AI-Driven Evaluations",
     desc: "Engage candidates with stunning visuals and rich dialogues for a deep, immersive evaluation experience. Eliminate bias and enhance accuracy with our generative AI, delivering fair and reliable candidate ratings",
     buttonText: "Is it for me?",
+    modalTitle: "Is it for me?",
+    modalDesc:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    modalButtonText: "Learn More",
   },
   {
     id: 3,
@@ -226,5 +234,9 @@ export const CARD_SLIDER_ITEMS = [
     title: "Effortless Benchmarking and Integration",
     desc: "Compare candidate performance against your top employees and industry standards to make informed hiring decisions. Seamlessly incorporate iEQ into your existing ATS with no additional training required, streamlining your evaluation process.",
     buttonText: "Why real-life scenarios?",
+    modalTitle: "Why real-life scenarios?",
+    modalDesc:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    modalButtonText: "Learn More",
   },
 ];

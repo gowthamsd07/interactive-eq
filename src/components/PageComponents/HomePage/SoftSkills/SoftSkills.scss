@@ -1,4 +1,9 @@
 .ieq-softskills {
+  z-index: 2;
+  position: relative;
+  transition-timing-function: cubic-bezier(0, 0, 0.35, 1) !important;
+  transition-duration: 0.8s;
+  transition-property: all;
   &__title {
     p {
       margin-top: 40px;

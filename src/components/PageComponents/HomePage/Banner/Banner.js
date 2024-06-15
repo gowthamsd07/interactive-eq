@@ -11,6 +11,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Col, Row } from "antd";
 import Modal from "../../../UIComponents/Modal/Modal";
+import { Timeline, Tween } from "react-gsap";
 gsap.registerPlugin(ScrollTrigger);
 
 const HomeBanner = () => {
@@ -23,37 +24,64 @@ const HomeBanner = () => {
           id: "pin-section1",
           // markers: true,
           scrub: 1,
-          start: "50px top",
-          end: "200% top",
-          pinSpacing: true,
+          start: "-98px top",
+          end: "100% top",
+          pinSpacing: false,
           pinSpacer: false,
           anticipatePin: 1,
-          pin: true,
-          // onLeave: () => {
-          //   gsap.to(".ieq-banner", {
-          //     scale: 0.8,
-          //     opacity: 0,
-          //   });
-          // },
-          // onEnterBack: () => {
-          //   gsap.to(".ieq-banner", {
-          //     scale: 1,
-          //     opacity: 1,
-          //   });
-          // },
-          toggleActions: "play none none reverse",
+          pin: ".content-pin",
+        });
+        gsap.to(".canvas-wrapper", {
+          y: "-98px",
+          immediateRender: false,
+          scrollTrigger: {
+            trigger: ".ieq-banner",
+            // markers: true,
+            id: "video-move",
+            scrub: true,
+            start: "-98px top",
+            end: "40px top",
+            toggleActions: "play none none reverse",
+          },
+        });
+        gsap.to(".ieq-banner__content", {
+          marginTop: "-98px",
+          immediateRender: false,
+          scrollTrigger: {
+            trigger: ".ieq-banner",
+            // markers: true,
+            id: "video-move",
+            scrub: true,
+            start: "-98px top",
+            end: "40px top",
+            // toggleActions: "play none none reverse",
+          },
+        });
+        gsap.to(".canvas-wrapper", {
+          scale: 0.6,
+          opacity: 0,
+          immediateRender: false,
+          scrollTrigger: {
+            trigger: ".canvas-wrapper",
+            // markers: true,
+            id: "banner",
+            scrub: true,
+            start: "250% center",
+            end: "400% center",
+            toggleActions: "play none none reverse",
+          },
         });
       });
 
-      gsap.to(".ieq-banner__content", {
-        scale: 0.8,
+      gsap.to(".ieq-banner__content > *", {
         opacity: 0,
         y: "-50px",
+        stagger: 0.1,
         immediateRender: false,
         scrollTrigger: {
           trigger: ".ieq-banner__content",
           // markers: true,
-          id: "banner-content",
+          id: "canvas",
           scrub: false,
           start: "700px top",
           end: "2100px top",
@@ -93,7 +121,7 @@ const HomeBanner = () => {
       snap: "frame",
       ease: "none",
       scrollTrigger: {
-        scrub: 3,
+        scrub: 4,
         start: "50px top",
         end: "1800px top",
         // markers: true,
@@ -191,19 +219,35 @@ const HomeBanner = () => {
           </video>
         </div>
       </Modal>
-      <div className="master-pinning">
-        <section className="ieq-banner additional-pin">
-          {/* <div className="container"> */}
-          <div className="ieq-banner__content">
-            <h1 className="display-3 text-center">
-              Hiring technology that accounts for humanity.
-            </h1>
-
-            <div onClick={openMapHandler}>
-              <Button size="large" tertiary>
-                <IconSet bg="bg" iconName="play" />
-                Watch a Demo
-              </Button>
+      <section className="ieq-banner additional-pin">
+        <div className="container">
+          <div className="content-pin">
+            <div className="ieq-banner__content">
+              <Timeline>
+                <Tween
+                  from={{ opacity: 0, y: 10 }}
+                  to={{ opacity: 1, y: 0 }}
+                  duration={0.3}
+                  ease="Power1.out(0.5)"
+                >
+                  <h1 className="display-3 text-center">
+                    Hiring technology that accounts for humanity.
+                  </h1>
+                </Tween>
+              </Timeline>
+              <Tween
+                from={{ opacity: 0, y: 10 }}
+                to={{ opacity: 1, y: 0 }}
+                duration={0.3}
+                ease="Power1.out(0.5)"
+              >
+                <div onClick={openMapHandler}>
+                  <Button size="large" tertiary>
+                    <IconSet bg="bg" iconName="play" />
+                    Watch a Demo
+                  </Button>
+                </div>
+              </Tween>
             </div>
           </div>
           <Row className="ieq-banner__video">
@@ -216,13 +260,18 @@ const HomeBanner = () => {
               />
             </Col>
           </Row>
-          <div className="w-100vw canvas-wrapper">
-            <canvas id="hero-lightpass"></canvas>
-          </div>
-
-          {/* </div> */}
-        </section>
-      </div>
+          <Tween
+            from={{ opacity: 0, y: 10 }}
+            to={{ opacity: 1, y: 0 }}
+            duration={1}
+            ease="Power1.out(0.5)"
+          >
+            <div className="w-100vw canvas-wrapper">
+              <canvas id="hero-lightpass"></canvas>
+            </div>
+          </Tween>
+        </div>
+      </section>
     </Fragment>
   );
 };

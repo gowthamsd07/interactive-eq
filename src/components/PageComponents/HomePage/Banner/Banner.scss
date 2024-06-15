@@ -1,23 +1,14 @@
 .ieq-banner {
-  // padding-top: 90px;
-  width: 100% !important;
-
-  padding: 112px 24px 40px 24px;
-  // height: 100vh;
-
-  min-height: 100vh;
-
-  @media (max-width: 767px) {
-    // height: 100vh;
-  }
-
-  @media (min-width: 768px) {
-    padding: 112px 80px 0 80px;
+  padding-top: 112px;
+  padding-bottom: 80px;
+  // z-index: 3;
+  // position: relative;
+  @media (min-width: 1200px) {
+    height: 300vh;
   }
 
   @media (min-width: 1200px) {
-    min-height: 100vh;
-    padding: 112px 0 160px 0;
+    padding: 112px 0 0 0;
   }
 
   &__content {
@@ -25,28 +16,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    @media (max-width: 767px) {
-      min-height: 236px;
-    }
-
     z-index: 3;
-    width: 100%;
+    position: relative;
 
-    // @media (min-width: 1200px) {
-    //   position: absolute;
-    //   transform: translateX(-50%);
-    //   top: 10%;
-    //   left: 50%;
-    //   width: auto;
-    // }
     h1 {
       background: linear-gradient(270deg, #5a1c4f 9.4%, #e13d44 99.62%);
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       max-width: 335px;
-      text-transform: capitalize;
 
       @media (min-width: 768px) {
         max-width: 690px;
@@ -62,8 +40,10 @@
       padding: 12px 24px 12px 12px !important;
     }
 
-    .animated {
-      height: 100%;
+    & > * {
+      transition-timing-function: cubic-bezier(0, 0, 0.35, 1) !important;
+      transition-duration: 0.5s;
+      transition-property: all;
     }
   }
 
@@ -80,21 +60,40 @@
       height: 100%;
     }
   }
+  .scrub-video {
+    position: fixed;
+    top: 98px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 
   .canvas-wrapper {
     display: none;
 
     @media (min-width: 1200px) {
       display: block;
-      position: absolute;
-      top: 0;
+      position: fixed;
+      top: 98px;
       left: 0;
       width: 100%;
       height: 100%;
       z-index: -1;
+      // transition-timing-function: cubic-bezier(0, 0, 0.35, 1) !important;
+      // transition-duration: 0.8s;
+      // transition-property: all;
     }
     .animated {
       height: 100%;
     }
   }
+}
+
+.watch-demo-modal {
+  max-height: 80vh !important;
+  max-height: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px !important;
 }

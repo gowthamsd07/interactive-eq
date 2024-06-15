@@ -1,12 +1,24 @@
 .ieq-cardslider {
-  overflow: hidden;
-  height: 100vh;
   // padding: 160px 0 160px 0;
   align-items: center;
   display: flex;
+  z-index: 3;
+  padding-top: 80px;
+
+  @media (min-width: 768px) {
+    padding-top: 120px;
+  }
+
+  @media (min-width: 1200px) {
+    overflow: hidden;
+    height: 100vh;
+    padding-top: 0;
+  }
   .slider-wrapper {
     gap: 76px;
-    max-height: 605px;
+    @media (min-width: 1200px) {
+      max-height: 605px;
+    }
     .ant-col {
       height: 100%;
     }
@@ -14,7 +26,9 @@
 
   .image-list-wrapper {
     height: 100%;
-    max-height: 605px;
+    @media (min-width: 1200px) {
+      max-height: 605px;
+    }
 
     .image-list {
       &__item {

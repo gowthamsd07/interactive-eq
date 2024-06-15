@@ -69,7 +69,7 @@ const HumanAptitude = () => {
       <div className="container">
         <div className="ieq-aptitude__title">
           <h3 className="text-white text-center">
-            Deeper than just resume and social profiles
+            Deeper than resume and social profiles
           </h3>
           {/* <p className="text-secondary subtitle-1 text-center">
             Look beyond job titles, work samples, and social profiles. Now you
