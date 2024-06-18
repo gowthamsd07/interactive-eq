@@ -11,6 +11,36 @@
     padding: 112px 0 0 0;
   }
 
+  &.hide-element {
+    h1 {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    button {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    canvas {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+  }
+  &.show-element {
+    h1 {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+    button {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+    canvas {
+      transform: translateY(0px);
+      opacity: 1;
+      transition: all ease 0.8s;
+    }
+  }
+
   &__content {
     display: flex;
     flex-direction: column;

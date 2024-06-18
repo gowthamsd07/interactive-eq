@@ -4,6 +4,8 @@
   display: flex;
   z-index: 3;
   padding-top: 80px;
+  overflow: hidden;
+  margin-top: -100vh;
 
   @media (min-width: 768px) {
     padding-top: 120px;

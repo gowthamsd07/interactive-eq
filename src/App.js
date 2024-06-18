@@ -11,15 +11,14 @@ const App = () => (
   <div>
     <Router forceRefresh={true}>
       <Suspense fallback={<div>Loading...</div>}>
-        <ScrollToTop>
-          <MainNavigation />
-          <main>
-            <Routes>
-              <Route exact path="/" element={<Home />}></Route>
-            </Routes>
-          </main>
-          <FooterNavigation />
-        </ScrollToTop>
+        <MainNavigation />
+        <ScrollToTop />
+        <main>
+          <Routes>
+            <Route exact path="/" element={<Home />}></Route>
+          </Routes>
+        </main>
+        <FooterNavigation />
       </Suspense>
     </Router>
   </div>

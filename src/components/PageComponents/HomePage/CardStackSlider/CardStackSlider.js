@@ -44,7 +44,7 @@ const ListItemContent = (props) => {
       <div>
         <h3 className="text-white">{props.title}</h3>
         <p className="h6r text-white">{props.desc}</p>
-        <Button size="large" tertiary>
+        <Button size="large" tertiary onClick={props.openMapHandler}>
           {props.buttonText}
           <IconSet bg="bg" iconName="plus" />
         </Button>
@@ -55,6 +55,20 @@ const ListItemContent = (props) => {
 
 const CardStackSlider = (props) => {
   let mm = gsap.matchMedia();
+  const [showmodal, setShowmodal] = useState(false);
+  const [selectedItem, setSelectedItem] = useState(null);
+
+  const openMapHandler = () => {
+    // setSelectedItem(item);
+    document.body.style.overflow = "hidden";
+    setShowmodal(true);
+  };
+
+  const closeMapHandler = () => {
+    setShowmodal(false);
+    // setSelectedItem(null);
+    document.documentElement.style.overflow = "unset";
+  };
 
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
@@ -62,6 +76,17 @@ const CardStackSlider = (props) => {
         const images = gsap.utils.toArray(".image-list__item");
         const rightElements = gsap.utils.toArray(".content-list__item");
         // gsap.set(".content-list__item", {
+        // gsap.timeline({
+        //   scrollTrigger: {
+        //     trigger: ".ieq-cardslider",
+        //     start: "-50% top",
+        //     end: "0px top",
+        //     pin: true,
+        //     scrub: true,
+        //     markers: true,
+        //     id: "new",
+        //   },
+        // });
         //   opacity: 0.3,
         //   duration: 0.3,
         // });
@@ -69,7 +94,7 @@ const CardStackSlider = (props) => {
           scrollTrigger: {
             trigger: ".ieq-cardslider",
             start: "0px top",
-            end: "300% top",
+            end: "350% top",
             pin: true,
             scrub: true,
             // markers: true,
@@ -83,10 +108,11 @@ const CardStackSlider = (props) => {
           scrollTrigger: {
             trigger: ".image-list__item-1",
             // markers: true,
-            id: "img-1",
+            id: "card-2-in",
             scrub: 3,
-            start: "50% top",
-            end: "150% top",
+            start: "180% top",
+            end: "280% top",
+            snap: 0.1,
           },
         });
         gsap.to(".image-list__item-1", {
@@ -96,10 +122,10 @@ const CardStackSlider = (props) => {
           scrollTrigger: {
             trigger: ".image-list__item-1",
             // markers: true,
-            id: "img-1",
+            id: "card-1-out",
             scrub: 3,
-            start: "60% top",
-            end: "160% top",
+            start: "190% top",
+            end: "290% top",
           },
         });
         gsap.to(".image-list__item-3", {
@@ -108,10 +134,11 @@ const CardStackSlider = (props) => {
           scrollTrigger: {
             trigger: ".image-list__item-2",
             // markers: true,
-            id: "img-1",
+            id: "card-3-in",
             scrub: 3,
-            start: "100% top",
-            end: "200% top",
+            start: "190% top",
+            end: "290% top",
+            snap: 0.1,
           },
         });
         gsap.to(".image-list__item-2", {
@@ -121,10 +148,10 @@ const CardStackSlider = (props) => {
           scrollTrigger: {
             trigger: ".image-list__item-2",
             // markers: true,
-            id: "img-1",
+            id: "card-2-out",
             scrub: 3,
-            start: "100% top",
-            end: "200% top",
+            start: "230% top",
+            end: "330% top",
           },
         });
 
@@ -137,10 +164,10 @@ const CardStackSlider = (props) => {
             scrollTrigger: {
               trigger: img,
               // markers: true,
-              id: "cont",
+              id: "cont" + i,
               scrub: false,
-              start: "60% center",
-              end: "80% center",
+              start: "160% center",
+              end: "170% center",
               toggleActions: "play none none reverse",
             },
           });
@@ -149,28 +176,18 @@ const CardStackSlider = (props) => {
     });
     return () => ctx.revert();
   });
-  // const [showMap, setShowMap] = useState(false);
 
-  // const openMapHandler = () => {
-  //   console.log("clicked");
-  //   setShowMap(true);
-  //   document.body.style.overflow = "hidden";
-  // };
-
-  // const closeMapHandler = () => {
-  //   setShowMap(false);
-  //   document.body.style.overflow = "unset";
-  // };
   return (
     <Fragment>
-      {/* <Modal
-        show={showMap}
+      <Modal
+        show={showmodal}
         onCancel={closeMapHandler}
-        className="watch-demo-modal"
-        contentClass="watch-demo__modal-content"
+        className=""
+        contentClass=""
       >
-        <div>{props.id}</div>
-      </Modal> */}
+        <div>modal</div>
+      </Modal>
+
       <section className="ieq-cardslider bg-surface">
         <div className="container ">
           <Row className="slider-wrapper">
@@ -204,6 +221,7 @@ const CardStackSlider = (props) => {
                     title={item.title}
                     desc={item.desc}
                     buttonText={item.buttonText}
+                    // openMapHandler={openMapHandler}
                   />
                 ))}
               </ul>

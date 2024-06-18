@@ -94,6 +94,21 @@ const SoftSkills = (props) => {
             },
           });
         });
+
+        gsap.to(".ieq-softskills", {
+          scale: 0.97,
+
+          immediateRender: false,
+          scrollTrigger: {
+            trigger: ".ieq-softskills",
+            // markers: true,
+            id: "cards-1",
+            scrub: true,
+            start: "80% center",
+            end: "100% center",
+            toggleActions: "play none none none",
+          },
+        });
       });
     });
     // ScrollTrigger.refresh();

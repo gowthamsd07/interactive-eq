@@ -4,11 +4,14 @@ import App from "./App";
 import "./App.scss";
 import reportWebVitals from "./reportWebVitals";
 import "./styles/main.scss";
+import SmoothScrolling from "./components/UIComponents/SmoothScroll";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <SmoothScrolling>
+      <App />
+    </SmoothScrolling>
   </React.StrictMode>
 );
 

@@ -23,64 +23,37 @@ const HomeBanner = () => {
           id: "pin-section1",
           // markers: true,
           scrub: 1,
-          start: "-98px top",
-          end: "100% top",
-          pinSpacing: false,
+          start: "50px top",
+          end: "200% top",
+          pinSpacing: true,
           pinSpacer: false,
           anticipatePin: 1,
-          pin: ".content-pin",
-        });
-        gsap.to(".canvas-wrapper", {
-          y: "-98px",
-          immediateRender: false,
-          scrollTrigger: {
-            trigger: ".ieq-banner",
-            // markers: true,
-            id: "video-move",
-            scrub: true,
-            start: "-98px top",
-            end: "40px top",
-            toggleActions: "play none none reverse",
-          },
-        });
-        gsap.to(".ieq-banner__content", {
-          marginTop: "-98px",
-          immediateRender: false,
-          scrollTrigger: {
-            trigger: ".ieq-banner",
-            // markers: true,
-            id: "video-move",
-            scrub: true,
-            start: "-98px top",
-            end: "40px top",
-            // toggleActions: "play none none reverse",
-          },
-        });
-        gsap.to(".canvas-wrapper", {
-          scale: 0.6,
-          opacity: 0,
-          immediateRender: false,
-          scrollTrigger: {
-            trigger: ".canvas-wrapper",
-            // markers: true,
-            id: "banner",
-            scrub: true,
-            start: "250% center",
-            end: "400% center",
-            toggleActions: "play none none reverse",
-          },
+          pin: true,
+          // onLeave: () => {
+          //   gsap.to(".ieq-banner", {
+          //     scale: 0.8,
+          //     opacity: 0,
+          //   });
+          // },
+          // onEnterBack: () => {
+          //   gsap.to(".ieq-banner", {
+          //     scale: 1,
+          //     opacity: 1,
+          //   });
+          // },
+          toggleActions: "play none none reverse",
         });
       });
 
-      gsap.to(".ieq-banner__content > *", {
+      gsap.to(".ieq-banner__content", {
+        scale: 0.8,
         opacity: 0,
         y: "-50px",
-        stagger: 0.1,
         immediateRender: false,
         scrollTrigger: {
           trigger: ".ieq-banner__content",
           // markers: true,
-          id: "canvas",
+          id: "banner-content",
           scrub: false,
           start: "700px top",
           end: "2100px top",
@@ -120,7 +93,7 @@ const HomeBanner = () => {
       snap: "frame",
       ease: "none",
       scrollTrigger: {
-        scrub: 4,
+        scrub: 3,
         start: "50px top",
         end: "1800px top",
         // markers: true,
@@ -191,16 +164,6 @@ const HomeBanner = () => {
       window.removeEventListener("resize", resizeCanvas);
     };
   }, []);
-  const [isVisible, setIsVisible] = useState(false);
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setIsVisible(true);
-    }, 1200);
-
-    return () => clearTimeout(timeout);
-  }, []);
-  const loaderClass = isVisible ? "show-element" : "hide-element";
-
   const [showMap, setShowMap] = useState(false);
 
   const openMapHandler = () => {
@@ -228,20 +191,19 @@ const HomeBanner = () => {
           </video>
         </div>
       </Modal>
-      <section className={`ieq-banner additional-pin ${loaderClass}`}>
-        <div className="container">
-          <div className="content-pin">
-            <div className="ieq-banner__content">
-              <h1 className="display-3 text-center">
-                Hiring technology that accounts for humanity.
-              </h1>
+      <div className="master-pinning">
+        <section className="ieq-banner additional-pin">
+          {/* <div className="container"> */}
+          <div className="ieq-banner__content">
+            <h1 className="display-3 text-center">
+              Hiring technology that accounts for humanity.
+            </h1>
 
-              <div onClick={openMapHandler}>
-                <Button size="large" tertiary>
-                  <IconSet bg="bg" iconName="play" />
-                  Watch a Demo
-                </Button>
-              </div>
+            <div onClick={openMapHandler}>
+              <Button size="large" tertiary>
+                <IconSet bg="bg" iconName="play" />
+                Watch a Demo
+              </Button>
             </div>
           </div>
           <Row className="ieq-banner__video">
@@ -254,12 +216,13 @@ const HomeBanner = () => {
               />
             </Col>
           </Row>
-
           <div className="w-100vw canvas-wrapper">
             <canvas id="hero-lightpass"></canvas>
           </div>
-        </div>
-      </section>
+
+          {/* </div> */}
+        </section>
+      </div>
     </Fragment>
   );
 };
