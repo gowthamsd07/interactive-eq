@@ -56,13 +56,13 @@ const ListItemContent = (props) => {
 const CardStackSlider = (props) => {
   let mm = gsap.matchMedia();
   const [showmodal, setShowmodal] = useState(false);
-  const [selectedItem, setSelectedItem] = useState(null);
+  // const [selectedItem, setSelectedItem] = useState(null);
 
-  const openMapHandler = () => {
-    // setSelectedItem(item);
-    document.body.style.overflow = "hidden";
-    setShowmodal(true);
-  };
+  // const openMapHandler = () => {
+  //   // setSelectedItem(item);
+  //   document.body.style.overflow = "hidden";
+  //   setShowmodal(true);
+  // };
 
   const closeMapHandler = () => {
     setShowmodal(false);

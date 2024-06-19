@@ -82,7 +82,7 @@ const HomeBanner = () => {
           // markers: true,
           id: "canvas",
           scrub: false,
-          start: "700px top",
+          start: "600px top",
           end: "2100px top",
           toggleActions: "play none none reverse",
         },
@@ -239,7 +239,7 @@ const HomeBanner = () => {
               <div onClick={openMapHandler}>
                 <Button size="large" tertiary>
                   <IconSet bg="bg" iconName="play" />
-                  Watch a Demo
+                  <span>Watch a Demo</span>
                 </Button>
               </div>
             </div>
