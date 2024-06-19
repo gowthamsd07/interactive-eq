@@ -203,8 +203,8 @@ export const CARD_SLIDER_ITEMS = [
     AltText: "Candidate ratings",
     imgItemclass: "1",
     contentItemclass: "1",
-    title: "Predictive EQ Insights and Real-World Simulations",
-    desc: "Go beyond traditional IQ measures by gauging a candidate’s potential for future success with our advanced EQ assessment. Test candidates under pressure by immersing them in realistic business scenarios, evaluating their responses in real-time.",
+    title: "Measure future success",
+    desc: "Typical hiring accounts for intelligence, or IQ. We quantify your candidate’s on-the-job potential by measuring their emotional intelligence, or EQ.",
     buttonText: "How smart is Interactive EQ?",
     modalTitle: "How smart is interactive EQ?",
     modalDesc:
@@ -217,8 +217,8 @@ export const CARD_SLIDER_ITEMS = [
     AltText: "Candidate ratings",
     imgItemclass: "2",
     contentItemclass: "2",
-    title: "Immersive and AI-Driven Evaluations",
-    desc: "Engage candidates with stunning visuals and rich dialogues for a deep, immersive evaluation experience. Eliminate bias and enhance accuracy with our generative AI, delivering fair and reliable candidate ratings",
+    title: "First-person simulation",
+    desc: "When your candidates are dropped into immersive scenarios brought to life by interactive video, you can see how they will respond under real pressure.",
     buttonText: "Is it for me?",
     modalTitle: "Is it for me?",
     modalDesc:
@@ -231,8 +231,8 @@ export const CARD_SLIDER_ITEMS = [
     AltText: "Candidate ratings",
     imgItemclass: "3",
     contentItemclass: "3",
-    title: "Effortless Benchmarking and Integration",
-    desc: "Compare candidate performance against your top employees and industry standards to make informed hiring decisions. Seamlessly incorporate iEQ into your existing ATS with no additional training required, streamlining your evaluation process.",
+    title: "Real business conflicts",
+    desc: "Every other soft skill test on the market is read-and-write. iEQ pressure-tests candidates by placing them in real business simulations in real time.",
     buttonText: "Why real-life scenarios?",
     modalTitle: "Why real-life scenarios?",
     modalDesc:

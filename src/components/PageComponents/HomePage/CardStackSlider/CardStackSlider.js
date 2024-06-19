@@ -34,18 +34,24 @@ const ListItemImage = (props) => {
   );
 };
 
-const ListItemContent = (props) => {
+const ListItemContent = ({ contentItemclass, title, desc, buttonText }) => {
+  const triggerClick = (event) => {
+    event.stopPropagation();
+
+    // Call handleClick function with itemId as argument
+    // handleClick();
+  };
   return (
     <li
       className={`content-list__item content-list__item-${
-        props.contentItemclass || "default"
+        contentItemclass || "default"
       }`}
     >
       <div>
-        <h3 className="text-white">{props.title}</h3>
-        <p className="h6r text-white">{props.desc}</p>
-        <Button size="large" tertiary onClick={props.openMapHandler}>
-          {props.buttonText}
+        <h3 className="text-white">{title}</h3>
+        <p className="h6r text-white">{desc}</p>
+        <Button size="large" tertiary onClick={triggerClick}>
+          {buttonText}
           <IconSet bg="bg" iconName="plus" />
         </Button>
       </div>
@@ -56,15 +62,16 @@ const ListItemContent = (props) => {
 const CardStackSlider = (props) => {
   let mm = gsap.matchMedia();
   const [showmodal, setShowmodal] = useState(false);
-  // const [selectedItem, setSelectedItem] = useState(null);
 
-  // const openMapHandler = () => {
-  //   // setSelectedItem(item);
-  //   document.body.style.overflow = "hidden";
+  // const handleClick = (e) => {
+  //   e.stopPropagation();
+
   //   setShowmodal(true);
+  //   document.body.style.overflow = "hidden";
   // };
 
-  const closeMapHandler = () => {
+  const closeMapHandler = (e) => {
+    e.stopPropagation();
     setShowmodal(false);
     // setSelectedItem(null);
     document.documentElement.style.overflow = "unset";
@@ -217,11 +224,11 @@ const CardStackSlider = (props) => {
                   <ListItemContent
                     key={item.id}
                     id={item.id}
-                    contentItemclass={item.imgItemclass}
+                    contentItemclass={item.contentItemclass}
                     title={item.title}
                     desc={item.desc}
                     buttonText={item.buttonText}
-                    // openMapHandler={openMapHandler}
+                    // handleClick={handleClick}
                   />
                 ))}
               </ul>

@@ -5,7 +5,6 @@ import { Col, Row } from "antd";
 import SoftSkillsCard from "./SoftSkillsCard";
 import Button from "../../../UIComponents/Buttons/Buttons";
 
-// import { Tween } from "react-gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import gsap from "gsap";
 import { Tween, Reveal } from "react-gsap";
@@ -15,21 +14,16 @@ gsap.core.globals("ScrollTrigger", ScrollTrigger);
 const SoftSkills = (props) => {
   let mm = gsap.matchMedia();
   useLayoutEffect(() => {
-    let cty = gsap.context(() => {
-      mm.add("(min-width: 1200px)", () => {
+    mm.add("(min-width: 1200px)", () => {
+      let cty = gsap.context(() => {
         for (const card of document.querySelectorAll(".soft-skills-card")) {
           gsap.set(card, {
             y: "50px",
             scale: 0.9,
-            // opacity: 0,
             duration: 0.3,
           });
           gsap.to(card, {
-            // opacity: 1,
             y: 0,
-            // keyframes: {
-            //   scale: [1.04, 0.97, 1],
-            // },
             scale: 1,
             immediateRender: false,
             scrollTrigger: {
@@ -110,9 +104,8 @@ const SoftSkills = (props) => {
           },
         });
       });
+      return () => cty.revert();
     });
-    // ScrollTrigger.refresh();
-    return () => cty.revert();
   });
   return (
     <section className="ieq-softskills section-padding-y bg-surface-l">
@@ -160,13 +153,6 @@ const SoftSkills = (props) => {
             className="ieq-softskills__list"
           >
             {props.items.map((item) => (
-              // <ScrollAnimation
-              //   key={item.id}
-              //   animateOnce={true}
-              //   offset={item.offset}
-              //   // duration={0.8}
-              //   animateIn="animate__fadeInUp"
-              // >
               <SoftSkillsCard
                 key={item.id}
                 id={item.id}
@@ -175,7 +161,6 @@ const SoftSkills = (props) => {
                 desc={item.desc}
                 iconUrl={item.iconUrl}
               />
-              // </ScrollAnimation>
             ))}
           </Col>
         </Row>

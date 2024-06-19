@@ -12,7 +12,7 @@ const App = () => (
     <Router forceRefresh={true}>
       <Suspense fallback={<div>Loading...</div>}>
         <MainNavigation />
-        <ScrollToTop />
+        {/* <ScrollToTop /> */}
         <main>
           <Routes>
             <Route exact path="/" element={<Home />}></Route>
