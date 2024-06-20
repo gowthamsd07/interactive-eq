@@ -7,25 +7,24 @@ import Button from "../../../UIComponents/Buttons/Buttons";
 
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import gsap from "gsap";
-import { Tween, Reveal } from "react-gsap";
 gsap.registerPlugin(ScrollTrigger);
 gsap.core.globals("ScrollTrigger", ScrollTrigger);
 
 const SoftSkills = (props) => {
   let mm = gsap.matchMedia();
   useLayoutEffect(() => {
-    mm.add("(min-width: 1200px)", () => {
-      let cty = gsap.context(() => {
+    let cty = gsap.context(() => {
+      mm.add("(min-width: 1200px)", () => {
         const cardStacks = gsap.utils.toArray(".soft-skills-card");
 
-        cardStacks.forEach((cardstack) => {
+        cardStacks.forEach((cardstack, i) => {
           gsap.set(cardstack, {
             y: "50px",
             scale: 0.9,
             // duration: 0.5,
           });
           gsap.to(cardstack, {
-            y: 0,
+            y: "0",
             scale: 1,
             // duration: 0.5,
 
@@ -33,11 +32,11 @@ const SoftSkills = (props) => {
             scrollTrigger: {
               trigger: cardstack,
               // markers: true,
-              id: "cards-1",
+              id: "cards-1" + i,
               scrub: true,
               start: "-40% center",
               end: "80% center",
-              // toggleActions: "play none none none",
+              // toggleActions: "play none none reverse",
             },
           });
         });
@@ -108,8 +107,8 @@ const SoftSkills = (props) => {
           },
         });
       });
-      return () => cty.revert();
     });
+    return () => cty.revert();
   }, []);
   return (
     <section className="ieq-softskills section-padding-y bg-surface-l">
