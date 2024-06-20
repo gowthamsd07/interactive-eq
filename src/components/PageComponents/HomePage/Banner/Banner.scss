@@ -3,6 +3,7 @@
   padding-bottom: 80px;
   // z-index: 3;
   // position: relative;
+
   @media (min-width: 1200px) {
     height: 300vh;
   }
@@ -39,6 +40,11 @@
       opacity: 1;
       transition: all ease 0.8s;
     }
+  }
+  .content-pin {
+    backface-visibility: hidden;
+    will-change: transform;
+    transform: translateZ(0);
   }
 
   &__content {

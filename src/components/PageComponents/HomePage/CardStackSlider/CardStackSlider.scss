@@ -5,6 +5,9 @@
   z-index: 3;
   padding-top: 80px;
   overflow: hidden;
+  backface-visibility: hidden;
+  will-change: transform;
+  transform: translateZ(0);
 
   @media (min-width: 768px) {
     padding-top: 120px;
