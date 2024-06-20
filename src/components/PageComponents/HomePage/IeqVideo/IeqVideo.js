@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
+import React, { useLayoutEffect, useRef, useState } from "react";
 
 import VideoPlaceholder from "../../../../assets/images/home/section-ieqvideo.svg";
 import IeqVideoFile from "../../../../assets/images/home/ieq-video.mp4";
@@ -53,7 +53,7 @@ const IeqVideo = () => {
           duration: 2,
           zIndex: 2,
         });
-        const st = ScrollTrigger.create({
+        ScrollTrigger.create({
           trigger: ".ieq-video",
           id: "pin-mark",
           // markers: true,
