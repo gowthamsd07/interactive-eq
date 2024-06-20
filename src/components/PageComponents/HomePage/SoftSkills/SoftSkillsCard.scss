@@ -3,9 +3,9 @@
   width: 100%;
   flex-direction: column-reverse;
   padding: 32px;
-  transition-timing-function: cubic-bezier(0, 0, 0.35, 1) !important;
-  transition-duration: 0.3s;
-  transition-property: all;
+  // transition-timing-function: cubic-bezier(0, 0, 0.35, 1) !important;
+  // transition-duration: 0.3s;
+  // transition-property: all;
   gap: 32px;
   @media (min-width: 768px) {
     flex-direction: row;

@@ -22,11 +22,13 @@ const SoftSkills = (props) => {
           gsap.set(cardstack, {
             y: "50px",
             scale: 0.9,
-            duration: 0.3,
+            // duration: 0.5,
           });
           gsap.to(cardstack, {
             y: 0,
             scale: 1,
+            // duration: 0.5,
+
             immediateRender: false,
             scrollTrigger: {
               trigger: cardstack,
@@ -119,33 +121,33 @@ const SoftSkills = (props) => {
             xl={{ span: 12, offset: 6 }}
             className="ieq-softskills__title"
           >
-            <Reveal>
+            {/* <Reveal>
               <Tween
                 from={{ y: "100px", opacity: 0 }}
                 to={{ y: "0px", opacity: 1 }}
                 duration={1}
                 ease="Power1.out(1.7)"
-              >
-                <h3 className="text-primary-l text-center primary-title">
-                  What is human aptitude?
-                </h3>
-              </Tween>
-            </Reveal>
-            <Reveal>
+              > */}
+            <h3 className="text-primary-l text-center primary-title">
+              What is human aptitude?
+            </h3>
+            {/* </Tween> */}
+            {/* </Reveal> */}
+            {/* <Reveal>
               <Tween
                 from={{ y: "100px", opacity: 0 }}
                 to={{ y: "0px", opacity: 1 }}
                 duration={1}
                 ease="Power1.out(1.7)"
-              >
-                <p className="subtitle-1 text-center text-secondary-l">
-                  IQ measures intelligence. EQ measures emotional intelligence.
-                  Human aptitude is the application of EQ to job candidate
-                  evaluation. A rich, experiential assessment from Interactive
-                  EQ measures
-                </p>
-              </Tween>
-            </Reveal>
+              > */}
+            <p className="subtitle-1 text-center text-secondary-l">
+              IQ measures intelligence. EQ measures emotional intelligence.
+              Human aptitude is the application of EQ to job candidate
+              evaluation. A rich, experiential assessment from Interactive EQ
+              measures
+            </p>
+            {/* </Tween>
+            </Reveal> */}
           </Col>
         </Row>
         <Row className="mt-80">

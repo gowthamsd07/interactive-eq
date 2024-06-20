@@ -269,18 +269,16 @@ const CardStackSlider = (props) => {
             <Col xl={{ span: 10 }} className="content-list-wrapper">
               <ul className="content-list">
                 {props.items.map((item) => (
-                  <Fragment>
-                    <ListItemContent
-                      key={item.id}
-                      id={item.id}
-                      contentItemclass={item.imgItemclass}
-                      title={item.title}
-                      desc={item.desc}
-                      buttonText={item.buttonText}
-                      itemId={item.id}
-                      openMapHandler={openMapHandler}
-                    />
-                  </Fragment>
+                  <ListItemContent
+                    key={item.id}
+                    id={item.id}
+                    contentItemclass={item.imgItemclass}
+                    title={item.title}
+                    desc={item.desc}
+                    buttonText={item.buttonText}
+                    itemId={item.id}
+                    openMapHandler={openMapHandler}
+                  />
                 ))}
                 {/* <li className={`content-list__item content-list__item-1`}>
                   <div onClick={(e) => e.stopPropagation()}>
