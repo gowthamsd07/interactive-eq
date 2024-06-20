@@ -41,7 +41,6 @@ const Button = (props) => {
         props.tertiary && "button--tertiary"
       }`}
       type={props.type}
-      onClick={props.onClick}
       disabled={props.disabled}
     >
       {props.children}

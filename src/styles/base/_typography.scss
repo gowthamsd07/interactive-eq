@@ -87,11 +87,11 @@ h6,
 }
 
 .text-body {
-  @include mixin.font-responsive(16, 16, 16, 110, 110, 150); //16-R
+  @include mixin.font-responsive(16, 16, 16, 150, 150, 150); //16-R
 }
 
 .text-body-bold {
-  @include mixin.font-responsive(16, 16, 16, 110, 110, 130); //16-B
+  @include mixin.font-responsive(16, 16, 16, 130, 130, 130); //16-B
   font-weight: 700;
 }
 

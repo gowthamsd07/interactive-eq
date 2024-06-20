@@ -68,6 +68,10 @@
     button {
       margin-top: 40px;
       padding: 12px 24px 12px 12px !important;
+
+      .icon-wrap-bg {
+        background: var(--bg-brand-hover-l) !important;
+      }
     }
 
     & > * {
@@ -126,4 +130,18 @@
   align-items: center;
   justify-content: center;
   max-width: 1200px !important;
+  background: transparent !important;
+  padding: 0;
+  border-radius: 0 !important;
+  height: auto !important;
+  overflow: visible !important;
+
+  .watch-demo__modal-content {
+    padding: 0;
+  }
+
+  .icon-wrap-bg {
+    right: -40px !important;
+    top: 0 !important;
+  }
 }

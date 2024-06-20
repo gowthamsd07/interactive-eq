@@ -69,6 +69,9 @@
           h3 {
             max-width: 450px;
           }
+          button {
+            width: 100%;
+          }
         }
       }
     }
@@ -135,8 +138,35 @@
 
         button {
           max-width: 348px;
+          padding: 12px 12px 12px 24px;
         }
       }
     }
+  }
+}
+
+.card-stack-modal {
+  max-width: 456px !important;
+  min-height: 424px !important;
+
+  @media (min-width: 768px) {
+    min-height: 594px !important;
+  }
+  .text-body-bold {
+    text-transform: uppercase;
+  }
+  .text-body {
+    margin-top: 16px;
+  }
+  button {
+    margin-top: 32px;
+    color: var(--text-primary-l) !important;
+    border-color: var(--text-primary-l) !important;
+  }
+
+  .icon-wrap-bg {
+    bottom: 24px !important;
+    right: 24px !important;
+    top: unset !important;
   }
 }

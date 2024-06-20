@@ -106,7 +106,7 @@ const SoftSkills = (props) => {
       });
       return () => cty.revert();
     });
-  });
+  }, []);
   return (
     <section className="ieq-softskills section-padding-y bg-surface-l">
       <div className="container">
