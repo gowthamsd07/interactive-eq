@@ -96,7 +96,7 @@ const CardStackSlider = (props) => {
     // setSelectedItem(null);
     setCurrentModal(null);
 
-    document.documentElement.style.overflow = "unset";
+    document.body.style.overflow = "unset";
   };
 
   useLayoutEffect(() => {
