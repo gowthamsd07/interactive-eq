@@ -70,22 +70,22 @@ const HomeBanner = () => {
             toggleActions: "play none none reverse",
           },
         });
-      });
 
-      gsap.to(".ieq-banner__content > *", {
-        opacity: 0,
-        y: "-50px",
-        stagger: 0.1,
-        immediateRender: false,
-        scrollTrigger: {
-          trigger: ".ieq-banner__content",
-          // markers: true,
-          id: "canvas",
-          scrub: false,
-          start: "600px top",
-          end: "2100px top",
-          toggleActions: "play none none reverse",
-        },
+        gsap.to(".ieq-banner__content > *", {
+          opacity: 0,
+          y: "-50px",
+          stagger: 0.1,
+          immediateRender: false,
+          scrollTrigger: {
+            trigger: ".ieq-banner__content",
+            // markers: true,
+            id: "canvas",
+            scrub: false,
+            start: "600px top",
+            end: "2100px top",
+            toggleActions: "play none none reverse",
+          },
+        });
       });
     });
     return () => cty.revert();
@@ -114,19 +114,20 @@ const HomeBanner = () => {
 
       // console.log(BulkImg[i]);s
     }
-
-    gsap.to(airpods, {
-      frame: frameCount - 1,
-      snap: "frame",
-      ease: "none",
-      scrollTrigger: {
-        scrub: 4,
-        start: "50px top",
-        end: "1800px top",
-        // markers: true,
-        id: "video-animation",
-      },
-      onUpdate: render,
+    mm.add("(min-width: 1200px)", () => {
+      gsap.to(airpods, {
+        frame: frameCount - 1,
+        snap: "frame",
+        ease: "none",
+        scrollTrigger: {
+          scrub: 4,
+          start: "50px top",
+          end: "1800px top",
+          // markers: true,
+          id: "video-animation",
+        },
+        onUpdate: render,
+      });
     });
 
     images[0].onload = render;
