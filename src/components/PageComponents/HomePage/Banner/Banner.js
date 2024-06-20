@@ -1,8 +1,19 @@
-import React, { Fragment, useEffect, useLayoutEffect, useState } from "react";
+import React, {
+  Fragment,
+  useEffect,
+  useLayoutEffect,
+  useRef,
+  useState,
+} from "react";
 
 import BannerVideoPlaceholder from "../../../../assets/images/home/mobile-mockup-banner.png";
 import WatchDemoVideo from "../../../../assets/images/home/watch-demo.mp4";
 import { BulkImg } from "../../../../pages/BulkImg";
+import StartOverIcon from "../../../../assets/images/shared/startover.svg";
+import PlayIcon from "../../../../assets/images/shared/play.svg";
+import PauseIcon from "../../../../assets/images/shared/pause.svg";
+import SoundIcon from "../../../../assets/images/shared/sound.svg";
+import MutedIcon from "../../../../assets/images/shared/muted.svg";
 
 import "./Banner.scss";
 import Button from "../../../UIComponents/Buttons/Buttons";
@@ -14,6 +25,33 @@ import Modal from "../../../UIComponents/Modal/Modal";
 gsap.registerPlugin(ScrollTrigger);
 
 const HomeBanner = () => {
+  const [isVideoMuted, setVideoMuted] = useState(true);
+  const [isVideoPlaying, setVideoPlaying] = useState(true);
+  const videoRef = useRef(null);
+
+  const videolPlayHandler = (e, control) => {
+    e.stopPropagation();
+    if (control === "play") {
+      videoRef.current.pause();
+      setVideoPlaying(false);
+    } else if (control === "pause") {
+      videoRef.current.play();
+      setVideoPlaying(true);
+    }
+  };
+  const videolSoundHandler = (control) => {
+    if (control === "unmute") {
+      setVideoMuted(false);
+    } else if (control === "mute") {
+      setVideoMuted(true);
+    }
+  };
+  const videoStartOver = () => {
+    if (videoRef.current) {
+      videoRef.current.currentTime = 0;
+      videoRef.current.play(); // Optional: If you want to play the video immediately after resetting
+    }
+  };
   let mm = gsap.matchMedia();
   useLayoutEffect(() => {
     let cty = gsap.context(() => {
@@ -223,7 +261,50 @@ const HomeBanner = () => {
         contentClass="watch-demo__modal-content"
       >
         <div>
-          <video className="w-100 h-100" autoPlay muted loop controls>
+          <div className="controls-container">
+            <img
+              src={StartOverIcon}
+              alt="start over"
+              onClick={() => videoStartOver()}
+            />
+            {isVideoPlaying ? (
+              <img
+                src={PauseIcon}
+                onClick={(e) => {
+                  videolPlayHandler(e, "play");
+                }}
+                alt="start over"
+              />
+            ) : (
+              <img
+                src={PlayIcon}
+                onClick={(e) => {
+                  videolPlayHandler(e, "pause");
+                }}
+                alt="start over"
+              />
+            )}
+            {isVideoMuted ? (
+              <img
+                src={SoundIcon}
+                alt="start over"
+                onClick={() => videolSoundHandler("unmute")}
+              />
+            ) : (
+              <img
+                src={MutedIcon}
+                alt="start over"
+                onClick={() => videolSoundHandler("mute")}
+              />
+            )}
+          </div>
+          <video
+            className="w-100 h-100"
+            ref={videoRef}
+            autoPlay={isVideoPlaying}
+            muted={isVideoMuted}
+            loop
+          >
             <source src={WatchDemoVideo} type="video/mp4" />
             Your browser does not support the video tag.
           </video>

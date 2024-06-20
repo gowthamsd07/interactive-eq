@@ -146,4 +146,30 @@
       top: 0 !important;
     }
   }
+
+  .controls-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    z-index: 9;
+    justify-content: center;
+    bottom: 20px;
+    width: 100%;
+
+    @media (min-width: 1200px) {
+      bottom: 80px;
+    }
+
+    img {
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+
+      @media (min-width: 1200px) {
+        width: 64px;
+        height: 64px;
+      }
+    }
+  }
 }
