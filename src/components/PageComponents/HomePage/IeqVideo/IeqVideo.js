@@ -89,6 +89,7 @@ const IeqVideo = () => {
     return () => {
       cty.revert();
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

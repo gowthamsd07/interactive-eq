@@ -229,6 +229,7 @@ const HomeBanner = () => {
     return () => {
       window.removeEventListener("resize", resizeCanvas);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   const [isVisible, setIsVisible] = useState(false);
   useEffect(() => {

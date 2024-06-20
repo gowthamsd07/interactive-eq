@@ -109,6 +109,7 @@ const SoftSkills = (props) => {
       });
     });
     return () => cty.revert();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <section className="ieq-softskills section-padding-y bg-surface-l">
