@@ -16,27 +16,29 @@ const SoftSkills = (props) => {
   useLayoutEffect(() => {
     mm.add("(min-width: 1200px)", () => {
       let cty = gsap.context(() => {
-        for (const card of document.querySelectorAll(".soft-skills-card")) {
-          gsap.set(card, {
+        const cardStacks = gsap.utils.toArray(".soft-skills-card");
+
+        cardStacks.forEach((cardstack) => {
+          gsap.set(cardstack, {
             y: "50px",
             scale: 0.9,
             duration: 0.3,
           });
-          gsap.to(card, {
+          gsap.to(cardstack, {
             y: 0,
             scale: 1,
             immediateRender: false,
             scrollTrigger: {
-              trigger: card,
+              trigger: cardstack,
               // markers: true,
               id: "cards-1",
               scrub: true,
               start: "-40% center",
               end: "80% center",
-              toggleActions: "play none none none",
+              // toggleActions: "play none none none",
             },
           });
-        }
+        });
         const textwrappers = gsap.utils.toArray(
           ".soft-skills-card .soft-skills-card__content"
         );
@@ -64,7 +66,7 @@ const SoftSkills = (props) => {
               scrub: false,
               start: "-50% center",
               end: "100% center",
-              toggleActions: "play none none none",
+              // toggleActions: "play none none none",
             },
           });
           gsap.set(icons[i], {
@@ -84,7 +86,7 @@ const SoftSkills = (props) => {
               scrub: false,
               start: "-20% center",
               end: "100% center",
-              toggleActions: "play none none none",
+              // toggleActions: "play none none none",
             },
           });
         });

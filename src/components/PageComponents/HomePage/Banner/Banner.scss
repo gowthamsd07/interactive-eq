@@ -141,7 +141,9 @@
   }
 
   .icon-wrap-bg {
-    right: -40px !important;
-    top: 0 !important;
+    @media (min-width: 1200px) {
+      right: -40px !important;
+      top: 0 !important;
+    }
   }
 }
