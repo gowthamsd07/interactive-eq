@@ -311,7 +311,9 @@ const HomeBanner = () => {
           </video>
         </div>
       </Modal>
-      <section className={`ieq-banner additional-pin ${loaderClass}`}>
+      <section
+        className={`ieq-banner bg-surface additional-pin ${loaderClass}`}
+      >
         <div className="container">
           <div className="content-pin">
             <div className="ieq-banner__content">
