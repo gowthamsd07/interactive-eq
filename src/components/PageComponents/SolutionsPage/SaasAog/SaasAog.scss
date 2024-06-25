@@ -1,0 +1,36 @@
+.saas-aog {
+  padding-top: 110px;
+  padding-bottom: 160px;
+  .container {
+    h6 {
+      text-align: center;
+      font-size: 26px;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+  }
+
+  &__heading {
+    color: #fff;
+    max-width: 626px;
+  }
+
+  .img-wrapper {
+    margin: 72px 0;
+    width: 1448.823px;
+    height: 688px;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      border-radius: 40px;
+    }
+  }
+
+  .saas-desc {
+    width: 696px;
+    height: 102px;
+    color: #A6A6A6;
+  }
+}

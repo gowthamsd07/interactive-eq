@@ -3,6 +3,7 @@ import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import MainNavigation from "./components/UIComponents/Navigation/MainNavigation";
 import FooterNavigation from "./components/UIComponents/Footer/FooterNavigation";
 import ScrollToTop from "./components/PageComponents/ScrollTop";
+import SolutionsPage from "./pages/SolutionsPage";
 // import ScrollToTop from "./components/ScrollTop";
 
 const Home = lazy(() => import("./pages/HomePage"));
@@ -18,6 +19,7 @@ const App = () => (
           <Routes>
             <Route exact path="/" element={<Home />}></Route>
             <Route exact path="/product" element={<Products />}></Route>
+            <Route path="/solutions" element={<SolutionsPage />}></Route>
           </Routes>
         </main>
         <FooterNavigation />

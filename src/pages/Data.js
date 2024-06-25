@@ -39,6 +39,11 @@ import SkillIcon8 from "../assets/images/home/skill-slider-8.png";
 import ProductSliderImg1 from "../assets/images/product/slider-image-1.jpg";
 import ProductSliderImg2 from "../assets/images/product/slider-image-2.jpg";
 import ProductSliderImg3 from "../assets/images/product/slider-image-3.jpg";
+// HRA Tile
+import HraTile1 from "../assets/images/solutions/hrm-img-1.png";
+import HraTile2 from "../assets/images/solutions/hrm-img-2.png";
+import HraTile3 from "../assets/images/solutions/hrm-img-3.png";
+
 
 export const SOFT_SKILLS_ITEMS = [
   {
@@ -268,3 +273,31 @@ export const PRODUCT_SLIDER_ITEMS = [
     imgUrl: ProductSliderImg3,
   },
 ];
+
+// solution page
+export const HRM_TILE_ITEMS = [
+  {
+    id: 1,
+    imgUrl: HraTile1,
+    altText: 'Cohesive distributed teams',
+    title: 'Cohesive distributed teams',
+    titleDescription: 'When teams are scattered across time zones, you must ensure every member has the interpersonal skills to collaborate and make decisions. You need people who fit your company culture. ',
+    tileText: 'Find colleagues that can tell who is engaged and who is tuned-out during meetings. ',
+  },
+  {
+    id: 2,
+    imgUrl: HraTile2,
+    altText: 'Maximize hiring resources',
+    title: 'Maximize hiring resources',
+    titleDescription: 'Candidates go through multiple rounds of interviews before receiving an offer. Validate your decision by confirming their EQ is as strong as their resume. ',
+    tileText: 'Identify salespeople that can sense when a deal is slipping.',
+  },
+  {
+    id: 3,
+    imgUrl: HraTile3,
+    altText: 'Operational efficiency',
+    title: 'Operational efficiency',
+    titleDescription: 'Seamlessly integrate Interactive EQ with your ATS for a unified, holistic candidate view.',
+    tileText: 'Hire workers who circumvent customer issues proactively instead of reactively. ',
+  },
+]
