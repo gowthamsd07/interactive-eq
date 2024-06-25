@@ -81,6 +81,11 @@ h6,
   font-weight: 500;
 }
 
+.subtitle-3 {
+  @include mixin.font-responsive(16, 24, 24, 110, 110, 140); //18-SB
+  font-weight: 400;
+}
+
 .text-l {
   @include mixin.font-responsive(18, 18, 18, 150, 150, 150); //18-R
   font-weight: 400;
