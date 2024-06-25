@@ -6,6 +6,7 @@ import ScrollToTop from "./components/PageComponents/ScrollTop";
 // import ScrollToTop from "./components/ScrollTop";
 
 const Home = lazy(() => import("./pages/HomePage"));
+const Products = lazy(() => import("./pages/ProductPage"));
 
 const App = () => (
   <div>
@@ -16,6 +17,7 @@ const App = () => (
         <main>
           <Routes>
             <Route exact path="/" element={<Home />}></Route>
+            <Route exact path="/product" element={<Products />}></Route>
           </Routes>
         </main>
         <FooterNavigation />

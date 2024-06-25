@@ -5,6 +5,7 @@ import "./HumanAptitude.scss";
 import HumanAptitudeVideo from "../../../../assets/images/home/human-aptitude-placeholder.mp4";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import { Col, Row } from "antd";
 
 gsap.registerPlugin(ScrollTrigger);
 const HumanAptitude = () => {
@@ -76,12 +77,16 @@ const HumanAptitude = () => {
             can objectively measure a true differentiator.
           </p> */}
         </div>
-        <div className="mt-80 video-wrap">
-          <video className="w-100 h-100" autoPlay muted loop>
-            <source src={HumanAptitudeVideo} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
+        <Row>
+          <Col xl={{ span: 20, offset: 2 }}>
+            <div className="mt-80 video-wrap">
+              <video className="w-100 h-100" autoPlay muted loop>
+                <source src={HumanAptitudeVideo} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </Col>
+        </Row>
       </div>
     </section>
   );

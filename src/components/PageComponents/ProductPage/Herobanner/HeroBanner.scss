@@ -1,0 +1,26 @@
+.ieq-product-banner {
+  position: relative;
+  &__bg {
+    width: 100%;
+  }
+
+  &__content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 915px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+
+    p {
+      margin-top: 24px;
+    }
+
+    button {
+      margin-top: 40px;
+    }
+  }
+}

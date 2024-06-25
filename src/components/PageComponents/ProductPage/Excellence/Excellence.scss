@@ -1,0 +1,34 @@
+.ieq-product-excel {
+  &__title {
+    max-width: 445px;
+    margin: 0 auto;
+  }
+
+  .cards-wrapper {
+    .image-card,
+    .content-card {
+      background: var(--bg-variant2-d);
+      border-radius: 40px;
+      padding: 150px 78px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .content-card {
+      p {
+        max-width: 300px;
+        margin-top: 8px;
+      }
+    }
+
+    .cards-inner-wrapper {
+      &:not(:first-child) {
+        margin-top: 24px;
+      }
+      .ant-col {
+        display: flex;
+      }
+    }
+  }
+}

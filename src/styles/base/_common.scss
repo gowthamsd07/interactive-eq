@@ -48,6 +48,17 @@ body {
     padding-top: 160px;
   }
 }
+.section-padding-bottom {
+  padding-bottom: 80px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 120px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-bottom: 160px;
+  }
+}
 
 .section-padding-y {
   padding: 80px 0;
@@ -186,6 +197,12 @@ body {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+.inner-page {
+  footer {
+    opacity: 1 !important;
   }
 }
 

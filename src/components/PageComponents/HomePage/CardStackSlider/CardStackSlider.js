@@ -102,8 +102,6 @@ const CardStackSlider = (props) => {
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
       mm.add("(min-width: 1200px)", () => {
-        const images = gsap.utils.toArray(".image-list__item");
-        const rightElements = gsap.utils.toArray(".content-list__item");
         // gsap.set(".content-list__item", {
         // gsap.timeline({
         //   scrollTrigger: {
@@ -136,7 +134,7 @@ const CardStackSlider = (props) => {
           // markers: true,
           scrub: 3,
           start: "0px top",
-          end: "350% top",
+          end: "450% top",
           pinSpacing: true,
           pinSpacer: true,
           anticipatePin: 1,
@@ -151,72 +149,95 @@ const CardStackSlider = (props) => {
         gsap.to(".image-list__item-2", {
           marginTop: -685,
           immediateRender: false,
+          duration: 1,
           scrollTrigger: {
             trigger: ".image-list__item-1",
             // markers: true,
             id: "card-2-in",
-            scrub: 3,
-            start: "180% top",
-            end: "280% top",
-            snap: 0.1,
+            scrub: false,
+            start: "350% top",
+            // end: "400% top",
+            toggleActions: "play none reverse none",
           },
         });
         gsap.to(".image-list__item-1", {
           opacity: 0.4,
           scale: 0.8,
+          duration: 1,
+
           immediateRender: false,
           scrollTrigger: {
             trigger: ".image-list__item-1",
             // markers: true,
             id: "card-1-out",
-            scrub: 3,
-            start: "190% top",
-            end: "290% top",
+            scrub: false,
+            start: "360% top",
+            // end: "350% top",
+            toggleActions: "play none reverse none",
           },
         });
         gsap.to(".image-list__item-3", {
           marginTop: -685,
           immediateRender: false,
+          duration: 1,
+
           scrollTrigger: {
             trigger: ".image-list__item-2",
             // markers: true,
             id: "card-3-in",
-            scrub: 3,
-            start: "190% top",
-            end: "290% top",
-            snap: 0.1,
+            scrub: false,
+            start: "350% top",
+            // end: "570% top",
+            toggleActions: "play none reverse none",
           },
         });
         gsap.to(".image-list__item-2", {
           opacity: 0.4,
           scale: 0.8,
+          duration: 1,
+
           immediateRender: false,
           scrollTrigger: {
             trigger: ".image-list__item-2",
             // markers: true,
             id: "card-2-out",
-            scrub: 3,
-            start: "230% top",
-            end: "330% top",
+            scrub: false,
+            start: "370% top",
+            // end: "480% top",
+            toggleActions: "play none reverse none",
           },
         });
 
-        images.forEach((img, i) => {
-          gsap.to(rightElements, {
-            yPercent: -(100 * i),
-            ease: "none",
-            // delay: 0.2,
-            immediateRender: false,
-            scrollTrigger: {
-              trigger: img,
-              // markers: true,
-              id: "cont" + i,
-              scrub: false,
-              start: "160% center",
-              end: "170% center",
-              toggleActions: "play none none reverse",
-            },
-          });
+        gsap.to(".content-list__item", {
+          yPercent: -100,
+          ease: "none",
+          // delay: 0.2,
+          immediateRender: false,
+          scrollTrigger: {
+            trigger: ".image-list__item-1",
+            // markers: true,
+            id: "cont1",
+            scrub: false,
+            start: "350% top",
+            // end: "400% top",
+            toggleActions: "play none reverse none",
+          },
+        });
+
+        gsap.to(".content-list__item", {
+          yPercent: -200,
+          ease: "none",
+          // delay: 0.2,
+          immediateRender: false,
+          scrollTrigger: {
+            trigger: ".image-list__item-2",
+            // markers: true,
+            id: "cont2",
+            scrub: false,
+            start: "350% top",
+            // end: "500% top",
+            toggleActions: "play none reverse none",
+          },
         });
       });
     });

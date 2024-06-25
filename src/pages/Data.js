@@ -35,6 +35,11 @@ import SkillIcon6 from "../assets/images/home/skill-slider-6.png";
 import SkillIcon7 from "../assets/images/home/skill-slider-7.png";
 import SkillIcon8 from "../assets/images/home/skill-slider-8.png";
 
+// product-slider
+import ProductSliderImg1 from "../assets/images/product/slider-image-1.jpg";
+import ProductSliderImg2 from "../assets/images/product/slider-image-2.jpg";
+import ProductSliderImg3 from "../assets/images/product/slider-image-3.jpg";
+
 export const SOFT_SKILLS_ITEMS = [
   {
     id: 1,
@@ -238,5 +243,28 @@ export const CARD_SLIDER_ITEMS = [
     modalDesc:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
     modalButtonText: "Learn More",
+  },
+];
+
+// product page
+
+export const PRODUCT_SLIDER_ITEMS = [
+  {
+    id: 1,
+    title: "The forefront of hiring tech.",
+    desc: "Human aptitude scoring by iEQ is a first-of-its-kind breakthrough that you won’t find anywhere else.",
+    imgUrl: ProductSliderImg1,
+  },
+  {
+    id: 2,
+    title: "Multi Module",
+    desc: "Pick from a range of role-play scenarios to test your candidates, from chats and email threads to remote and in-person simulations.",
+    imgUrl: ProductSliderImg2,
+  },
+  {
+    id: 3,
+    title: "Data privacy & compliance",
+    desc: "We take great care in adhering to fast changing compliance laws related to artificial intelligence, recording, talent recruitment and beyond. Our methods are constantly vetted by the most trusted legal minds in Silicon Valley.",
+    imgUrl: ProductSliderImg3,
   },
 ];
