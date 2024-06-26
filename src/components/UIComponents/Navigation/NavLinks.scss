@@ -1,13 +1,15 @@
-.nav-links {
-  li {
-    &:hover {
-      color: var(--text-white-l);
-    }
-
-    a {
-      &.active {
+header {
+  .nav-links {
+    li {
+      &:hover {
         color: var(--text-white-l);
-        font-weight: 700;
+      }
+
+      a {
+        &.active {
+          color: var(--text-white-l);
+          font-weight: 700;
+        }
       }
     }
   }

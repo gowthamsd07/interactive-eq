@@ -8,6 +8,8 @@ import SolutionsPage from "./pages/SolutionsPage";
 
 const Home = lazy(() => import("./pages/HomePage"));
 const Products = lazy(() => import("./pages/ProductPage"));
+const AutoDealer = lazy(() => import("./pages/AutoDealerPage"));
+const Candidates = lazy(() => import("./pages/CandidatesPage"));
 
 const App = () => (
   <div>
@@ -20,6 +22,8 @@ const App = () => (
             <Route exact path="/" element={<Home />}></Route>
             <Route exact path="/product" element={<Products />}></Route>
             <Route path="/solutions" element={<SolutionsPage />}></Route>
+            <Route path="/auto-dealer" element={<AutoDealer />}></Route>
+            <Route path="/candidates" element={<Candidates />}></Route>
           </Routes>
         </main>
         <FooterNavigation />

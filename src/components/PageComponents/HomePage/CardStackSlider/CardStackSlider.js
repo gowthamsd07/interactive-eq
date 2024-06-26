@@ -134,7 +134,7 @@ const CardStackSlider = (props) => {
           // markers: true,
           scrub: 3,
           start: "0px top",
-          end: "450% top",
+          end: "480% top",
           pinSpacing: true,
           pinSpacer: true,
           anticipatePin: 1,
@@ -156,7 +156,7 @@ const CardStackSlider = (props) => {
             id: "card-2-in",
             scrub: false,
             start: "350% top",
-            // end: "400% top",
+            end: "400% top",
             toggleActions: "play none reverse none",
           },
         });
@@ -172,7 +172,7 @@ const CardStackSlider = (props) => {
             id: "card-1-out",
             scrub: false,
             start: "360% top",
-            // end: "350% top",
+            end: "400% top",
             toggleActions: "play none reverse none",
           },
         });
@@ -186,8 +186,8 @@ const CardStackSlider = (props) => {
             // markers: true,
             id: "card-3-in",
             scrub: false,
-            start: "350% top",
-            // end: "570% top",
+            start: "450% top",
+            end: "500% top",
             toggleActions: "play none reverse none",
           },
         });
@@ -202,8 +202,8 @@ const CardStackSlider = (props) => {
             // markers: true,
             id: "card-2-out",
             scrub: false,
-            start: "370% top",
-            // end: "480% top",
+            start: "460% top",
+            end: "500% top",
             toggleActions: "play none reverse none",
           },
         });
@@ -219,7 +219,7 @@ const CardStackSlider = (props) => {
             id: "cont1",
             scrub: false,
             start: "350% top",
-            // end: "400% top",
+            end: "400% top",
             toggleActions: "play none reverse none",
           },
         });
@@ -234,8 +234,8 @@ const CardStackSlider = (props) => {
             // markers: true,
             id: "cont2",
             scrub: false,
-            start: "350% top",
-            // end: "500% top",
+            start: "450% top",
+            end: "500% top",
             toggleActions: "play none reverse none",
           },
         });

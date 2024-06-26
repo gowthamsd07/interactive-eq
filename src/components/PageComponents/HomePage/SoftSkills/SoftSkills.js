@@ -140,11 +140,9 @@ const SoftSkills = (props) => {
                 duration={1}
                 ease="Power1.out(1.7)"
               > */}
-            <p className="subtitle-1 text-center text-secondary-l">
-              IQ measures intelligence. EQ measures emotional intelligence.
-              Human aptitude is the application of EQ to job candidate
-              evaluation. A rich, experiential assessment from Interactive EQ
-              measures
+            <p className="h6r text-center text-secondary-l">
+              IQ measures intelligence. EQ measures emotional intelligence. A
+              rich, experiential assessment from Interactive EQ measures:
             </p>
             {/* </Tween>
             </Reveal> */}
@@ -164,6 +162,7 @@ const SoftSkills = (props) => {
                 title={item.title}
                 desc={item.desc}
                 iconUrl={item.iconUrl}
+                listItems={item.listItems}
               />
             ))}
           </Col>

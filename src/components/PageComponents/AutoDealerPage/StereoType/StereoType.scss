@@ -1,0 +1,26 @@
+.ieq-auto-stereo {
+  .content-wrap {
+    p {
+      margin-top: 24px;
+    }
+    button {
+      margin-top: 40px;
+    }
+  }
+
+  .stereotype-card {
+    background: var(--bg-variant1-l);
+    padding: 56px 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+
+    img {
+      width: 96px;
+      height: 96px;
+    }
+  }
+}

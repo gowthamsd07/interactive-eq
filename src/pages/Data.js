@@ -44,13 +44,27 @@ import HraTile1 from "../assets/images/solutions/hrm-img-1.png";
 import HraTile2 from "../assets/images/solutions/hrm-img-2.png";
 import HraTile3 from "../assets/images/solutions/hrm-img-3.png";
 
+// auto dealer
+import AutoDealerSliderImg1 from "../assets/images/auto-dealer/slider-image-1.png";
+// import AutoDealerSliderImg2 from "../assets/images/auto-dealer/slider-image-2.png";
+
+// candidates
+import CandidatesSliderImg1 from "../assets/images/candidates/candidate-slider-image-1.png";
+// import CandidatesSliderImg2 from "../assets/images/candidates/candidate-slider-image-2.png";
+// import CandidatesSliderImg3 from "../assets/images/candidates/candidate-slider-image-3.png";
 
 export const SOFT_SKILLS_ITEMS = [
   {
     id: 1,
     direction: "",
     title: "Empathy",
-    desc: "Under stand others. Sense their emotional state. Feel what they are feeling.",
+    desc: "Contribute to a culture where compassion and mutual respect underpin every interaction.",
+    listItems: [
+      "Feel what others are feeling",
+      "Actively listen and give genuine responses",
+      "Understand others’ personal challenges",
+      "Cultivate trust with compassion",
+    ],
     iconUrl: HumanAptIcon1,
     offset: 300,
   },
@@ -58,32 +72,56 @@ export const SOFT_SKILLS_ITEMS = [
     id: 2,
     direction: "reverse",
     title: "Situational awareness",
-    desc: "Read the room, understand what is needed, and respond appropriately.",
+    desc: "Stay attuned to unfolding events to ensure a swift and informed response to any situation. ",
     offset: 450,
+    listItems: [
+      "Read the room ",
+      "Proactively identify hazards",
+      "Understand what is needed ",
+      "Respond appropriately",
+    ],
     iconUrl: HumanAptIcon2,
   },
   {
     id: 3,
     direction: "",
     title: "Improvisation",
-    desc: "The flexibility to keep cool and pivot when things don’t go to plan.",
+    desc: "Foster the art of building a dynamic environment where adaptability and creativity thrive. ",
     offset: 450,
+    listItems: [
+      "Be flexible when things don’t go to plan ",
+      "Keep cool under pressure ",
+      "Quickly pivot into spontaneous collaboration",
+      "Embrace unexpected opportunities ",
+    ],
     iconUrl: HumanAptIcon3,
   },
   {
     id: 4,
     direction: "reverse",
     title: "Conflict resolution",
-    desc: "Sense tension from others and know which wires to clip to disarm the bomb.",
+    desc: "Pave the way for harmony and collaboration, which leads to professional growth and team unity. ",
     offset: 450,
+    listItems: [
+      "Sense tension in others ",
+      "Seek common ground ",
+      "Come up with a plan",
+      "Disarm the bomb ",
+    ],
     iconUrl: HumanAptIcon4,
   },
   {
     id: 5,
     direction: "",
-    title: "Self awareness",
-    desc: "Knowing one's own impact on any situation, including tone and body language.",
+    title: "Cultural fit",
+    desc: "Harmonize individual values with the collective ethos of the organization for heightened productivity.",
     offset: 450,
+    listItems: [
+      "Find your tribe",
+      "Align on shared core values",
+      "Stop at nothing to achieve win-wins ",
+      "Strive for an inclusive work environment ",
+    ],
     iconUrl: HumanAptIcon5,
   },
 ];
@@ -166,24 +204,25 @@ export const ASSESSMENT_ITEMS = [
 export const SKILLS_ITEMS = [
   {
     id: 1,
-    iconUrl: SkillIcon1,
-    desc: "Multi-modular assessments",
-  },
-  {
-    id: 2,
     iconUrl: SkillIcon2,
     desc: "Generative AI",
   },
   {
-    id: 3,
+    id: 2,
     iconUrl: SkillIcon3,
     desc: "Natural language processing",
   },
   {
-    id: 4,
+    id: 3,
     iconUrl: SkillIcon4,
     desc: "Large language modeling",
   },
+  {
+    id: 4,
+    iconUrl: SkillIcon1,
+    desc: "Multi-modular assessments",
+  },
+
   {
     id: 5,
     iconUrl: SkillIcon5,
@@ -279,25 +318,50 @@ export const HRM_TILE_ITEMS = [
   {
     id: 1,
     imgUrl: HraTile1,
-    altText: 'Cohesive distributed teams',
-    title: 'Cohesive distributed teams',
-    titleDescription: 'When teams are scattered across time zones, you must ensure every member has the interpersonal skills to collaborate and make decisions. You need people who fit your company culture. ',
-    tileText: 'Find colleagues that can tell who is engaged and who is tuned-out during meetings. ',
+    altText: "Cohesive distributed teams",
+    title: "Cohesive distributed teams",
+    titleDescription:
+      "When teams are scattered across time zones, you must ensure every member has the interpersonal skills to collaborate and make decisions. You need people who fit your company culture. ",
+    tileText:
+      "Find colleagues that can tell who is engaged and who is tuned-out during meetings. ",
   },
   {
     id: 2,
     imgUrl: HraTile2,
-    altText: 'Maximize hiring resources',
-    title: 'Maximize hiring resources',
-    titleDescription: 'Candidates go through multiple rounds of interviews before receiving an offer. Validate your decision by confirming their EQ is as strong as their resume. ',
-    tileText: 'Identify salespeople that can sense when a deal is slipping.',
+    altText: "Maximize hiring resources",
+    title: "Maximize hiring resources",
+    titleDescription:
+      "Candidates go through multiple rounds of interviews before receiving an offer. Validate your decision by confirming their EQ is as strong as their resume. ",
+    tileText: "Identify salespeople that can sense when a deal is slipping.",
   },
   {
     id: 3,
     imgUrl: HraTile3,
-    altText: 'Operational efficiency',
-    title: 'Operational efficiency',
-    titleDescription: 'Seamlessly integrate Interactive EQ with your ATS for a unified, holistic candidate view.',
-    tileText: 'Hire workers who circumvent customer issues proactively instead of reactively. ',
+    altText: "Operational efficiency",
+    title: "Operational efficiency",
+    titleDescription:
+      "Seamlessly integrate Interactive EQ with your ATS for a unified, holistic candidate view.",
+    tileText:
+      "Hire workers who circumvent customer issues proactively instead of reactively. ",
   },
-]
+];
+
+// Auto dealer slider
+export const AUTO_DEALER_SLIDER_ITEMS = [
+  {
+    id: 1,
+    title: "Healthy competition",
+    desc: "Hire salespeople who work together, not against each other. ",
+    imgUrl: AutoDealerSliderImg1,
+  },
+];
+
+// Candidates slider
+export const CANDIDATES_SLIDER_ITEMS = [
+  {
+    id: 1,
+    title: "Beyond technical skills",
+    desc: "Traditional interviews don't always showcase your strengths in relationships, communication, and leadership.",
+    imgUrl: CandidatesSliderImg1,
+  },
+];

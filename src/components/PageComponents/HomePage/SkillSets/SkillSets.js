@@ -39,7 +39,7 @@ const SkillSets = (props) => {
                 ease="Power1.out(1.7)"
               >
                 <h3 className="text-primary-l">
-                  Tools to elevate your recruitment
+                  Making the impossible possible
                 </h3>
               </Tween>
             </Reveal>
@@ -53,9 +53,10 @@ const SkillSets = (props) => {
                 ease="Power1.out(1.7)"
               >
                 <p className="subtitle-1 text-secondary-l">
-                  Technical skills have become commoditized. Hirers need to look
-                  beyond job titles, results and work samples. Human aptitude is
-                  the true differentiator. Now you can objectively measure it.
+                  If it sounds like iEQ is uncovering new ground in talent
+                  acquisition, that’s because it is. Behavior recognition and
+                  interpersonal skill assessments of this depth and quality are
+                  only possible due to breakthroughs in artificial intelligence.
                 </p>
               </Tween>
             </Reveal>

@@ -9,9 +9,9 @@ const MainFooter = (props) => {
   // magic
   useLayoutEffect(() => {
     let cty = gsap.context(() => {
-      gsap.set(".main-footer", {
-        opacity: 0,
-      });
+      // gsap.set(".main-footer", {
+      //   opacity: 0,
+      // });
       gsap.to(".main-footer", {
         opacity: 1,
         immediateRender: false,

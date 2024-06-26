@@ -37,7 +37,7 @@
     }
 
     @media (min-width: 1200px) {
-      padding: 120px 80px;
+      padding: 64px 80px 80px 80px;
     }
     h6 {
       border-radius: 100px;
@@ -56,14 +56,28 @@
       @media (min-width: 768px) {
         margin-top: 32px;
       }
+      @media (min-width: 1200px) {
+        margin-top: 0px;
+      }
     }
-    p {
+    .subtitle-2 {
       margin-top: 8px;
       max-width: 320px;
 
       @media (min-width: 1200px) {
         margin-top: 16px;
       }
+    }
+  }
+
+  &__list {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    li {
+      gap: 12px;
     }
   }
 
