@@ -1,6 +1,7 @@
 import React from 'react'
 import './SaasAog.scss';
-import AogImage from '../../../../assets/images/solutions/aog-img.jpg'
+import AogImage from '../../../../assets/images/solutions/aog-img.jpg';
+import { Row, Col } from 'antd';
 
 const SaasAog = () => {
     return (
@@ -10,12 +11,20 @@ const SaasAog = () => {
                 <h1 className='saas-aog__heading display-3 text-center'>
                     Achieve operational greatness
                 </h1>
-                <div className="img-wrapper">
-                    <img className='"w-100' src={AogImage} alt="Achieve operational greatness" />
-                </div>
-                <div className='saas-desc subtitle-3'>
-                    SaaS teams are full of brilliant, talented people. Your top performers leverage their EQ every day to solve complex challenges.
-                </div>
+                <Row className='img-wrapper'>
+                    <Col span={24}>
+                        <img className='w-100 h-100' src={AogImage} alt="Achieve operational greatness" />
+                    </Col>
+                </Row>
+                <Row justify="center">
+                    <Col span={12}>
+                        <p className='saas-desc h6r'>
+                        SaaS teams are full of brilliant,
+                        talented people. Your top performers leverage 
+                        their EQ every day to solve complex challenges.
+                        </p>
+                    </Col>
+                </Row>
             </div>
         </section>
     )

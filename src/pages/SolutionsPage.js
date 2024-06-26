@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import SaasAog from '../components/PageComponents/SolutionsPage/SaasAog'
 import TopCandidate from '../components/PageComponents/SolutionsPage/TopCandidate'
-import Hrm from '../components/PageComponents/SolutionsPage/Hrm'
+import Hrm from '../components/PageComponents/SolutionsPage/Hrm/Hrm'
 import { HRM_TILE_ITEMS } from './Data'
 
 const SolutionsPage = () => {

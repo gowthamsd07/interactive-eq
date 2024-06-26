@@ -5,20 +5,19 @@
     h6 {
       text-align: center;
       font-size: 26px;
-      color: #fff;
+      color: var(--text-white-l);
       margin-bottom: 4px;
     }
   }
 
   &__heading {
-    color: #fff;
+    color: var(--text-white-l);
     max-width: 626px;
   }
 
   .img-wrapper {
     margin: 72px 0;
-    width: 1448.823px;
-    height: 688px;
+    max-height: 688px;
 
     img {
       object-fit: cover;
@@ -29,8 +28,6 @@
   }
 
   .saas-desc {
-    width: 696px;
-    height: 102px;
     color: #A6A6A6;
   }
 }

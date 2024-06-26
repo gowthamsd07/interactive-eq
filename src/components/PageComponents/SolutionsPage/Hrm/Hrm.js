@@ -9,7 +9,7 @@ const Hrm = (props) => {
       <div className="container">
         <div className="flex-all-center flex-column">
           {items.map((tileData) => (
-            <HrmTileCard tileData={tileData} />
+            <HrmTileCard key={tileData.id} tileData={tileData} />
           ))}
         </div>
       </div>

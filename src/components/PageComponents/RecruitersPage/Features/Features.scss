@@ -1,0 +1,24 @@
+.ieq-recruiters-features{
+    .ieq-recruiters-featureTitle{
+        max-width: 456px;
+        p {
+            margin-top: 16px;
+        }
+    }
+    .feature-card {
+        background: var(--bg-variant2-l);
+        border-radius: 20px;
+        padding: 56px 40px;
+        flex-direction: column;
+        justify-content: unset;
+        height: 408px;
+        h3 {
+          margin-top: 32px;
+        }
+    
+        p {
+          margin-top: 16px;
+          color: #666;
+        }
+      }
+}
