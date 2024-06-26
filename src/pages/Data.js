@@ -332,7 +332,7 @@ export const HRM_TILE_ITEMS = [
     title: "Maximize hiring resources",
     titleDescription:
       "Candidates go through multiple rounds of interviews before receiving an offer. Validate your decision by confirming their EQ is as strong as their resume. ",
-    tileText: "Identify salespeople that can sense when a deal is slipping.",
+    tileText: "Save time by avoiding open-ended questions.",
   },
   {
     id: 3,
@@ -342,7 +342,7 @@ export const HRM_TILE_ITEMS = [
     titleDescription:
       "Seamlessly integrate Interactive EQ with your ATS for a unified, holistic candidate view.",
     tileText:
-      "Hire workers who circumvent customer issues proactively instead of reactively. ",
+      "Candidate EQ scoring blends in easily with your recruiting workflow.",
   },
 ];
 
