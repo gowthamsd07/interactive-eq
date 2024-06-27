@@ -98,13 +98,13 @@ const NavLinks = (props) => {
               </NavLink>
             </li>
             <li>
-              <NavLink
+              {/* <NavLink
                 className="text-secondary-l text-body"
                 to="/"
                 exact="true"
-              >
-                Compliance
-              </NavLink>
+              > */}
+              <p className="text-secondary-l text-body">Compliance</p>
+              {/* </NavLink> */}
             </li>
           </ul>
         </div>
