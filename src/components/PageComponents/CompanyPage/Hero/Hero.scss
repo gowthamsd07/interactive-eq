@@ -1,9 +1,16 @@
 .ieq-company-banner {
     position: relative;
+    height: calc(100vh - 92px);
+    @media (min-width: 1200px) {
+      height: calc(100vh - 88px);
+    }
     img {
       width: 100%;
-      height: 960px;
-      transform: translateY(-88px);
+      height: 100vh;
+      transform: translateY(-92px);
+      @media (min-width: 1200px) {
+        transform: translateY(-88px);
+      }
     }
   
     &__content {
@@ -15,7 +22,7 @@
       max-width: 915px;
       left: 50%;
       transform: translateX(-50%);
-      bottom: calc(48px + 88px);
+      bottom: 24px;
       p {
         margin-top: 24px;
         max-width: 489px;
