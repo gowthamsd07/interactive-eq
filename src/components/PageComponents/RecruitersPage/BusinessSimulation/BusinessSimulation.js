@@ -9,7 +9,7 @@ const BusinessSimulation = () => {
     <section className="ieq-product-simulation section-padding-y bg-surface">
       <div className="container">
         <Row>
-          <Col xl={{ span: 7, offset: 3 }}>
+          <Col xl={{ span: 7, offset: 2 }}>
             <div className="simulation-content">
               <h3 className="display-3 text-white">
                 For all hiring needs
@@ -23,7 +23,7 @@ const BusinessSimulation = () => {
               </Button>
             </div>
           </Col>
-          <Col xl={{ span: 10, offset: 2 }}>
+          <Col xl={{ span: 10, offset: 3 }}>
             <img
               className="w-100"
               src={SimulationImg}
