@@ -11,6 +11,7 @@ const AutoDealer = lazy(() => import("./pages/AutoDealerPage"));
 const Candidates = lazy(() => import("./pages/CandidatesPage"));
 const Recruiters = lazy(() => import("./pages/RecruitersPage"));
 const SolutionsPage = lazy(() => import("./pages/SolutionsPage"));
+const CompanyPage = lazy(() => import("./pages/CompanyPage"));
 
 const App = () => (
   <div>
@@ -26,6 +27,7 @@ const App = () => (
             <Route path="/auto-dealer" element={<AutoDealer />}></Route>
             <Route path="/candidates" element={<Candidates />}></Route>
             <Route path="/recruiters" element={<Recruiters />}></Route>
+            <Route path="/company" element={<CompanyPage />}></Route>
           </Routes>
         </main>
         <FooterNavigation />
