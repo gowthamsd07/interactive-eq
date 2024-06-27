@@ -1,0 +1,17 @@
+.ieq-company-softskill {
+    background-color: var(--text-white-l);
+    .softSkillImg{
+        border-radius: 40px;
+    }
+    &__content {
+        h1 {
+            color: #1A1A1A;
+        }
+
+        p {
+            max-width: 456px;
+            margin-top: 24px;
+            color: #666;
+        }
+    }
+}
