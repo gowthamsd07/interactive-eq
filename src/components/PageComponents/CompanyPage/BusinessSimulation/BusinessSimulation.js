@@ -14,8 +14,9 @@ const BusinessSimulation = () => {
                 Creating a holistic solution
               </h3>
               <p className="h6r text-secondary">
-                Interactive EQ was created to fill the missing piece in the hiring process.
-                We developed assessments that provide a complete picture of the people you're hiring.
+                Interactive EQ was created to fill the missing piece in the
+                hiring process. We developed assessments that provide a complete
+                picture of the people you're hiring.
               </p>
             </div>
           </Col>
@@ -33,25 +34,25 @@ const BusinessSimulation = () => {
               <Col xl={8}>
                 <div className="simulation-card">
                   {/* <h4 className="h4r text-primary">Leadership roles</h4> */}
-                  <p className="h4r text-secondary">
+                  <h4 className="h4r text-secondary">
                     Backed by years of experience
-                  </p>
+                  </h4>
                 </div>
               </Col>
               <Col xl={8}>
                 <div className="simulation-card">
                   {/* <h4 className="h4r text-primary">Internal collaborators</h4> */}
-                  <p className="h4r text-secondary">
+                  <h4 className="h4r text-secondary">
                     Validated by industry leaders
-                  </p>
+                  </h4>
                 </div>
               </Col>
               <Col xl={8}>
                 <div className="simulation-card">
                   {/* <h4 className="h4r text-primary">Client specialists</h4> */}
-                  <p className="h4r text-secondary">
+                  <h4 className="h4r text-secondary">
                     Compliant with evolving AI standards
-                  </p>
+                  </h4>
                 </div>
               </Col>
             </Row>
@@ -60,6 +61,6 @@ const BusinessSimulation = () => {
       </div>
     </section>
   );
-}
+};
 
 export default BusinessSimulation;
