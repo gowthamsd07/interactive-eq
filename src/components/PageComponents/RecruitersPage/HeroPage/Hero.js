@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from "../../../UIComponents/Buttons/Buttons";
-import RecruiterBanner from '../../../../assets/images/recruiters/recruiters-page-hero.png';
+import RecruiterBanner from '../../../../assets/images/recruiters/recruitershero.jpg';
 import './Hero.scss';
 
 const HeroPage = () => {

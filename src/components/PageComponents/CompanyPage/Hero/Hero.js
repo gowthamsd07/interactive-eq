@@ -1,5 +1,5 @@
 import React from 'react';
-import CompanyBanner from '../../../../assets/images/company/company-hero.png';
+import CompanyBanner from '../../../../assets/images/company/Companyhero.png';
 import './Hero.scss';
 
 const HeroPage = () => {
