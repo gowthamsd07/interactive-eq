@@ -20,6 +20,11 @@
 
   @media (min-width: 1440px) {
     max-width: 1416px;
+    padding: 0 80px;
+  }
+
+  @media (min-width: 1500px) {
+    padding: 0;
   }
 }
 
