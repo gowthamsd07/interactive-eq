@@ -11,15 +11,103 @@ const NavLinks = (props) => {
           Product
         </NavLink>
       </li>
-      <li className="text-body">
-        <NavLink className="text-secondary" to="/solutions">
-          Solutions
-        </NavLink>
+      <li className="text-body solutions-menu-trigger">
+        <div className="flex-align-center">
+          <p className="text-secondary text-body">Solutions</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="17"
+            height="16"
+            viewBox="0 0 17 16"
+            fill="none"
+          >
+            <path
+              d="M4.17188 6L8.17188 10L12.1719 6"
+              stroke="#A7A7A7"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+          <ul className="solutions-dropdown">
+            <li>
+              <NavLink
+                className="text-secondary-l text-body"
+                to="/recruiters"
+                exact="true"
+              >
+                Recruiters
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className="text-secondary-l text-body"
+                to="/candidates"
+                exact="true"
+              >
+                Candidates
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className="text-secondary-l text-body"
+                to="/solutions"
+                exact="true"
+              >
+                Saas
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className="text-secondary-l text-body"
+                to="/auto-dealer"
+                exact="true"
+              >
+                Automotive Dealerships
+              </NavLink>
+            </li>
+          </ul>
+        </div>
       </li>
-      <li className="text-body">
-        <NavLink className="text-secondary" to="/resources">
-          Resources
-        </NavLink>
+      <li className="text-body company-menu-trigger">
+        <div className="flex-align-center">
+          <p className="text-secondary text-body">Company</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="17"
+            height="16"
+            viewBox="0 0 17 16"
+            fill="none"
+          >
+            <path
+              d="M4.17188 6L8.17188 10L12.1719 6"
+              stroke="#A7A7A7"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+          <ul className="company-dropdown">
+            <li>
+              <NavLink
+                className="text-secondary-l text-body"
+                to="/company"
+                exact="true"
+              >
+                Origin Story
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className="text-secondary-l text-body"
+                to="/"
+                exact="true"
+              >
+                Compliance
+              </NavLink>
+            </li>
+          </ul>
+        </div>
       </li>
       <li className="text-body">
         <NavLink className="text-secondary" to="/contact-us">
