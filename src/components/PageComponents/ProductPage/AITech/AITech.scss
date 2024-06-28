@@ -1,7 +1,12 @@
 .ieq-product-ai {
+  margin-top: -2px;
   padding-top: 80px;
   &__title {
-    max-width: 456px;
+    max-width: 335px;
+
+    @media (min-width: 768px) {
+      max-width: 456px;
+    }
     margin: 0 auto;
     p {
       margin-top: 16px;

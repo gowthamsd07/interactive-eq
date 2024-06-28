@@ -1,6 +1,26 @@
 .ieq-candidate-slider {
+  padding-bottom: 100px;
+  margin-top: -2px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 160px;
+  }
   .container {
     display: flex;
     justify-content: center;
+
+    & > div {
+      width: 100%;
+    }
+  }
+  .carousel-prev {
+    &::before {
+      background-image: url(../../../../assets/images/shared/arrow-left-white.svg) !important;
+    }
+  }
+  .carousel-next {
+    &::before {
+      background-image: url(../../../../assets/images/shared/arrow-left-white.svg) !important;
+    }
   }
 }

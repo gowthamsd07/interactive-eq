@@ -29,45 +29,45 @@ const NavLinks = (props) => {
               strokeLinejoin="round"
             />
           </svg>
-          <ul className="solutions-dropdown">
-            <li>
-              <NavLink
-                className="text-secondary-l text-body"
-                to="/recruiters"
-                exact="true"
-              >
-                Recruiters
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                className="text-secondary-l text-body"
-                to="/candidates"
-                exact="true"
-              >
-                Candidates
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                className="text-secondary-l text-body"
-                to="/solutions"
-                exact="true"
-              >
-                Saas
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                className="text-secondary-l text-body"
-                to="/auto-dealer"
-                exact="true"
-              >
-                Automotive Dealerships
-              </NavLink>
-            </li>
-          </ul>
         </div>
+        <ul className="solutions-dropdown">
+          <li>
+            <NavLink
+              className="text-secondary-l text-body"
+              to="/recruiters"
+              exact="true"
+            >
+              Recruiters
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className="text-secondary-l text-body"
+              to="/candidates"
+              exact="true"
+            >
+              Candidates
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className="text-secondary-l text-body"
+              to="/solutions"
+              exact="true"
+            >
+              Saas
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className="text-secondary-l text-body"
+              to="/auto-dealer"
+              exact="true"
+            >
+              Automotive Dealerships
+            </NavLink>
+          </li>
+        </ul>
       </li>
       <li className="text-body company-menu-trigger">
         <div className="flex-align-center">
@@ -87,27 +87,27 @@ const NavLinks = (props) => {
               strokeLinejoin="round"
             />
           </svg>
-          <ul className="company-dropdown">
-            <li>
-              <NavLink
-                className="text-secondary-l text-body"
-                to="/company"
-                exact="true"
-              >
-                Origin Story
-              </NavLink>
-            </li>
-            <li>
-              {/* <NavLink
+        </div>
+        <ul className="company-dropdown">
+          <li>
+            <NavLink
+              className="text-secondary-l text-body"
+              to="/company"
+              exact="true"
+            >
+              Origin Story
+            </NavLink>
+          </li>
+          <li>
+            {/* <NavLink
                 className="text-secondary-l text-body"
                 to="/"
                 exact="true"
               > */}
-              <p className="text-secondary-l text-body">Compliance</p>
-              {/* </NavLink> */}
-            </li>
-          </ul>
-        </div>
+            <p className="text-secondary-l text-body">Compliance</p>
+            {/* </NavLink> */}
+          </li>
+        </ul>
       </li>
       <li className="text-body">
         <NavLink className="text-secondary" to="/contact-us">

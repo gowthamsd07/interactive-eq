@@ -84,6 +84,20 @@ const IeqVideo = () => {
             scrub: 2,
           },
         });
+
+        gsap.to(".controls-container", {
+          zIndex: 0,
+          immediateRender: false,
+          scrollTrigger: {
+            trigger: ".ieq-video__wrap",
+            start: "10% top",
+            end: "100% top",
+            // markers: true,
+            id: "anim-mark",
+            scrub: 2,
+            // toggleActions: "play none reverse none",
+          },
+        });
       });
     });
     return () => {

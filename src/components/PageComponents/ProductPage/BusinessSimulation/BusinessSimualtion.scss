@@ -1,11 +1,16 @@
 .ieq-product-simulation {
-  .simulation-content {
+  overflow: hidden;
+  .simulation-title {
     p {
       margin-top: 32px;
     }
     button {
       margin-top: 40px;
     }
+  }
+  .simulation-content {
+    flex-wrap: nowrap !important;
+    overflow-x: scroll;
   }
 
   .simulation-card {

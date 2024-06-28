@@ -21,8 +21,8 @@ const AITech = () => {
         </div>
         <Row className="mt-80">
           <Col xl={{ span: 20, offset: 2 }}>
-            <Row gutter={24}>
-              <Col xl={8}>
+            <Row gutter={[24, 24]}>
+              <Col className="d-flex" xs={24} md={12} xl={8}>
                 <div className="ai-card flex-all-center">
                   <img src={AIIcon1} alt="gen ai" />
                   <h3 className="text-primary-l text-center">Gen AI</h3>
@@ -31,7 +31,7 @@ const AITech = () => {
                   </p>
                 </div>
               </Col>
-              <Col xl={8}>
+              <Col className="d-flex" xs={24} md={12} xl={8}>
                 <div className="ai-card flex-all-center">
                   <img src={AIIcon2} alt="gen ai" />
                   <h3 className="text-primary-l text-center">NLP</h3>
@@ -40,7 +40,7 @@ const AITech = () => {
                   </p>
                 </div>
               </Col>
-              <Col xl={8}>
+              <Col className="d-flex" xs={24} md={12} xl={8}>
                 <div className="ai-card flex-all-center">
                   <img src={AIIcon3} alt="gen ai" />
                   <h3 className="text-primary-l text-center">LLM</h3>

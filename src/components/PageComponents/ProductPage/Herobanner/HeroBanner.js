@@ -17,7 +17,7 @@ const HeroBanner = () => {
         <h1 className="display-3 text-center text-white">
           The star employee finder
         </h1>
-        <p className="h6r text-center text-secondary">
+        <p className="text-center text-secondary">
           Interactive EQ combines immersive on-the-job experiences and
           expert-validated analysis to help hirers identify the most impactful
           talent.

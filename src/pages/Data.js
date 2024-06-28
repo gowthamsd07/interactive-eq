@@ -46,12 +46,12 @@ import HraTile3 from "../assets/images/solutions/hrm-img-3.png";
 
 // auto dealer
 import AutoDealerSliderImg1 from "../assets/images/auto-dealer/slider-image-1.png";
-// import AutoDealerSliderImg2 from "../assets/images/auto-dealer/slider-image-2.png";
+import AutoDealerSliderImg2 from "../assets/images/auto-dealer/slider-image-2.png";
 
 // candidates
 import CandidatesSliderImg1 from "../assets/images/candidates/candidate-slider-image-1.png";
-// import CandidatesSliderImg2 from "../assets/images/candidates/candidate-slider-image-2.png";
-// import CandidatesSliderImg3 from "../assets/images/candidates/candidate-slider-image-3.png";
+import CandidatesSliderImg2 from "../assets/images/candidates/candidate-slider-image-2.png";
+import CandidatesSliderImg3 from "../assets/images/candidates/candidate-slider-image-3.png";
 
 export const SOFT_SKILLS_ITEMS = [
   {
@@ -353,6 +353,14 @@ export const AUTO_DEALER_SLIDER_ITEMS = [
     title: "Healthy competition",
     desc: "Hire salespeople who work together, not against each other. ",
     imgUrl: AutoDealerSliderImg1,
+    isButton: true,
+  },
+  {
+    id: 2,
+    title: "Service with a smile",
+    desc: "You know the stat: 50% of dealership profits come from parts and service. Make sure you hire a team that isn’t just handy but also friendly. Hire workers who circumvent customer issues proactively instead of reactively.",
+    imgUrl: AutoDealerSliderImg2,
+    isButton: true,
   },
 ];
 
@@ -363,5 +371,17 @@ export const CANDIDATES_SLIDER_ITEMS = [
     title: "Beyond technical skills",
     desc: "Traditional interviews don't always showcase your strengths in relationships, communication, and leadership.",
     imgUrl: CandidatesSliderImg1,
+  },
+  {
+    id: 2,
+    title: "Showcase your true potential",
+    desc: "Don't let your potential go unnoticed. Let your Interactive EQ scores demonstrate your soft skills to recruiters.",
+    imgUrl: CandidatesSliderImg2,
+  },
+  {
+    id: 3,
+    title: "Play the hiring game",
+    desc: "This is not your father’s candidate assessment. Our experiential scenarios are as entertaining as they are immersive and realistic.",
+    imgUrl: CandidatesSliderImg3,
   },
 ];

@@ -1,33 +1,136 @@
 .ieq-product-slider {
-  overflow: hidden;
+  // overflow: visible;
+
+  @media (min-width: 768px) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  // overflow: hidden;
   .slider-wrapper {
     display: flex;
-    align-items: center;
-    gap: 80px;
+    align-items: flex-start;
+    gap: 24px;
     overflow: scroll;
+    flex-direction: column;
+    // position: relative;
+    // overflow: visible;
+    // position: relative;
+
+    @media (min-width: 768px) {
+      gap: 40px;
+    }
+
+    @media (min-width: 1200px) {
+      gap: 80px;
+      flex-direction: row;
+    }
+
+    & > div {
+      width: 100%;
+    }
   }
 }
 .slider-card {
-  max-width: 936px;
-  max-height: 560px;
   display: flex;
   align-items: center;
-  gap: 58px;
-  padding: 24px 24px 24px 64px;
+  gap: 24px;
   background: var(--bg-variant1-l);
   border-radius: 40px;
+  padding: 24px;
+  flex-direction: column;
+  min-width: 100%;
+  @media (min-width: 768px) {
+    flex-direction: column-reverse;
+    max-width: 524px;
+    margin: 0 auto;
+    min-width: auto;
+  }
+
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    max-width: 936px;
+    padding: 24px 24px 24px 64px;
+    max-height: 560px;
+    gap: 58px;
+  }
   p {
     margin-top: 24px;
   }
 
   &__text {
-    min-width: 428px;
-    width: 100%;
+    @media (min-width: 1200px) {
+      min-width: 428px;
+      width: 100%;
+    }
   }
 
   &__img {
+    width: 100%;
     img {
       border-radius: 20px;
+      width: 100%;
+      height: 100%;
+      max-height: 300px;
+      object-fit: cover;
+
+      @media (min-width: 1200px) {
+        width: auto;
+        max-height: none;
+      }
     }
   }
+
+  .buttons-wrap {
+    margin-top: 40px;
+    display: flex;
+    gap: 16px;
+
+    .button--secondary {
+      color: var(--text-primary-l);
+      border-color: var(--text-primary-l);
+    }
+  }
+}
+
+.carousel-arrow {
+  position: absolute;
+  width: 32px !important;
+  height: 32px !important;
+  bottom: -60px !important;
+  top: unset !important;
+
+  @media (min-width: 768px) {
+    bottom: -96px !important;
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  &::before {
+    width: 48px !important;
+    height: 48px !important;
+  }
+}
+
+.carousel-prev {
+  left: calc(50% - 40px) !important;
+  @media (min-width: 768px) {
+    left: calc(50% - 56px) !important;
+  }
+  &::before {
+    background-image: url(../../../../assets/images/shared/arrow-left.svg) !important;
+  }
+}
+.carousel-next {
+  right: calc(50% - 40px) !important;
+  @media (min-width: 768px) {
+    right: calc(50% - 56px) !important;
+  }
+  &::before {
+    background-image: url(../../../../assets/images/shared/arrow-left.svg) !important;
+    transform: scaleX(-1) !important;
+  }
+}
+
+.carousel-initialized {
+  position: unset !important;
 }

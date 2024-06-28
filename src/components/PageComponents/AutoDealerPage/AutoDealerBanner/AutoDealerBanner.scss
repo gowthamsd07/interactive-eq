@@ -1,5 +1,9 @@
 .ieq-auto-banner {
-  padding-top: 80px;
+  padding-top: 40px;
+
+  @media (min-width: 768px) {
+    padding-top: 80px;
+  }
 
   &__desc {
     max-width: 617px;

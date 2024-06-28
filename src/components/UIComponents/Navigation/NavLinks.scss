@@ -29,6 +29,12 @@ header {
       transform: translateY(0px);
 
       transition: all ease 0.5s;
+
+      @media (max-width: 1199px) {
+        height: auto;
+        transform: none !important;
+        transition: none !important;
+      }
     }
   }
 }
@@ -42,29 +48,43 @@ header {
       transform: translateY(0px);
 
       transition: all ease 0.5s;
+
+      @media (max-width: 1199px) {
+        height: auto;
+        transform: none !important;
+        transition: none !important;
+      }
     }
   }
 }
 
 .company-dropdown,
 .solutions-dropdown {
-  display: none;
+  display: flex;
   border-radius: 8px;
   background: #fff;
   padding: 16px !important;
   flex-direction: column;
   gap: 12px;
-  min-width: 215px;
-  position: absolute;
+  min-width: 220px;
   top: 35px;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(10px);
-  transition: all ease 0.5s;
+
   // transition-delay: 0.5s;
+
+  // @media (max-width: 1199px) {
+  //   height: 0;
+  //   padding: 0 !important;
+  //   transform: none !important;
+  //   transition: none !important;
+  // }
 
   @media (min-width: 1200px) {
     display: flex;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all ease 0.5s;
   }
 
   a:hover {

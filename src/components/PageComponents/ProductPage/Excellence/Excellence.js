@@ -23,13 +23,13 @@ const Excellence = () => {
         </h3>
         <Row className="mt-80 cards-wrapper">
           <Col xl={{ span: 16, offset: 4 }}>
-            <Row gutter={24} className="cards-inner-wrapper">
-              <Col xl={12}>
+            <Row gutter={[24, 24]} className="cards-inner-wrapper">
+              <Col xs={24} md={12}>
                 <div className="image-card">
                   <img src={CardIcon1} alt="product icons" />
                 </div>
               </Col>
-              <Col xl={12}>
+              <Col xs={24} md={12}>
                 <div className="content-card">
                   <h4 className="text-primary">Human aptitude</h4>
                   <p className="text-l text-secondary">
@@ -40,13 +40,13 @@ const Excellence = () => {
                 </div>
               </Col>
             </Row>
-            <Row gutter={24} className="cards-inner-wrapper">
-              <Col xl={{ span: 12, order: 2 }}>
+            <Row gutter={[24, 24]} className="cards-inner-wrapper">
+              <Col xs={24} md={{ span: 12, order: 2 }}>
                 <div className="image-card">
                   <img src={CardIcon2} alt="product icons" />
                 </div>
               </Col>
-              <Col xl={{ span: 12, order: 1 }}>
+              <Col xs={24} md={{ span: 12, order: 1 }}>
                 <div className="content-card">
                   <h4 className="text-primary">Interactive video</h4>
                   <p className="text-l text-secondary">
@@ -57,13 +57,13 @@ const Excellence = () => {
                 </div>
               </Col>
             </Row>
-            <Row gutter={24} className="cards-inner-wrapper">
-              <Col xl={12}>
+            <Row gutter={[24, 24]} className="cards-inner-wrapper">
+              <Col xs={24} md={12}>
                 <div className="image-card">
                   <img src={CardIcon3} alt="product icons" />
                 </div>
               </Col>
-              <Col xl={12}>
+              <Col xs={24} md={12}>
                 <div className="content-card">
                   <h4 className="text-primary">Real people</h4>
                   <p className="text-l text-secondary">
@@ -74,13 +74,13 @@ const Excellence = () => {
                 </div>
               </Col>
             </Row>
-            <Row gutter={24} className="cards-inner-wrapper">
-              <Col xl={{ span: 12, order: 2 }}>
+            <Row gutter={[24, 24]} className="cards-inner-wrapper">
+              <Col xs={24} md={{ span: 12, order: 2 }}>
                 <div className="image-card">
                   <img src={CardIcon4} alt="product icons" />
                 </div>
               </Col>
-              <Col xl={{ span: 12, order: 1 }}>
+              <Col xs={24} md={{ span: 12, order: 1 }}>
                 <div className="content-card">
                   <h4 className="text-primary">Measurable insight</h4>
                   <p className="text-l text-secondary">

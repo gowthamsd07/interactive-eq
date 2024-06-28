@@ -19,6 +19,7 @@ const MainNavigation = (props) => {
 
   const closeDrawerHandler = () => {
     setDrawerIsOpen(false);
+    console.log("clicked");
   };
 
   return (

@@ -10,9 +10,9 @@ function BusinessSimulation() {
   return (
     <section className="ieq-product-simulation section-padding-y bg-surface">
       <div className="container">
-        <Row>
-          <Col xl={{ span: 8, offset: 2 }}>
-            <div className="simulation-content">
+        <Row gutter={[24, { xs: 80, xl: 0 }]}>
+          <Col xs={24} xl={{ span: 8, offset: 2 }}>
+            <div className="simulation-title">
               <h3 className="display-3 text-white">
                 First-person business simulation
               </h3>
@@ -25,7 +25,7 @@ function BusinessSimulation() {
               </Button>
             </div>
           </Col>
-          <Col xl={{ span: 10, offset: 2 }}>
+          <Col xs={24} xl={{ span: 10, offset: 2 }}>
             <img
               className="w-100"
               src={SimulationImg}
@@ -35,8 +35,8 @@ function BusinessSimulation() {
         </Row>
         <Row className="mt-80">
           <Col xl={{ offset: 2, span: 20 }}>
-            <Row gutter={24}>
-              <Col xl={8}>
+            <Row gutter={[24, 24]} className="simulation-content">
+              <Col xs={24} md={12} xl={8}>
                 <div className="simulation-card">
                   <h4 className="h4r text-primary">Film production</h4>
                   <p className="text-body text-secondary">
@@ -45,7 +45,7 @@ function BusinessSimulation() {
                   </p>
                 </div>
               </Col>
-              <Col xl={8}>
+              <Col xs={24} md={12} xl={8}>
                 <div className="simulation-card">
                   <h4 className="h4r text-primary">Layered writing </h4>
                   <p className="text-body text-secondary">
@@ -54,7 +54,7 @@ function BusinessSimulation() {
                   </p>
                 </div>
               </Col>
-              <Col xl={8}>
+              <Col xs={24} md={12} xl={8}>
                 <div className="simulation-card">
                   <h4 className="h4r text-primary">Real-life scenarios </h4>
                   <p className="text-body text-secondary">

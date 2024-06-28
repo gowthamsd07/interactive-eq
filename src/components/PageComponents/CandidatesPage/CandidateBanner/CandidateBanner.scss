@@ -1,8 +1,14 @@
 .ieq-candidate-banner {
   padding-top: 80px;
+  padding-bottom: 8px;
 
   &__desc {
     max-width: 662px;
     margin: 0 auto;
+    text-align: center;
+
+    @media (min-width: 1200px) {
+      text-align: left;
+    }
   }
 }

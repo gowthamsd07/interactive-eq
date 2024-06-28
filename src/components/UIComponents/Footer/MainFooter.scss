@@ -16,4 +16,9 @@
   @media (min-width: 1200px) {
     padding: 90px 0;
   }
+
+  .company-dropdown,
+  .solutions-dropdown {
+    display: none;
+  }
 }
