@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Row } from "antd";
-import SimulationImg from "../../../../assets/images/product/business-simulation.png";
+import SimulationImg from "../../../../assets/images/recruiters/rec-simulation.png";
 import "./BusinessSimualtion.scss";
 import Button from "../../../UIComponents/Buttons/Buttons";
 
@@ -8,7 +8,7 @@ const BusinessSimulation = () => {
   return (
     <section className="ieq-product-simulation section-padding-y bg-surface">
       <div className="container">
-        <Row>
+        <Row align={"middle"}>
           <Col xl={{ span: 7, offset: 2 }}>
             <div className="simulation-content">
               <h3 className="display-3 text-white">
