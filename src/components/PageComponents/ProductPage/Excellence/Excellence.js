@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 import CardIcon1 from "../../../../assets/images/product/card-icon-1.svg";
 import CardIcon2 from "../../../../assets/images/product/card-icon-2.svg";
-import CardIcon3 from "../../../../assets/images/product/card-icon-3.svg";
+// import CardIcon3 from "../../../../assets/images/product/card-icon-3.svg";
 import CardIcon4 from "../../../../assets/images/product/card-icon-4.svg";
 
 import "./Excellence.scss";

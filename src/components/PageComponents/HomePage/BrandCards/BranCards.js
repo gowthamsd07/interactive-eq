@@ -4,7 +4,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 import BrandCardIllustration from "../../../../assets/images/home/brand-card-illustration.png";
 import "./BrandCards.scss";
-import Button from "../../../UIComponents/Buttons/Buttons";
+// import Button from "../../../UIComponents/Buttons/Buttons";
 import Modal from "../../../UIComponents/Modal/Modal";
 
 const BrandCards = (props) => {
