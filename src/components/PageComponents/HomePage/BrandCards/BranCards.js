@@ -170,9 +170,12 @@ const BrandCards = (props) => {
                         src={BrandCardIllustration}
                         alt="Brand Card Illustration"
                       />
-                      <Button size="small" secondary onClick={openMapHandler}>
-                        Hiring failures are costly?
-                      </Button>
+                      <p
+                        className="text-s popup-trigger"
+                        onClick={openMapHandler}
+                      >
+                        Are you measuring soft skills effectively?
+                      </p>
                     </div>
                   </ScrollAnimation>
                 </Col>

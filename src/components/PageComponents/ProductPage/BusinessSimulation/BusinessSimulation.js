@@ -17,8 +17,10 @@ function BusinessSimulation() {
                 First-person business simulation
               </h3>
               <p className="h6r text-secondary">
-                It's time to place your candidates in a first-person business
-                simulation.
+                Full-motion film productions created by iEQ’s creative and
+                professional script writers, cast, and crew immerse candidates
+                into real-life business scenarios ripped straight from the
+                boardroom.
               </p>
               <Button size="large" primary>
                 Request Demo
@@ -38,28 +40,33 @@ function BusinessSimulation() {
             <Row gutter={[24, 24]} className="simulation-content">
               <Col xs={24} md={12} xl={8}>
                 <div className="simulation-card">
-                  <h4 className="h4r text-primary">Film production</h4>
+                  <h4 className="h4r text-primary">Deeply researched topics</h4>
                   <p className="text-body text-secondary">
-                    Image is everything. Our production team has over two
-                    decades suspending disbelief.
+                    Realistic storylines are crafted by professional script
+                    writers in collaboration with industry experts and vetted by
+                    an advisory council.
                   </p>
                 </div>
               </Col>
               <Col xs={24} md={12} xl={8}>
                 <div className="simulation-card">
-                  <h4 className="h4r text-primary">Layered writing </h4>
+                  <h4 className="h4r text-primary">
+                    Dedicated film production{" "}
+                  </h4>
                   <p className="text-body text-secondary">
-                    Working with business experts who are also writers ensures
-                    our assessments are comprehensive and realistic.
+                    Our film production capabilities are unrivaled. Our team has
+                    been bringing business scenarios to life for more than two
+                    decades.
                   </p>
                 </div>
               </Col>
               <Col xs={24} md={12} xl={8}>
                 <div className="simulation-card">
-                  <h4 className="h4r text-primary">Real-life scenarios </h4>
+                  <h4 className="h4r text-primary">A real pressure test</h4>
                   <p className="text-body text-secondary">
-                    First-person POV situations ripped from the boardroom are
-                    played out by real actors.
+                    Know what your candidate is made of. Place them in an
+                    immersive world to gain insight into their full
+                    problem-solving capabilities.
                   </p>
                 </div>
               </Col>

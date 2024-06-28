@@ -13,7 +13,7 @@ const AITech = () => {
     <section className="ieq-product-ai section-padding-bottom bg-surface-l">
       <div className="container">
         <div className="ieq-product-ai__title">
-          <h3 className="text-primary-l text-center">AI Technology</h3>
+          <h3 className="text-primary-l text-center">AI-powered</h3>
           <p className="h6r text-secondary text-center">
             The transformative ways that we harness AI technologies sets us
             apart.

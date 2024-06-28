@@ -16,7 +16,7 @@ const AutoDealerBanner = () => {
           alt="Auto dealer banner"
         />
         <div className="mt-80">
-          <p className="text-secondary h6r text-center ieq-auto-banner__desc">
+          <p className="text-secondary h6r  ieq-auto-banner__desc">
             Technical systems can be taught. Finding empathetic collaborators is
             challenging. Human aptitude is key, both on the lot and at the desk.
           </p>

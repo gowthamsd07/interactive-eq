@@ -18,9 +18,8 @@ const HeroBanner = () => {
           The star employee finder
         </h1>
         <p className="text-center text-secondary">
-          Interactive EQ combines immersive on-the-job experiences and
-          expert-validated analysis to help hirers identify the most impactful
-          talent.
+          Interactive EQ is a talent recruitment platform that leverages
+          full-motion film production to measure EQ and soft skills.
         </p>
         <Button size="large" primary>
           Request Demo
