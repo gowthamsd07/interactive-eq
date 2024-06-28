@@ -33,7 +33,6 @@ const BusinessSimulation = () => {
             <Row gutter={24}>
               <Col xl={8}>
                 <div className="simulation-card">
-                  {/* <h4 className="h4r text-primary">Leadership roles</h4> */}
                   <h4 className="h4r text-secondary">
                     Backed by years of experience
                   </h4>
@@ -41,7 +40,6 @@ const BusinessSimulation = () => {
               </Col>
               <Col xl={8}>
                 <div className="simulation-card">
-                  {/* <h4 className="h4r text-primary">Internal collaborators</h4> */}
                   <h4 className="h4r text-secondary">
                     Validated by industry leaders
                   </h4>
@@ -49,7 +47,6 @@ const BusinessSimulation = () => {
               </Col>
               <Col xl={8}>
                 <div className="simulation-card">
-                  {/* <h4 className="h4r text-primary">Client specialists</h4> */}
                   <h4 className="h4r text-secondary">
                     Compliant with evolving AI standards
                   </h4>
