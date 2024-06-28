@@ -1,16 +1,22 @@
 import React from 'react';
 import Button from "../../../UIComponents/Buttons/Buttons";
-import RecruiterBanner from '../../../../assets/images/recruiters/recruitershero.jpg';
+import RecruiterBannerVideo from '../../../../assets/images/recruiters/recruiter-page-video.mp4';
 import './Hero.scss';
 
 const HeroPage = () => {
     return (
         <section className="ieq-recruiters-banner bg-surface">
-            <img
+                        <div className="ieq-recruiters-banner__bg">
+              <video className="w-100 h-100" autoPlay muted loop={false}>
+                <source src={RecruiterBannerVideo} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            {/* <img
                 className="ieq-recruiters-banner__bg"
                 src={RecruiterBanner}
                 alt="recruiters banner background"
-            />
+            /> */}
             <div className="ieq-recruiters-banner__content">
                 <h1 className="display-3 text-center text-white">
                     Become a hiring superstar
