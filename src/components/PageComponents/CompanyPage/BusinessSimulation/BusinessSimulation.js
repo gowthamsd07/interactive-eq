@@ -1,13 +1,13 @@
 import React from "react";
 import { Col, Row } from "antd";
-import SimulationImg from "../../../../assets/images/product/business-simulation.png";
+import SimulationImg from "../../../../assets/images/company/company-simulation.png";
 import "./BusinessSimualtion.scss";
 
 const BusinessSimulation = () => {
   return (
     <section className="ieq-product-simulation section-padding-y bg-surface">
       <div className="container">
-        <Row>
+        <Row align={"middle"}>
           <Col xl={{ span: 7, offset: 2 }}>
             <div className="simulation-content">
               <h3 className="display-3 text-white">
@@ -33,21 +33,21 @@ const BusinessSimulation = () => {
             <Row gutter={24}>
               <Col xl={8}>
                 <div className="simulation-card">
-                  <h4 className="h4r text-secondary">
+                  <h4 className="h4r text-primary">
                     Backed by years of experience
                   </h4>
                 </div>
               </Col>
               <Col xl={8}>
                 <div className="simulation-card">
-                  <h4 className="h4r text-secondary">
+                  <h4 className="h4r text-primary">
                     Validated by industry leaders
                   </h4>
                 </div>
               </Col>
               <Col xl={8}>
                 <div className="simulation-card">
-                  <h4 className="h4r text-secondary">
+                  <h4 className="h4r text-primary">
                     Compliant with evolving AI standards
                   </h4>
                 </div>
