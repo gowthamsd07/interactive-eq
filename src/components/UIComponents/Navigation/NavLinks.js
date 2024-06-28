@@ -4,10 +4,17 @@ import { NavLink } from "react-router-dom";
 import "./NavLinks.scss";
 
 const NavLinks = (props) => {
+  const { onClose } = props;
+  const onNavClick = () => {
+    if (onClose) {
+      onClose();
+    }
+  }
+
   return (
     <ul className="nav-links">
       <li className="text-body">
-        <NavLink className="text-secondary" to="/product" exact="true">
+        <NavLink className="text-secondary" to="/product" exact="true" onClick={onNavClick}>
           Product
         </NavLink>
       </li>
@@ -34,8 +41,9 @@ const NavLinks = (props) => {
           <li>
             <NavLink
               className="text-secondary-l text-body"
-              to="/recruiters"
               exact="true"
+              to="/recruiters"
+              onClick={onNavClick}
             >
               Recruiters
             </NavLink>
@@ -45,6 +53,7 @@ const NavLinks = (props) => {
               className="text-secondary-l text-body"
               to="/candidates"
               exact="true"
+              onClick={onNavClick}
             >
               Candidates
             </NavLink>
@@ -54,6 +63,7 @@ const NavLinks = (props) => {
               className="text-secondary-l text-body"
               to="/solutions"
               exact="true"
+              onClick={onNavClick}
             >
               Saas
             </NavLink>
@@ -63,6 +73,7 @@ const NavLinks = (props) => {
               className="text-secondary-l text-body"
               to="/auto-dealer"
               exact="true"
+              onClick={onNavClick}
             >
               Automotive Dealerships
             </NavLink>
@@ -94,6 +105,7 @@ const NavLinks = (props) => {
               className="text-secondary-l text-body"
               to="/company"
               exact="true"
+              onClick={onNavClick}
             >
               Origin Story
             </NavLink>
@@ -110,7 +122,7 @@ const NavLinks = (props) => {
         </ul>
       </li>
       <li className="text-body">
-        <NavLink className="text-secondary" to="/contact-us">
+        <NavLink className="text-secondary" to="/contact-us" onClick={onNavClick}>
           Contact us
         </NavLink>
       </li>

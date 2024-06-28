@@ -10,7 +10,7 @@ import "./MainNavigation.scss";
 import Button from "../Buttons/Buttons";
 import IconSet from "../IconSet/IconSet";
 
-const MainNavigation = (props) => {
+const MainNavigation = () => {
   const [drawerIsOpen, setDrawerIsOpen] = useState(false);
 
   const openDrawerHandler = () => {
@@ -25,15 +25,15 @@ const MainNavigation = (props) => {
   return (
     <React.Fragment>
       {drawerIsOpen && <Backdrop onClick={closeDrawerHandler} />}
-      <SideDrawer show={drawerIsOpen} onClick={closeDrawerHandler}>
+      {drawerIsOpen && <SideDrawer show={drawerIsOpen} onClick={closeDrawerHandler}>
         <nav className="main-navigation__drawer-nav">
-          <NavLinks />
+          <NavLinks onClose={closeDrawerHandler} />
           <Button size="large" primary>
             Request Demo
           </Button>
           <IconSet bg="" iconName="cross" />
         </nav>
-      </SideDrawer>
+      </SideDrawer>}
 
       <MainHeader>
         <div className="container">
