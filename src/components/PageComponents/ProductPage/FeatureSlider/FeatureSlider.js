@@ -5,11 +5,15 @@ import "./FeatureSlider.scss";
 import SliderCard from "./FeatureSliderCard";
 
 const FeatureSlider = (props) => {
+  const settings = {
+    adaptiveHeight: true,
+    gutter: 40,
+  };
   return (
     <section className="ieq-product-slider bg-surface-l section-padding-y">
       <div className="container position-relative">
         <div className="slider-wrapper">
-          <Slider adaptiveHeight={true}>
+          <Slider {...settings}>
             {props.items.map((item) => (
               <SliderCard
                 key={item.id}

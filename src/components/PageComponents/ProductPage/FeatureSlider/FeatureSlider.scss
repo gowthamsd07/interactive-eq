@@ -84,6 +84,11 @@
     margin-top: 40px;
     display: flex;
     gap: 16px;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
 
     .button--secondary {
       color: var(--text-primary-l);
@@ -120,6 +125,9 @@
     background-image: url(../../../../assets/images/shared/arrow-left.svg) !important;
   }
 }
+.carousel-track {
+  gap: 40px;
+}
 .carousel-next {
   right: calc(50% - 40px) !important;
   @media (min-width: 768px) {
@@ -129,6 +137,10 @@
     background-image: url(../../../../assets/images/shared/arrow-left.svg) !important;
     transform: scaleX(-1) !important;
   }
+}
+
+.carousel-row {
+  margin: 0 10px;
 }
 
 .carousel-initialized {

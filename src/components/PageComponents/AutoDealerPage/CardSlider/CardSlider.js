@@ -5,11 +5,15 @@ import Slider from "infinite-react-carousel";
 import "./CardSlider.scss";
 
 const DealerCardSlider = (props) => {
+  const settings = {
+    adaptiveHeight: true,
+    gutter: 40,
+  };
   return (
     <section className="ieq-auto-slider section-padding-top bg-surface">
       <div className="container position-relative">
-        <div className="slider-wrapper w-100">
-          <Slider adaptiveHeight={true}>
+        <div className="slider-wrapper">
+          <Slider {...settings}>
             {props.items.map((item) => (
               <SliderCard
                 key={item.id}
