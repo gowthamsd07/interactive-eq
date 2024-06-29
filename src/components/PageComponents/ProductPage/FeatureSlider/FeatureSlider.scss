@@ -29,6 +29,14 @@
       width: 100%;
     }
   }
+
+  .carousel-track {
+    min-height: 690px;
+
+    @media (min-width: 1200px) {
+      min-height: 590px;
+    }
+  }
 }
 .slider-card {
   display: flex;
@@ -153,14 +161,6 @@
   &::before {
     background-image: url(../../../../assets/images/shared/arrow-left.svg) !important;
     transform: scaleX(-1) !important;
-  }
-}
-
-.carousel-track {
-  min-height: 690px;
-
-  @media (min-width: 1200px) {
-    min-height: 590px;
   }
 }
 
