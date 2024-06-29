@@ -30,11 +30,14 @@ const Excellence = () => {
 
         cardStacks.forEach((cardstack, i) => {
           gsap.set(cardstack, {
-            opacity: 0,
+            opacity: 0.1,
+            scale: 0.97,
             y: 40,
           });
           gsap.to(cardstack, {
             opacity: 1,
+            scale: 1,
+
             y: 0,
 
             immediateRender: false,

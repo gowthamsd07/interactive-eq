@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import { Col, Row } from "antd";
 
 import AIIcon1 from "../../../../assets/images/product/ai-tech-icon-1.svg";
@@ -8,7 +8,43 @@ import AIIcon3 from "../../../../assets/images/product/ai-tech-icon-3.svg";
 import "./AITech.scss";
 import Button from "../../../UIComponents/Buttons/Buttons";
 
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import gsap from "gsap";
+
+gsap.registerPlugin(ScrollTrigger);
+gsap.core.globals("ScrollTrigger", ScrollTrigger);
+
 const AITech = () => {
+  useLayoutEffect(() => {
+    let mm = gsap.matchMedia();
+
+    let cty = gsap.context(() => {
+      mm.add("(min-width: 1200px)", () => {
+        gsap.set(".ai-card", {
+          opacity: 0.1,
+          scale: 0.97,
+          y: 40,
+        });
+        gsap.to(".ai-card", {
+          opacity: 1,
+          scale: 1,
+          y: 0,
+          stagger: 0.1,
+          duration: 1,
+          immediateRender: false,
+          scrollTrigger: {
+            trigger: ".ieq-product-ai",
+            // markers: true,
+            id: "cards-1",
+            scrub: false,
+            start: "0% center",
+            end: "80% center",
+          },
+        });
+      });
+    });
+    return () => cty.revert();
+  }, []);
   return (
     <section className="ieq-product-ai section-padding-bottom bg-surface-l">
       <div className="container">
