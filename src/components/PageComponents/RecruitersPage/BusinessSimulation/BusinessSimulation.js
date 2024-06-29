@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Row } from "antd";
-import SimulationImg from "../../../../assets/images/recruiters/rec-simulation.png";
+import PatternAnimation from "../../../../assets/images/recruiters/pattern-animation.mp4";
 import "./BusinessSimualtion.scss";
 import Button from "../../../UIComponents/Buttons/Buttons";
 
@@ -24,11 +24,12 @@ const BusinessSimulation = () => {
             </div>
           </Col>
           <Col xl={{ span: 10, offset: 3 }}>
-            <img
-              className="w-100"
-              src={SimulationImg}
-              alt="First-person business simulation"
-            />
+            <div className="video-wrapper">
+              <video className="w-100 h-100" autoPlay muted loop>
+                <source src={PatternAnimation} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </Col>
         </Row>
         <Row className="mt-80">
