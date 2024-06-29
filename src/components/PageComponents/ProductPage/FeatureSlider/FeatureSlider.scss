@@ -39,6 +39,7 @@
   padding: 24px;
   flex-direction: column;
   min-width: 100%;
+  justify-content: space-between;
   @media (min-width: 768px) {
     flex-direction: column-reverse;
     max-width: 524px;
@@ -80,14 +81,32 @@
     }
   }
 
+  .learn-more-cta {
+    p {
+      background: linear-gradient(270deg, #5a1c4f 9.4%, #e13d44 99.62%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      cursor: pointer;
+      transition: all ease 0.3s;
+      // text-decoration: underline !important;
+      border-bottom: 1px solid linear-gradient(270deg, #5a1c4f 9.4%, #e13d44 99.62%);
+      &:hover {
+        font-weight: 500;
+        transition: all ease 0.3s;
+      }
+    }
+  }
+
   .buttons-wrap {
-    margin-top: 40px;
+    margin-top: 24px;
     display: flex;
     gap: 16px;
     flex-direction: column;
 
     @media (min-width: 768px) {
       flex-direction: row;
+      margin-top: 40px;
     }
 
     .button--secondary {
@@ -125,9 +144,7 @@
     background-image: url(../../../../assets/images/shared/arrow-left.svg) !important;
   }
 }
-.carousel-track {
-  gap: 40px;
-}
+
 .carousel-next {
   right: calc(50% - 40px) !important;
   @media (min-width: 768px) {
@@ -139,8 +156,25 @@
   }
 }
 
+.carousel-track {
+  min-height: 690px;
+
+  @media (min-width: 1200px) {
+    min-height: 590px;
+  }
+}
+
+.carousel-item {
+  height: 100%;
+
+  .slider-card {
+    height: 100%;
+  }
+}
+
 .carousel-row {
   margin: 0 10px;
+  height: 100%;
 }
 
 .carousel-initialized {

@@ -23,4 +23,12 @@
       background-image: url(../../../../assets/images/shared/arrow-left-white.svg) !important;
     }
   }
+
+  .carousel-track {
+    min-height: 660px;
+
+    @media (min-width: 768px) {
+      min-height: 590px;
+    }
+  }
 }

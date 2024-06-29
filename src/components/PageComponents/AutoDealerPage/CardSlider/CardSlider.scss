@@ -32,4 +32,16 @@
       flex-direction: column-reverse !important;
     }
   }
+
+  .carousel-track {
+    min-height: 840px;
+
+    @media (min-width: 768px) {
+      min-height: 700px;
+    }
+
+    @media (min-width: 1200px) {
+      min-height: 590px;
+    }
+  }
 }

@@ -63,11 +63,11 @@ header {
   display: flex;
   border-radius: 8px;
   background: #fff;
-  padding: 16px !important;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
   min-width: 220px;
   top: 35px;
+  margin-top: 8px;
 
   // transition-delay: 0.5s;
 
@@ -79,12 +79,15 @@ header {
   // }
 
   @media (min-width: 1200px) {
+    padding: 16px !important;
+    margin-top: 0;
     display: flex;
     position: absolute;
     opacity: 0;
     visibility: hidden;
     transform: translateY(10px);
     transition: all ease 0.5s;
+    gap: 12px;
   }
 
   a:hover {

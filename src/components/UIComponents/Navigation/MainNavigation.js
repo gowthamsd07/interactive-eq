@@ -6,6 +6,7 @@ import NavLinks from "./NavLinks";
 import SideDrawer from "./SideDrawer";
 import Backdrop from "../Backdrop/Backdrop";
 import Brandlogo from "../../../assets/images/shared/header-logo.svg";
+import BrandLogoWhite from "../../../assets/images/shared/footer-logo.svg";
 import "./MainNavigation.scss";
 import Button from "../Buttons/Buttons";
 import IconSet from "../IconSet/IconSet";
@@ -25,15 +26,18 @@ const MainNavigation = () => {
   return (
     <React.Fragment>
       {drawerIsOpen && <Backdrop onClick={closeDrawerHandler} />}
-      {drawerIsOpen && <SideDrawer show={drawerIsOpen} onClick={closeDrawerHandler}>
-        <nav className="main-navigation__drawer-nav">
-          <NavLinks onClose={closeDrawerHandler} />
-          <Button size="large" primary>
-            Request Demo
-          </Button>
-          <IconSet bg="" iconName="cross" />
-        </nav>
-      </SideDrawer>}
+      {drawerIsOpen && (
+        <SideDrawer show={drawerIsOpen} onClick={closeDrawerHandler}>
+          <nav className="main-navigation__drawer-nav">
+            <img className="ham-logo" src={BrandLogoWhite} alt="brand logo" />
+            <NavLinks onClose={closeDrawerHandler} />
+            <Button size="large" primary>
+              Request Demo
+            </Button>
+            <IconSet bg="" iconName="cross" />
+          </nav>
+        </SideDrawer>
+      )}
 
       <MainHeader>
         <div className="container">

@@ -21,6 +21,7 @@ const FeatureSlider = (props) => {
                 title={item.title}
                 desc={item.desc}
                 imgUrl={item.imgUrl}
+                isCta={item.isCta}
               />
             ))}
           </Slider>

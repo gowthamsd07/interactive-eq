@@ -295,21 +295,24 @@ export const CARD_SLIDER_ITEMS = [
 export const PRODUCT_SLIDER_ITEMS = [
   {
     id: 1,
-    title: "The forefront of hiring tech.",
-    desc: "Human aptitude scoring by iEQ is a first-of-its-kind breakthrough that you won’t find anywhere else.",
-    imgUrl: ProductSliderImg1,
-  },
-  {
-    id: 2,
-    title: "Multi Module",
-    desc: "Pick from a range of role-play scenarios to test your candidates, from chats and email threads to remote and in-person simulations.",
-    imgUrl: ProductSliderImg2,
-  },
-  {
-    id: 3,
     title: "Data privacy & compliance",
     desc: "We take great care in adhering to fast changing compliance laws related to artificial intelligence, recording, talent recruitment and beyond. Our methods are constantly vetted by the most trusted legal minds in Silicon Valley.",
     imgUrl: ProductSliderImg3,
+    isCta: true,
+  },
+  {
+    id: 2,
+    title: "The forefront of hiring tech.",
+    desc: "Human aptitude scoring by iEQ is a first-of-its-kind breakthrough that you won’t find anywhere else.",
+    imgUrl: ProductSliderImg1,
+    isCta: true,
+  },
+  {
+    id: 3,
+    title: "Multi Module",
+    desc: "Pick from a range of role-play scenarios to test your candidates, from chats and email threads to remote and in-person simulations.",
+    imgUrl: ProductSliderImg2,
+    isCta: true,
   },
 ];
 
@@ -350,16 +353,16 @@ export const HRM_TILE_ITEMS = [
 export const AUTO_DEALER_SLIDER_ITEMS = [
   {
     id: 1,
-    title: "Healthy competition",
-    desc: "Hire salespeople who work together, not against each other. ",
-    imgUrl: AutoDealerSliderImg1,
+    title: "Service with a smile",
+    desc: "You know the stat: 50% of dealership profits come from parts and service. Make sure you hire a team that isn’t just handy but also friendly. Hire workers who circumvent customer issues proactively instead of reactively.",
+    imgUrl: AutoDealerSliderImg2,
     isButton: true,
   },
   {
     id: 2,
-    title: "Service with a smile",
-    desc: "You know the stat: 50% of dealership profits come from parts and service. Make sure you hire a team that isn’t just handy but also friendly. Hire workers who circumvent customer issues proactively instead of reactively.",
-    imgUrl: AutoDealerSliderImg2,
+    title: "Healthy competition",
+    desc: "Hire salespeople who work together, not against each other. ",
+    imgUrl: AutoDealerSliderImg1,
     isButton: true,
   },
 ];

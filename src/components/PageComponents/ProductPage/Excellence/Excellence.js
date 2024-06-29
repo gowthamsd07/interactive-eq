@@ -31,12 +31,11 @@ const Excellence = () => {
               </Col>
               <Col xs={24} md={12}>
                 <div className="content-card">
-                  <h4 className="text-primary h4r">
-                    Full-motion film production
-                  </h4>
+                  <h4 className="text-primary h4r">Beyond film production</h4>
                   <p className="text-l text-secondary">
-                    Our seasoned film production team brings on-the-job topics
-                    to life by naturally and accurately challenging candidates.
+                    Exceptional film production brings iEQ assessments to life.
+                    But our team goes even further, collaborating with industry
+                    experts to bring on-the-job scenarios to life.
                   </p>
                 </div>
               </Col>
@@ -66,11 +65,11 @@ const Excellence = () => {
               </Col>
               <Col xs={24} md={12}>
                 <div className="content-card">
-                  <h4 className="text-primary h4r">Human aptitude</h4>
+                  <h4 className="text-primary h4r">GenAI scoring</h4>
                   <p className="text-l text-secondary">
-                    Challenge your candidate to read the room by observing real
-                    people who emote, change tone, and present complex scenarios
-                    in business environments.
+                    Leaps in artificial intelligence make advanced soft skill
+                    scoring on this scale possible. Our generative AI models
+                    score your candidate’s EQ without bias.
                   </p>
                 </div>
               </Col>

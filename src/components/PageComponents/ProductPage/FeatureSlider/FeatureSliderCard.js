@@ -21,6 +21,14 @@ const SliderCard = (props) => {
         ) : (
           ""
         )}
+
+        {props.isCta ? (
+          <div className="learn-more-cta">
+            <p className="text-body">Learn More</p>
+          </div>
+        ) : (
+          ""
+        )}
       </div>
       <div className="slider-card__img">
         <img src={props.imgUrl} alt={props.title} />
