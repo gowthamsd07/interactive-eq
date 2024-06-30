@@ -1,5 +1,5 @@
 import React from "react";
-import SliderCard from "../../ProductPage/FeatureSlider/FeatureSliderCard";
+import AegencyCard from "./AegencyCard";
 import Button from "../../../UIComponents/Buttons/Buttons";
 import AgencyImg from '../../../../assets/images/recruiters/agency.png';
 import "./Agency.scss";
@@ -8,9 +8,7 @@ const Agency = () => {
   return (
     <section className="ieq-auto-slider bg-surface section-padding-y">
       <div className="container flex-align-center flex-column">
-        <SliderCard
-          key={1}
-          id={1}
+        <AegencyCard
           title="For agencies too"
           desc="Include human aptitude assessments in your recruiting toolbox to impress your clients and differentiate yourself against the competition."
           imgUrl={AgencyImg}

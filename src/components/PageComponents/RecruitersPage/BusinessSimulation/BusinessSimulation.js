@@ -8,8 +8,8 @@ const BusinessSimulation = () => {
   return (
     <section className="ieq-product-simulation section-padding-y bg-surface">
       <div className="container">
-        <Row align={"middle"}>
-          <Col xl={{ span: 7, offset: 2 }}>
+        <Row align={'middle'} gutter={[{ xl: 24 }, { xs: 24, md: 24 }]}>
+          <Col xs={{ span: 24 }} md={{ span: 20, offset: 2 }} xl={{ span: 7, offset: 2 }}>
             <div className="simulation-content">
               <h3 className="display-3 text-white">
                 For all hiring needs
@@ -23,7 +23,7 @@ const BusinessSimulation = () => {
               </Button>
             </div>
           </Col>
-          <Col xl={{ span: 10, offset: 3 }}>
+          <Col xs={{ span: 24 }} md={{ span: 20, offset: 2 }} xl={{ span: 10, offset: 3 }}>
             <div className="video-wrapper">
               <video className="w-100 h-100" autoPlay muted loop>
                 <source src={PatternAnimation} type="video/mp4" />
@@ -34,8 +34,8 @@ const BusinessSimulation = () => {
         </Row>
         <Row className="mt-80">
           <Col xl={{ offset: 2, span: 20 }}>
-            <Row gutter={24}>
-              <Col xl={8}>
+            <Row gutter={[{ xl: 24 }, { xs: 24, md: 24, sm: 24 }]}>
+              <Col xs={24} md={{ span: 20, offset: 2 }} xl={{ span: 8, offset: 0 }}>
                 <div className="simulation-card">
                   <h4 className="h4r text-primary">Leadership roles</h4>
                   <p className="text-body text-secondary">
@@ -43,7 +43,7 @@ const BusinessSimulation = () => {
                   </p>
                 </div>
               </Col>
-              <Col xl={8}>
+              <Col xs={24} md={{ span: 20, offset: 2 }} xl={{ span: 8, offset: 0 }}>
                 <div className="simulation-card">
                   <h4 className="h4r text-primary">Internal collaborators</h4>
                   <p className="text-body text-secondary">
@@ -51,7 +51,7 @@ const BusinessSimulation = () => {
                   </p>
                 </div>
               </Col>
-              <Col xl={8}>
+              <Col xs={24} md={{ span: 20, offset: 2 }} xl={{ span: 8, offset: 0 }}>
                 <div className="simulation-card">
                   <h4 className="h4r text-primary">Client specialists</h4>
                   <p className="text-body text-secondary">

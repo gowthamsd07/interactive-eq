@@ -19,8 +19,8 @@ const Features = () => {
                 </div>
                 <Row className="mt-80">
                     <Col xl={{ span: 20, offset: 2 }}>
-                        <Row gutter={24}>
-                            <Col xl={8}>
+                        <Row gutter={[24, 24]}>
+                            <Col  xs={24} md={12} xl={8}>
                                 <div className="feature-card flex-all-center">
                                     <img src={slider1} alt="gen ai" />
                                     <h3 className="text-primary-l text-center">Ready to integrate</h3>
@@ -29,7 +29,7 @@ const Features = () => {
                                     </p>
                                 </div>
                             </Col>
-                            <Col xl={8}>
+                            <Col  xs={24} md={12} xl={8}>
                                 <div className="feature-card flex-all-center">
                                     <img src={slider2} alt="gen ai" />
                                     <h3 className="text-primary-l text-center">Fast results</h3>
@@ -38,7 +38,7 @@ const Features = () => {
                                     </p>
                                 </div>
                             </Col>
-                            <Col xl={8}>
+                            <Col  xs={24} md={12} xl={8}>
                                 <div className="feature-card flex-all-center">
                                     <img src={slider3} alt="gen ai" />
                                     <h3 className="text-primary-l text-center">Accurate identification</h3>

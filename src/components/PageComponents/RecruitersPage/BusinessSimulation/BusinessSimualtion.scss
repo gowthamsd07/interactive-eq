@@ -7,7 +7,14 @@
       margin-top: 40px;
     }
   }
-
+  .video-wrapper{
+    max-height: 335px;
+    max-width: 335px;
+    @media (min-width: 768px) {
+      max-height: 485px;
+      max-width: 485px;
+    }
+  }
   .simulation-card {
     padding-top: 48px;
     border-top: 1px solid #505050;
