@@ -37,7 +37,7 @@ function ListItemImage({
       <div className="mobile-content">
         <h3 className="text-white">{title}</h3>
         <p className="h6r text-white">{desc}</p>
-        <div onClick={triggerPopupHandler} className="w-100">
+        <div onClick={triggerPopupHandler} className="w-100 button-wrap">
           <Button size="large" tertiary>
             {buttonText}
             <IconSet bg="bg" iconName="plus" />

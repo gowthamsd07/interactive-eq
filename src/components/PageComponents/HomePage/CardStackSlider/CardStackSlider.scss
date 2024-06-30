@@ -75,9 +75,24 @@
 
           h3 {
             max-width: 450px;
+
+            @media (min-width: 768px) {
+              text-align: center;
+              max-width: none;
+            }
           }
+          p {
+            @media (min-width: 768px) {
+              text-align: center;
+            }
+          }
+
           button {
             width: 100%;
+            @media (min-width: 768px) {
+              max-width: 348px;
+              margin: 0 auto;
+            }
           }
         }
       }

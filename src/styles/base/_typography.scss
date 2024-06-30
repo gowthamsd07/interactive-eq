@@ -67,7 +67,7 @@ h6,
   font-weight: 600;
 }
 .h6r {
-  @include mixin.font-responsive(18, 20, 24, 140, 140, 140); //24
+  @include mixin.font-responsive(18, 20, 24, 140, 150, 140); //24
   font-weight: 400;
 }
 
