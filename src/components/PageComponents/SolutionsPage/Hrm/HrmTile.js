@@ -14,7 +14,7 @@ const HrmTile = (props) => {
       <Row gutter={[{ xl: 24, lg: 24 }, { xs: 24, sm: 24, md:24 }]} className={`hrmTile-wrapper w-100 mt-80 ${isIdEven ? 'direction-reverse' : ''}`}>
         <Col xs={24} sm={24} md={24} lg={12} xl={8} className='w-100'>
           <div className={`hrmTextTile h4r flex-all-center w-100`}>
-            <p>{tileText}</p>
+            <p className='w-100'>{tileText}</p>
           </div>
         </Col>
         <Col xs={24} sm={24} md={24} lg={12} xl={16} className='w-100'>
