@@ -21,7 +21,7 @@ const AITech = () => {
     let cty = gsap.context(() => {
       mm.add("(min-width: 1200px)", () => {
         gsap.set(".ai-card", {
-          opacity: 0.1,
+          opacity: 0,
           scale: 0.97,
           y: 40,
         });
@@ -29,7 +29,7 @@ const AITech = () => {
           opacity: 1,
           scale: 1,
           y: 0,
-          stagger: 0.1,
+          stagger: 0.3,
           duration: 1,
           immediateRender: false,
           scrollTrigger: {
@@ -37,8 +37,8 @@ const AITech = () => {
             // markers: true,
             id: "cards-1",
             scrub: false,
-            start: "0% center",
-            end: "80% center",
+            start: "-40% top",
+            end: "80% top",
           },
         });
       });

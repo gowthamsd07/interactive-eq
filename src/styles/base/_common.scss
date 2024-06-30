@@ -223,14 +223,10 @@ body {
 }
 
 main {
-  margin-top: 92px;
-
-  @media (min-width: 768px) {
-    margin-top: 115px;
-  }
+  margin-top: 88px;
 
   @media (min-width: 1200px) {
-    margin-top: 98px;
+    margin-top: 90px;
   }
 }
 
