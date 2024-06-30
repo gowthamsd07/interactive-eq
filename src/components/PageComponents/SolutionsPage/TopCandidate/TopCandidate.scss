@@ -10,4 +10,14 @@
         color: #444;
         text-align: center;
     }
+
+    .top-candidate-desc {
+        p {
+            color: #444;
+            max-width: 100%;
+            @media (min-width: 768px) {
+                max-width: 627px;
+            }
+        }
+    }
 }

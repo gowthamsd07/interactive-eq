@@ -5,7 +5,7 @@ import HrmTileCard from "./HrmTile";
 const Hrm = (props) => {
   const { items } = props;
   return (
-    <section className="hrm-sec section-padding-y">
+    <section className="hrm-sec section-padding-y bg-surface">
       <div className="container">
         <div className="flex-all-center flex-column">
           {items.map((tileData) => (

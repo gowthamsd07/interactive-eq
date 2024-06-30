@@ -1,6 +1,9 @@
 .saas-aog {
-  padding-top: 110px;
-  padding-bottom: 160px;
+  padding-top: 72px;
+  padding-bottom: 80px;
+  @media (min-width: 1200px) {
+    padding-bottom: 160px;
+  }
   .container {
     h6 {
       text-align: center;
@@ -16,18 +19,30 @@
   }
 
   .img-wrapper {
-    margin: 72px 0;
     max-height: 688px;
 
     img {
       object-fit: cover;
       width: 100%;
       height: 100%;
-      border-radius: 40px;
+      border-radius: 10px;
+      @media (min-width: 1200px) {
+        border-radius: 40px;
+      }
+      @media (min-width: 768px) {
+        border-radius: 20px;
+      }
     }
   }
 
   .saas-desc {
     color: #A6A6A6;
+    p {
+      max-width: 100%;
+      text-align: center;
+      @media (min-width: 768px) {
+        max-width: 533px;
+      }
+    }
   }
 }

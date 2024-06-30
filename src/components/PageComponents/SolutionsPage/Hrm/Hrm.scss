@@ -1,33 +1,63 @@
 .hrm-sec {
-    background-color: #000;
-
     .hrm-titleDesc {
-        color: #A6A6A6;
-        width: 608px;
+        color: #A7A7A7;
         margin-top: 24px;
-        text-align: center;
+        max-width: 100%;
+        @media (min-width: 768px) {
+            max-width: 608px;
+        }
+    }
+    .hrmTile {
+        margin-top: 80px;
+        &:first-of-type {
+            margin-top: 0;
+        }
+        @media (min-width: 1200px) {
+            margin-top: 160px;
+            &:first-of-type {
+                margin-top: 0;
+            }
+        }
     }
 
     .hrmTile-wrapper {
         .hrmTextTile {
-            // width: 456px;
-            max-height: 600px;
+            width: 100% !important;
+            height: 335px;
+            padding: 48px 24px;
+            border-radius: 24px;
+            @media (min-width: 768px) {
+                height: 446px;
+                border-radius: 40px;
+            }
+            @media (min-width: 1200px) {
+                height: 500px;
+                padding: 136px 72px;
+            }
             background-color: #2D272B;
-            border-radius: 30px;
             p {
                 max-width: 312px;
                 color: #E9E9E9;
             }
         }
-        .hrmImageTile{
-            // width: 963px;
-            max-height: 600px;
+        .hrmImageTile {
+            width: 100%;
+            height: 335px;
             img {
                 object-fit: cover;
                 width: 100%;
                 height: 100%;
-                border-radius: 30px;
+                border-radius: 24px;
               }
+              @media (min-width: 768px) {
+                height: 446px;
+                img {
+                    border-radius: 40px;
+                }
+            }
+            @media (min-width: 1200px) {
+                height: 500px;
+            }
         }
         @media (max-width: 768px) {
             flex-direction: column;
