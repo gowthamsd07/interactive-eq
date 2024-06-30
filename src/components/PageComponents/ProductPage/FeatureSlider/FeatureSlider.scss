@@ -1,9 +1,15 @@
 .ieq-product-slider {
   // overflow: visible;
+  padding-bottom: 80px;
 
   @media (min-width: 768px) {
     padding-left: 0px;
     padding-right: 0px;
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: 768px) {
+    padding-bottom: 160px;
   }
   // overflow: hidden;
   .slider-wrapper {
@@ -42,7 +48,7 @@
   display: flex;
   align-items: center;
   gap: 24px;
-  background: var(--bg-variant1-l);
+  background: var(--bg-variant1-l) !important;
   border-radius: 40px;
   padding: 24px;
   flex-direction: column;
