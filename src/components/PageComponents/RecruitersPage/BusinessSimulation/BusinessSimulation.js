@@ -8,7 +8,7 @@ const BusinessSimulation = () => {
   return (
     <section className="ieq-product-simulation section-padding-y bg-surface">
       <div className="container">
-        <Row align={'middle'} gutter={[{ xl: 24 }, { xs: 80, md: 80 }]}>
+        <Row align={'middle'} gutter={[{ xl: 24 }, { xs: 80, sm: 80, md: 80 }]}>
           <Col xs={{ span: 24 }} md={{ span: 20, offset: 2 }} xl={{ span: 7, offset: 2 }}>
             <div className="simulation-content">
               <h3 className="display-3 text-white">

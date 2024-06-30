@@ -15,7 +15,7 @@ const SoftSkill = () => {
           </Col>
           <Col xs={24} md={{ span: 20, offset: 2 }} xl={{ span: 8, offset: 2 }}>
             <div className='ieq-company-softskill__content w-100 h-100'>
-              <h2 className='mt-40 display-3'>
+              <h2 className='display-3'>
                 Acting on a hunch
               </h2>
               <p className='h6r'>

@@ -14,16 +14,22 @@
     }
 
     &__content {
+        @media (min-width: 1200px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
         h2 {
             color: #1A1A1A;
             @media (max-width: 1199px) {
-                text-align: center;
+                // text-align: center;
+                margin-top: 80px;
             }
         }
 
         p {
             @media (max-width: 1199px) {
-                text-align: center;
+                // text-align: center;
             }
             width: 100%;
             margin-top: 24px;
