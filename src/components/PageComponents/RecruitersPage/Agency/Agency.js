@@ -6,7 +6,7 @@ import "./Agency.scss";
 
 const Agency = () => {
   return (
-    <section className="ieq-auto-slider bg-surface section-padding-y">
+    <section className="ieq-auto-slider bg-surface section-padding-y z-index-2 position-relative">
       <div className="container flex-align-center flex-column">
         <AegencyCard
           title="For agencies too"

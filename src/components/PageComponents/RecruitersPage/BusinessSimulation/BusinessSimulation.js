@@ -6,7 +6,7 @@ import Button from "../../../UIComponents/Buttons/Buttons";
 
 const BusinessSimulation = () => {
   return (
-    <section className="ieq-product-simulation section-padding-y bg-surface">
+    <section className="ieq-product-simulation section-padding-y bg-surface z-index-2 position-relative">
       <div className="container">
         <Row align={'middle'} gutter={[{ xl: 24 }, { xs: 80, sm: 80, md: 80 }]}>
           <Col xs={{ span: 24 }} md={{ span: 20, offset: 2 }} xl={{ span: 7, offset: 2 }}>

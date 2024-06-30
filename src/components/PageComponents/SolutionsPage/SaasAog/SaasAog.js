@@ -5,7 +5,7 @@ import { Row, Col } from 'antd';
 
 const SaasAog = () => {
     return (
-        <section className='saas-aog bg-surface'>
+        <section className='saas-aog bg-surface z-index-2 position-relative'>
             <div className='container flex-all-center flex-column'>
                 <h6>SaaS</h6>
                 <h1 className='saas-aog__heading display-3 text-center'>

@@ -7,7 +7,7 @@ import './Features.scss';
 
 const Features = () => {
     return (
-        <section className="ieq-recruiters-features section-padding-y bg-surface">
+        <section className="ieq-recruiters-features section-padding-y bg-surface z-index-2 position-relative">
             <div className="container flex-all-center flex-column">
                 <div className="ieq-recruiters-featureTitle">
                     <h3 className="h3 text-center text-white">

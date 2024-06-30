@@ -5,7 +5,7 @@ import './SoftSkill.scss';
 
 const SoftSkill = () => {
   return (
-    <section className="ieq-company-softskill section-padding-y bg-surface">
+    <section className="ieq-company-softskill section-padding-y bg-surface z-index-2 position-relative">
       <div className='container'>
         <Row>
           <Col xs={24} md={{ span: 20, offset: 2 }} xl={{ span: 10, offset: 2 }}>

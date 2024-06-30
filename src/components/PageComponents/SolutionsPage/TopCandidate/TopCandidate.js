@@ -6,7 +6,7 @@ import { Row, Col } from 'antd';
 
 const TopCandidate = () => {
     return (
-        <section className='top-candidate-section section-padding-y'>
+        <section className='top-candidate-section section-padding-y z-index-2 position-relative'>
             <div className='container'>
                 <Row className='tc-img-wrapper'>
                     <Col span={24}>

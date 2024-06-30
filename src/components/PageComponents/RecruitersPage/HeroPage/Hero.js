@@ -5,7 +5,7 @@ import './Hero.scss';
 
 const HeroPage = () => {
     return (
-        <section className="ieq-recruiters-banner bg-surface">
+        <section className="ieq-recruiters-banner bg-surface z-index-2 position-relative">
             <div className="ieq-recruiters-banner__bg">
                 <video className="w-100 h-100" autoPlay muted loop={false}>
                     <source src={RecruiterBannerVideo} type="video/mp4" />

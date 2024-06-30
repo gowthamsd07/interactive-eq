@@ -4,7 +4,7 @@ import './Hero.scss';
 
 const HeroPage = () => {
     return (
-        <section className="ieq-company-banner bg-surface">
+        <section className="ieq-company-banner bg-surface z-index-2 position-relative">
             <img
                 className="ieq-company-banner__bg"
                 src={CompanyBanner}
