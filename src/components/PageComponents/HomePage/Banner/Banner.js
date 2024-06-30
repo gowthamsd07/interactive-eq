@@ -105,7 +105,20 @@ const HomeBanner = () => {
             scrub: true,
             start: "250% center",
             end: "400% center",
-            toggleActions: "play none none reverse",
+            toggleActions: "play none reverse none",
+          },
+        });
+        gsap.to(".canvas-wrapper", {
+          yPercent: -100,
+          immediateRender: false,
+          scrollTrigger: {
+            trigger: ".canvas-wrapper",
+            // markers: true,
+            id: "banner",
+            scrub: false,
+            start: "400% center",
+            end: "600% center",
+            toggleActions: "play none reverse none",
           },
         });
 
@@ -312,7 +325,7 @@ const HomeBanner = () => {
         </div>
       </Modal>
       <section
-        className={`ieq-banner bg-surface additional-pin ${loaderClass}`}
+        className={`ieq-banner bg-surface additional-pin z-index-2 position-relative ${loaderClass}`}
       >
         <div className="container">
           <div className="content-pin">

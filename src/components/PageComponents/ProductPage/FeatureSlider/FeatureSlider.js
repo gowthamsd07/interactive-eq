@@ -10,7 +10,7 @@ const FeatureSlider = (props) => {
     gutter: 40,
   };
   return (
-    <section className="ieq-product-slider bg-surface-l section-padding-y">
+    <section className="ieq-product-slider z-index-2 position-relative bg-surface-l section-padding-y">
       <div className="container position-relative">
         <div className="slider-wrapper">
           <Slider {...settings}>

@@ -8,7 +8,7 @@ import { Reveal, Tween } from "react-gsap";
 
 const HeroBanner = () => {
   return (
-    <section className="ieq-product-banner bg-surface">
+    <section className="ieq-product-banner z-index-2 position-relative bg-surface">
       <Reveal>
         <Tween
           from={{ opacity: 0 }}

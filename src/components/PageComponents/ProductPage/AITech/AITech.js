@@ -46,7 +46,7 @@ const AITech = () => {
     return () => cty.revert();
   }, []);
   return (
-    <section className="ieq-product-ai section-padding-bottom bg-surface-l">
+    <section className="ieq-product-ai section-padding-bottom z-index-2 position-relative bg-surface-l">
       <div className="container">
         <div className="ieq-product-ai__title">
           <h3 className="text-primary-l text-center">AI-powered</h3>

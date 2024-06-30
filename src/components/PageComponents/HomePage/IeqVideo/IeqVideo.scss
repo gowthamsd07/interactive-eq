@@ -2,6 +2,10 @@
   // will-change: transform;
   overflow: hidden !important;
 
+  @media (max-width: 1199px) {
+    position: relative;
+  }
+
   @media (min-width: 1200px) {
     height: 100vh !important;
   }

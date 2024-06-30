@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 import MainFooter from "./MainFooter";
 import Brandlogo from "../../../assets/images/shared/footer-logo.svg";
 import "./Footer-Navigation.scss";
-import NavLinks from "../Navigation/NavLinks";
+// import NavLinks from "../Navigation/NavLinks";
 
 const FooterNavigation = () => {
   return (
@@ -19,23 +19,77 @@ const FooterNavigation = () => {
           </p>
         </div>
         <nav className="main-navigation__header-nav">
-          <NavLinks />
-        </nav>
-        <div>
-          <ul className="terms-policy-list">
+          <ul>
+            <li className="text-body">
+              <NavLink
+                className="text-secondary-l"
+                to="/recruiters"
+                exact="true"
+              >
+                Recruiters
+              </NavLink>
+            </li>
+
+            <li className="text-body">
+              <NavLink
+                className="text-secondary-l"
+                to="/candidates"
+                exact="true"
+              >
+                Candidates
+              </NavLink>
+            </li>
+            <li className="text-body">
+              <NavLink
+                className="text-secondary-l"
+                to="/solutions"
+                exact="true"
+              >
+                Saas
+              </NavLink>
+            </li>
+            <li className="text-body">
+              <NavLink
+                className="text-secondary-l"
+                to="/auto-dealer"
+                exact="true"
+              >
+                Automotive Dealerships
+              </NavLink>
+            </li>
+          </ul>{" "}
+          <ul>
+            <li className="text-body">
+              <NavLink className="text-secondary-l" to="/company" exact="true">
+                Origin Story
+              </NavLink>
+            </li>
+
+            <li className="text-body">
+              <NavLink className="text-secondary-l" to="/" exact="true">
+                Compliance
+              </NavLink>
+            </li>
+          </ul>
+          <ul>
+            <li className="text-body">
+              <NavLink className="text-secondary-l" to="/" exact="true">
+                Contact us
+              </NavLink>
+            </li>
+
             <li className="text-body">
               <NavLink className="text-secondary-l" to="/" exact="true">
                 Terms
               </NavLink>
             </li>
-
             <li className="text-body">
               <NavLink className="text-secondary-l" to="/" exact="true">
                 Privacy Policy
               </NavLink>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
     </MainFooter>
   );

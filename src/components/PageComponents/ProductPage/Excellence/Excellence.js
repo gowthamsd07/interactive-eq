@@ -56,7 +56,7 @@ const Excellence = () => {
     return () => cty.revert();
   }, []);
   return (
-    <section className="section-padding-y ieq-product-excel bg-surface">
+    <section className="section-padding-y z-index-2 position-relative ieq-product-excel bg-surface">
       <div className="container">
         <h3 className="text-white text-center ieq-product-excel__title">
           Future employee success, measured

@@ -8,7 +8,7 @@ import Button from "../../../UIComponents/Buttons/Buttons";
 
 function BusinessSimulation() {
   return (
-    <section className="ieq-product-simulation section-padding-y bg-surface">
+    <section className="ieq-product-simulation z-index-2 position-relative section-padding-y bg-surface">
       <div className="container">
         <Row gutter={[24, { xs: 80, xl: 0 }]}>
           <Col xs={24} xl={{ span: 8, offset: 2 }}>

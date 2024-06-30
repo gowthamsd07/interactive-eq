@@ -119,7 +119,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      z-index: 0;
+      z-index: -1;
       // transition-timing-function: cubic-bezier(0, 0, 0.35, 1) !important;
       // transition-duration: 0.8s;
       // transition-property: all;
@@ -131,7 +131,6 @@
       left: 0;
       width: 100%;
       height: 100%;
-      z-index: 0;
     }
     @media (min-width: 1900px) {
       display: block;
@@ -140,7 +139,6 @@
       left: 0;
       width: 100%;
       height: 100%;
-      z-index: 0;
     }
     .animated {
       height: 100%;

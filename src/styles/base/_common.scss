@@ -105,6 +105,12 @@ body {
   column-gap: 24px;
 }
 
+// zindex
+
+.z-index-2 {
+  z-index: 2;
+}
+
 // sizes
 .w-100 {
   width: 100%;
@@ -213,6 +219,18 @@ body {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+main {
+  margin-top: 92px;
+
+  @media (min-width: 768px) {
+    margin-top: 115px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-top: 98px;
   }
 }
 

@@ -9,7 +9,7 @@ const CandidatesSlider = (props) => {
     gutter: 40,
   };
   return (
-    <section className="ieq-candidate-slider section-padding-top bg-surface">
+    <section className="ieq-candidate-slider z-index-2 position-relative section-padding-top bg-surface">
       <div className="container position-relative">
         <div className="slider-wrapper">
           <Slider {...settings}>

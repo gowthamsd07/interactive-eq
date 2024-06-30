@@ -100,7 +100,7 @@ const BrandCards = (props) => {
         </div>
       </Modal>
 
-      <section className="ieq-brand-cards section-padding-y bg-surface">
+      <section className="ieq-brand-cards section-padding-y bg-surface z-index-2 position-relative">
         <div className="container">
           {/* <div className="ieq-brand-cards__title">
             <ScrollAnimation

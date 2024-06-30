@@ -66,7 +66,7 @@ const HumanAptitude = () => {
     return () => cty.revert();
   });
   return (
-    <section className="ieq-aptitude  bg-surface">
+    <section className="ieq-aptitude  bg-surface z-index-2 position-relative">
       <div className="container">
         <div className="ieq-aptitude__title">
           <h3 className="text-white text-center">

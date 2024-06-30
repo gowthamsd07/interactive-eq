@@ -7,7 +7,7 @@ import { Reveal, Tween } from "react-gsap";
 
 const AutoDealerBanner = () => {
   return (
-    <section className="ieq-auto-banner bg-surface section-padding-bottom">
+    <section className="ieq-auto-banner z-index-2 position-relative bg-surface section-padding-bottom">
       <div className="container">
         <Reveal>
           <Tween

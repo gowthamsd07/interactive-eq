@@ -107,7 +107,7 @@ const IeqVideo = () => {
   }, []);
 
   return (
-    <section className="ieq-video bg-surface">
+    <section className="ieq-video bg-surface z-index-2 ">
       <div className="ieq-video__wrap">
         <img
           className="w-100 mask-image"

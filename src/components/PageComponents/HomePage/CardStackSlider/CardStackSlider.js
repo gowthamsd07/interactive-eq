@@ -264,7 +264,7 @@ const CardStackSlider = (props) => {
           </div>
         </Modal>
       ))}
-      <section className="ieq-cardslider bg-surface">
+      <section className="ieq-cardslider bg-surface z-index-2 ">
         <div className="container ">
           <Row className="slider-wrapper">
             <Col

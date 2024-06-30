@@ -10,8 +10,12 @@
 
   .container {
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     display: flex;
+
+    @media (min-width: 1200px) {
+      align-items: center;
+    }
   }
 
   .header-brand-logo {
@@ -25,6 +29,20 @@
 }
 
 .main-header {
-  z-index: 99;
-  position: relative;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  transition: top 0.4s ease-out;
+  z-index: 9999;
+  &.visible {
+    // display: block;
+    top: 0;
+    transition: top 0.4s ease-out;
+  }
+
+  &.hidden {
+    // display: none;
+    top: -110px;
+    transition: top 0.4s ease-out;
+  }
 }

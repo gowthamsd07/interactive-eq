@@ -9,7 +9,7 @@ import "./StereoType.scss";
 
 const StereoType = () => {
   return (
-    <section className="ieq-auto-stereo section-padding-y bg-surface-l">
+    <section className="ieq-auto-stereo z-index-2 position-relative section-padding-y bg-surface-l">
       <div className="container">
         <Row gutter={[24, { xs: 24, md: 80, xl: 24 }]}>
           <Col md={24} xl={{ span: 8, offset: 2 }} className="content-wrap">

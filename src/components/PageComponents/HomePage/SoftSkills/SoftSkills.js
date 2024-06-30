@@ -112,7 +112,7 @@ const SoftSkills = (props) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
-    <section className="ieq-softskills section-padding-y bg-surface-l">
+    <section className="ieq-softskills z-index-2 position-relative section-padding-y bg-surface-l">
       <div className="container">
         <Row gutter={[{ md: 40, xl: 80 }, 24]}>
           <Col

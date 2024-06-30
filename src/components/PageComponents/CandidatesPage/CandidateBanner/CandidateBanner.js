@@ -7,7 +7,7 @@ import { Reveal, Tween } from "react-gsap";
 
 const CandidatesBanner = () => {
   return (
-    <section className="ieq-candidate-banner bg-surface ">
+    <section className="ieq-candidate-banner z-index-2 position-relative bg-surface ">
       <div className="container">
         <Reveal>
           <Tween
