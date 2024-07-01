@@ -16,11 +16,12 @@ const MainNavigation = () => {
 
   const openDrawerHandler = () => {
     setDrawerIsOpen(true);
+    document.querySelector("html").style.overflow = "hidden";
   };
 
   const closeDrawerHandler = () => {
     setDrawerIsOpen(false);
-    console.log("clicked");
+    document.querySelector("html").style.overflow = "scroll";
   };
 
   return (
@@ -34,7 +35,11 @@ const MainNavigation = () => {
             <Button size="large" primary>
               Request Demo
             </Button>
-            <IconSet bg="" iconName="cross" />
+            <IconSet
+              bg=""
+              iconName="cross-black"
+              onClick={closeDrawerHandler}
+            />
           </nav>
         </SideDrawer>
       )}

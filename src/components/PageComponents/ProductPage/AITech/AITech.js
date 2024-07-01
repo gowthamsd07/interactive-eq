@@ -1,9 +1,9 @@
 import React, { useLayoutEffect } from "react";
 import { Col, Row } from "antd";
 
-import AIIcon1 from "../../../../assets/images/product/ai-tech-icon-1.svg";
-import AIIcon2 from "../../../../assets/images/product/ai-tech-icon-2.svg";
-import AIIcon3 from "../../../../assets/images/product/ai-tech-icon-3.svg";
+import AIIcon1 from "../../../../assets/images/product/ai-tech-icon-1.png";
+import AIIcon2 from "../../../../assets/images/product/ai-tech-icon-2.png";
+import AIIcon3 from "../../../../assets/images/product/ai-tech-icon-3.png";
 
 import "./AITech.scss";
 import Button from "../../../UIComponents/Buttons/Buttons";

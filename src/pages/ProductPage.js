@@ -5,13 +5,10 @@ import FeatureSlider from "../components/PageComponents/ProductPage/FeatureSlide
 import AITech from "../components/PageComponents/ProductPage/AITech/AITech";
 import BusinessSimulation from "../components/PageComponents/ProductPage/BusinessSimulation/BusinessSimulation";
 import { PRODUCT_SLIDER_ITEMS } from "./Data";
-import LoaderComponent from "../components/UIComponents/Loader/Loader";
 
 const ProductPage = () => {
   return (
     <Fragment>
-      <LoaderComponent />
-
       <HeroBanner />
       <Excellence />
       <FeatureSlider items={PRODUCT_SLIDER_ITEMS} />

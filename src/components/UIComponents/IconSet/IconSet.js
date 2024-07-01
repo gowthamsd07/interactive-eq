@@ -109,6 +109,42 @@ const IconSet = (props) => {
           </defs>
         </svg>
       ) : null}
+      {props.iconName === "cross-black" ? (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="17"
+          height="16"
+          viewBox="0 0 17 16"
+          fill="none"
+        >
+          <g clipPath="url(#clip0_727_5748)">
+            <path
+              d="M13.4551 3.5L4.45508 12.5"
+              stroke="#000"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <path
+              d="M13.4551 12.5L4.45508 3.5"
+              stroke="#000"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_727_5748">
+              <rect
+                width="16"
+                height="16"
+                fill="#000"
+                transform="translate(0.955078)"
+              />
+            </clipPath>
+          </defs>
+        </svg>
+      ) : null}
     </div>
   );
 };

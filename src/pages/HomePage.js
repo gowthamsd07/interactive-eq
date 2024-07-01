@@ -9,12 +9,10 @@ import { SKILLS_ITEMS, SOFT_SKILLS_ITEMS, CARD_SLIDER_ITEMS } from "./Data";
 import IeqVideo from "../components/PageComponents/HomePage/IeqVideo/IeqVideo";
 import CardStackSlider from "../components/PageComponents/HomePage/CardStackSlider/CardStackSlider";
 // import VideoScrub from "../components/PageComponents/HomePage/Banner/VideoScrub";
-import LoaderComponent from "../components/UIComponents/Loader/Loader";
 
 const HomePage = () => {
   return (
     <Fragment>
-      <LoaderComponent />
       <HomeBanner />
       {/* <VideoScrub /> */}
       {/* <DataDrivenPrecision items={DATA_DRIVEN_ITEMS} /> */}

@@ -3,6 +3,7 @@ import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import MainNavigation from "./components/UIComponents/Navigation/MainNavigation";
 import FooterNavigation from "./components/UIComponents/Footer/FooterNavigation";
 import ScrollToTop from "./components/PageComponents/ScrollTop";
+import LoaderComponent from "./components/UIComponents/Loader/Loader";
 // import ScrollToTop from "./components/ScrollTop";
 
 const Home = lazy(() => import("./pages/HomePage"));
@@ -17,6 +18,7 @@ const App = () => (
   <div>
     <Router forceRefresh={true}>
       <Suspense fallback={<div>Loading...</div>}>
+        <LoaderComponent />
         <MainNavigation />
         <ScrollToTop />
         <main>
