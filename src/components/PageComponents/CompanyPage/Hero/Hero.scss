@@ -6,16 +6,14 @@
     }
     &__bg {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transform: translateY(-92px);
+      height: auto;
       @media (min-width: 768px) {
-        transform: translateY(-88px);
-        height: 100%;
+        height: calc(100vh - 92px);
+        transform: translateY(-92px);
       }
       @media (min-width: 1200px) {
+        height: 100%;
         transform: translateY(-88px);
-        height: 100vh;
       }
     }
   
