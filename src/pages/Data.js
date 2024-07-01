@@ -388,3 +388,22 @@ export const CANDIDATES_SLIDER_ITEMS = [
     imgUrl: CandidatesSliderImg3,
   },
 ];
+
+export const TOP_CANDIDATE_PERCENTAGE_ANIMATION_ITEMS = [
+  {
+    id: 'percentageNum-1',
+    to: 95
+  },
+  {
+    id: 'percentageNum-2',
+    to: 85
+  },
+  {
+    id: 'percentageNum-3',
+    to: 96
+  },
+  {
+    id: 'percentageNum-4',
+    to: 94
+  },
+]
