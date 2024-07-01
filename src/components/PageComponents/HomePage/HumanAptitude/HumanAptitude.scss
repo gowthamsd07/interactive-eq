@@ -1,6 +1,7 @@
 .ieq-aptitude {
   padding-bottom: 80px;
   padding-top: 80px;
+  margin-top: -2px;
   @media (min-width: 1200px) {
     min-height: 100%;
     padding-bottom: 160px;
@@ -20,7 +21,7 @@
       }
 
       @media (min-width: 1200px) {
-        max-width: 430px;
+        max-width: 376px;
       }
     }
     p {

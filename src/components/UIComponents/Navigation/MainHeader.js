@@ -3,11 +3,11 @@ import React, { useEffect, useState } from "react";
 import "./MainHeader.scss";
 
 const MainHeader = (props) => {
-  const [position, setPosition] = useState(window.pageYOffset);
+  const [position, setPosition] = useState(window.scrollY);
   const [visible, setVisible] = useState(true);
   useEffect(() => {
     const handleScroll = () => {
-      const moving = window.pageYOffset;
+      const moving = window.scrollY;
 
       setVisible(position > moving);
       setPosition(moving);

@@ -269,6 +269,7 @@ const CardStackSlider = (props) => {
           <Row className="slider-wrapper">
             <Col
               md={{ span: 20, offset: 2 }}
+              lg={{ span: 24, offset: 0 }}
               xl={{ span: 10, offset: 2 }}
               className="image-list-wrapper"
             >

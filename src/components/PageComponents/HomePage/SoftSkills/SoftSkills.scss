@@ -1,5 +1,4 @@
 .ieq-softskills {
-  border-radius: 32px;
   // transition-timing-function: cubic-bezier(0, 0, 0.35, 1) !important;
   // transition-duration: 0.8s;
   // transition-property: all;
@@ -7,6 +6,7 @@
   @media (min-width: 1200px) {
     z-index: 8;
     position: relative;
+    border-radius: 32px;
   }
   &__title {
     p {

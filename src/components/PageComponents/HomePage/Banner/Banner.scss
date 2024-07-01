@@ -124,6 +124,9 @@
       // transition-duration: 0.8s;
       // transition-property: all;
     }
+    @media (min-width: 1200px) {
+      top: 220px;
+    }
     @media (min-width: 1400px) {
       display: block;
       position: fixed;
