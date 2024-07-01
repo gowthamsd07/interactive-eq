@@ -62,7 +62,7 @@ const AITech = () => {
                 <div className="ai-card flex-all-center">
                   <img src={AIIcon1} alt="gen ai" />
                   <h3 className="text-primary-l text-center">Gen AI</h3>
-                  <p className="h6r text-center">
+                  <p className="h6r text-center text-secondary">
                     Quick, objective candidate scoring
                   </p>
                 </div>
@@ -71,7 +71,7 @@ const AITech = () => {
                 <div className="ai-card flex-all-center">
                   <img src={AIIcon2} alt="gen ai" />
                   <h3 className="text-primary-l text-center">NLP</h3>
-                  <p className="h6r text-center">
+                  <p className="h6r text-center text-secondary">
                     Real human language interpretation
                   </p>
                 </div>
@@ -80,7 +80,7 @@ const AITech = () => {
                 <div className="ai-card flex-all-center">
                   <img src={AIIcon3} alt="gen ai" />
                   <h3 className="text-primary-l text-center">LLM</h3>
-                  <p className="h6r text-center">
+                  <p className="h6r text-center text-secondary">
                     Massive soft skill data processing
                   </p>
                 </div>

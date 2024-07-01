@@ -1,12 +1,12 @@
 import React from "react";
 import AegencyCard from "./AegencyCard";
 import Button from "../../../UIComponents/Buttons/Buttons";
-import AgencyImg from '../../../../assets/images/recruiters/agency.png';
+import AgencyImg from "../../../../assets/images/recruiters/agency.png";
 import "./Agency.scss";
 
 const Agency = () => {
   return (
-    <section className="ieq-auto-slider bg-surface section-padding-y z-index-2 position-relative">
+    <section className="ieq-agency-slider bg-surface section-padding-y z-index-2 position-relative">
       <div className="container flex-align-center flex-column">
         <AegencyCard
           title="For agencies too"

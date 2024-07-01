@@ -44,4 +44,12 @@
       min-height: 590px;
     }
   }
+
+  .slider-card {
+    button {
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+    }
+  }
 }
